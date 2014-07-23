@@ -1,0 +1,14 @@
+<header id="header" class="row" data-hook>
+
+<div class="container">
+	  	<figure id="logo" class="columns six" data-hook><%= logo %></figure>
+
+
+  		<%= render :partial => 'spree/shared/nav_bar' %>
+</div><!--container-->
+
+  	<div class="container">
+  		<%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+  	</div>
+
+</header>

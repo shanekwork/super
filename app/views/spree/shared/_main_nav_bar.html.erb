@@ -1,0 +1,24 @@
+<nav class="columns sixteen">
+
+  <ul id="main-nav-bar" class="inline" data-hook>
+
+    <li><a href="/additional_pages/home">home</a></li>
+
+    <% if spree_user_signed_in? %>
+      <li id="home-link" data-hook><%= link_to Spree.t(:store), spree.products_path %></li>
+      <li><a href="/additional_pages/consumables">ink &amp; toner</a></li>
+    <% else %>
+      <li><%= link_to "create account", new_spree_user_registration_path %></li>
+    <% end %>
+
+    <li id="link-to-cart" data-hook>
+      <noscript>
+        <%= link_to Spree.t(:cart), '/cart' %>
+      </noscript>
+      &nbsp;
+    </li>
+    
+    <script>Spree.fetch_cart()</script>
+  </ul>
+
+</nav>
