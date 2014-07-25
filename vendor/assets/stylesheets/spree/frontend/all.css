@@ -10,6 +10,7 @@
  *= require_tree .
 
 
+ *= require store/spree_favorite_products
 */
 table#listing_products img {
 	max-height: 40px !important;

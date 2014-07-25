@@ -11,3 +11,5 @@
 
 //= require_tree .
 
+
+//= require admin/spree_favorite_products

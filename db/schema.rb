@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140723142536) do
+ActiveRecord::Schema.define(version: 20140724112041) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -121,6 +121,16 @@ ActiveRecord::Schema.define(version: 20140723142536) do
 
   add_index "spree_credit_cards", ["payment_method_id"], name: "index_spree_credit_cards_on_payment_method_id", using: :btree
   add_index "spree_credit_cards", ["user_id"], name: "index_spree_credit_cards_on_user_id", using: :btree
+
+  create_table "spree_favorites", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "product_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "spree_favorites", ["user_id", "product_id"], name: "index_spree_favorites_on_user_id_and_product_id", unique: true, using: :btree
+  add_index "spree_favorites", ["user_id"], name: "index_spree_favorites_on_user_id", using: :btree
 
   create_table "spree_gateways", force: true do |t|
     t.string   "type"
