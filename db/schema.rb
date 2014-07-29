@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140724112041) do
+ActiveRecord::Schema.define(version: 20140729094449) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -131,6 +131,19 @@ ActiveRecord::Schema.define(version: 20140724112041) do
 
   add_index "spree_favorites", ["user_id", "product_id"], name: "index_spree_favorites_on_user_id_and_product_id", unique: true, using: :btree
   add_index "spree_favorites", ["user_id"], name: "index_spree_favorites_on_user_id", using: :btree
+
+  create_table "spree_feedback_reviews", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "review_id",                 null: false
+    t.integer  "rating",     default: 0
+    t.text     "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "locale",     default: "en"
+  end
+
+  add_index "spree_feedback_reviews", ["review_id"], name: "index_spree_feedback_reviews_on_review_id", using: :btree
+  add_index "spree_feedback_reviews", ["user_id"], name: "index_spree_feedback_reviews_on_user_id", using: :btree
 
   create_table "spree_gateways", force: true do |t|
     t.string   "type"
@@ -263,6 +276,27 @@ ActiveRecord::Schema.define(version: 20140724112041) do
     t.integer "promotion_id"
   end
 
+  create_table "spree_pages", force: true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "show_in_header",           default: false, null: false
+    t.boolean  "show_in_footer",           default: false, null: false
+    t.string   "foreign_link"
+    t.integer  "position",                 default: 1,     null: false
+    t.boolean  "visible",                  default: true
+    t.string   "meta_keywords"
+    t.string   "meta_description"
+    t.string   "layout"
+    t.boolean  "show_in_sidebar",          default: false, null: false
+    t.string   "meta_title"
+    t.boolean  "render_layout_as_partial", default: false
+  end
+
+  add_index "spree_pages", ["slug"], name: "index_spree_pages_on_slug", using: :btree
+
   create_table "spree_payment_capture_events", force: true do |t|
     t.decimal  "amount",     precision: 10, scale: 2, default: 0.0
     t.integer  "payment_id"
@@ -346,7 +380,7 @@ ActiveRecord::Schema.define(version: 20140724112041) do
   add_index "spree_product_properties", ["product_id"], name: "index_product_properties_on_product_id", using: :btree
 
   create_table "spree_products", force: true do |t|
-    t.string   "name",                         default: "", null: false
+    t.string   "name",                                                 default: "",  null: false
     t.text     "description"
     t.datetime "available_on"
     t.datetime "deleted_at"
@@ -387,6 +421,8 @@ ActiveRecord::Schema.define(version: 20140724112041) do
     t.string   "delta_status"
     t.string   "status_description"
     t.decimal  "nett_cost"
+    t.decimal  "avg_rating",                   precision: 7, scale: 5, default: 0.0, null: false
+    t.integer  "reviews_count",                                        default: 0,   null: false
   end
 
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on", using: :btree
@@ -492,6 +528,21 @@ ActiveRecord::Schema.define(version: 20140724112041) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "stock_location_id"
+  end
+
+  create_table "spree_reviews", force: true do |t|
+    t.integer  "product_id"
+    t.string   "name"
+    t.string   "location"
+    t.integer  "rating"
+    t.text     "title"
+    t.text     "review"
+    t.boolean  "approved",   default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+    t.string   "ip_address"
+    t.string   "locale",     default: "en"
   end
 
   create_table "spree_roles", force: true do |t|

@@ -11,6 +11,8 @@
 
 
  *= require store/spree_favorite_products
+ *= require spree/frontend/spree_static_content
+ *= require spree/frontend/spree_reviews
 */
 table#listing_products img {
 	max-height: 40px !important;

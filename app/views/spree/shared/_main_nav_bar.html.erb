@@ -2,14 +2,18 @@
 
   <ul id="main-nav-bar" class="inline" data-hook>
 
-    <!--<li><a href="/additional_pages/home">home</a></li>-->
+    
+    <li id="home-link" data-hook><%= link_to Spree.t(:store), spree.products_path %></li>
 
+    <!--<li><a href="/additional_pages/consumables">ink &amp; toner</a></li>-->
     
-      <li id="home-link" data-hook><%= link_to Spree.t(:store), spree.products_path %></li>
-      <!--<li><a href="/additional_pages/consumables">ink &amp; toner</a></li>-->
-    
+    <% if spree_user_signed_in? %>
+      
+    <% else %>
       <li><%= link_to "create account", new_spree_user_registration_path %></li>
-    
+    <% end %>
+
+
 
     <li id="link-to-cart" data-hook>
       <noscript>

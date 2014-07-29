@@ -1,5 +1,8 @@
 Super::Application.routes.draw do
 
+get 'additional_pages/findme'
+ 
+
   # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
   # If you would like to change where this engine is mounted, simply change the :at option to something different.
@@ -60,4 +63,5 @@ Super::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
 end
