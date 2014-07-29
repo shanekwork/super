@@ -60,7 +60,9 @@ ul#products li:nth-child(4n+1) {
 	clear: left !important;
 }
 
-
+.ratings {
+	display: none;
+}
 
 
 
