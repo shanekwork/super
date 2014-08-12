@@ -64,5 +64,78 @@ ul#products li:nth-child(4n+1) {
 	display: none;
 }
 
+.small_a {
+	font-size: 13px !important;
+}
 
+ul#main-nav-bar li {
+	position: relative;
+}
+
+ul#main-nav-bar li ul {
+	width: 210px;
+	position: absolute;
+	display: none;
+	z-index: 999;
+	margin: 0;
+	left: 5px;
+	border-right: 1px solid #00adee;
+	border-left: 1px solid #00adee;
+	border-bottom: 1px solid #00adee;
+}
+
+ul#main-nav-bar li:hover ul {
+	display: block;
+}
+
+ul#main-nav-bar li ul li {
+	width: 200px;
+}
+
+ul#main-nav-bar li ul li a {
+	color: #00adee;
+	display: block;
+	margin: 0 !important;
+	width: 100%;
+	background: #fff;
+	font-size: 11px;
+}
+
+/*3rd Level*/
+
+ul#main-nav-bar li ul li ul {
+	position: absolute;
+	display: none !important;
+	left: 210px;
+	top: -1px;
+	z-index: 999;
+	border-top: 1px solid #00adee;
+}
+
+ul#main-nav-bar li ul li:hover ul {
+	display: block !important;
+	margin: 0 0 0 0;
+}
+
+ul#main-nav-bar li ul li ul li {
+	float: left;
+	width: 200px;
+	display: block;
+}
+
+ul#main-nav-bar li ul li ul li a {
+	display: block;
+	margin: 0 !important;
+	width: 100%;
+	background: #fff;
+	color: #00adee;
+}
+
+nav #main-nav-bar li:first-child a {
+	padding-left: 5px !important;
+}
+
+ul#main-nav-bar li ul li a:hover {
+	background: #ededed !important;
+}
 

@@ -1,14 +1,4 @@
-<% content_for :sidebar do %>
-  <div data-hook="homepage_sidebar_navigation">
-    <% if "spree/products" == params[:controller] && @taxon %>
-      <%= render :partial => 'spree/shared/filters' %>
-    <% else %>
-      <%= render :partial => 'spree/shared/taxonomies' %>
-    <% end %>
-  </div>
-<% end %>
-
-
+<div style="display:none !important">
 <% if params[:keywords] %>
 
   <div data-hook="search_results">
@@ -18,9 +8,7 @@
       <%= render :partial => 'spree/shared/products', :locals => { :products => @products, :taxon => @taxon } %>
     <% end %>
   </div>
-
 <% else %>
-
   <div data-hook="homepage_products">
     <% cache(cache_key_for_products) do %>
       <%= render :partial => 'spree/shared/products', :locals => { :products => @products, :taxon => @taxon } %>
@@ -28,9 +16,13 @@
   </div>
 <% end %>
 
-
 <!--
 <%= form_tag empty_cart_path, :id => "empty_cart_form", :method => :put do %>
 <%= button_tag :id => 'empty-cart-button' do %> <%= t(:empty_cart) %> <% end %>
 <% end %>
 -->
+</div>
+
+<div style="background: yellow;">
+  <p>Test</p>
+</div>
