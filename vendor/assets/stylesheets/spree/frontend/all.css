@@ -14,6 +14,12 @@
  *= require spree/frontend/spree_static_content
  *= require spree/frontend/spree_reviews
 */
+
+img {
+	width: 100%;
+	height: auto;
+}
+
 table#listing_products img {
 	max-height: 40px !important;
 }
@@ -65,7 +71,7 @@ ul#products li:nth-child(4n+1) {
 }
 
 .small_a {
-	font-size: 13px !important;
+	font-size: 14px !important;
 }
 
 ul#main-nav-bar li {
@@ -138,4 +144,8 @@ nav #main-nav-bar li:first-child a {
 ul#main-nav-bar li ul li a:hover {
 	background: #ededed !important;
 }
+
+.banner { position: relative; overflow: auto; min-height: 365px; }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }
 
