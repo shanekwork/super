@@ -26,6 +26,8 @@ module Spree
         @images = Product.image_name(params[:id])
       end
 
+
+
       
 
     private

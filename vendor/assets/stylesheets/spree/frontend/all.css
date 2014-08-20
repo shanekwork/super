@@ -145,7 +145,28 @@ ul#main-nav-bar li ul li a:hover {
 	background: #ededed !important;
 }
 
-.banner { position: relative; overflow: auto; min-height: 365px; }
+.banner { position: relative; overflow: auto; min-height: 370px; }
     .banner li { list-style: none; }
         .banner ul li { float: left; }
 
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+.clearfix {
+    display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}

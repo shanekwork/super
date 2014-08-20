@@ -264,6 +264,12 @@ module Spree
       def touch_taxons
         self.taxons.each(&:touch)
       end
+
+      def pick_prod
+        @so = Spree::Product.first  
+      end
+
+
   end
 end
 
