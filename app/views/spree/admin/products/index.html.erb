@@ -2,6 +2,12 @@
   <%= Spree.t(:listing_products) %>
 <% end %>
 
+<hr>
+<h2 style="text-align:center">Home Specials</h2>
+<% @special = Spree::Product.find_by_special("t") %>
+<div><%= link_to @special.image_name, @special %></div>
+<hr>
+
 <% content_for :page_actions do %>
   <li id="new_product_link">
     <%= button_link_to Spree.t(:new_product), new_object_url, { :remote => true, :icon => 'icon-plus', :id => 'admin_new_product' } %>
@@ -79,7 +85,6 @@
           <tr <%== "style='color: red;'" if product.deleted? %> id="<%= spree_dom_id product %>" data-hook="admin_products_index_rows" class="<%= cycle('odd', 'even') %>">
             <td class="align-center"><%= product.sku rescue '' %></td>
 
-            
               
             
             <td class="align-center">

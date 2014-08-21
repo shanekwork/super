@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140729153558) do
+ActiveRecord::Schema.define(version: 20140820150522) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -380,7 +380,7 @@ ActiveRecord::Schema.define(version: 20140729153558) do
   add_index "spree_product_properties", ["product_id"], name: "index_product_properties_on_product_id", using: :btree
 
   create_table "spree_products", force: true do |t|
-    t.string   "name",                                                 default: "",  null: false
+    t.string   "name",                                                 default: "",    null: false
     t.text     "description"
     t.datetime "available_on"
     t.datetime "deleted_at"
@@ -421,8 +421,9 @@ ActiveRecord::Schema.define(version: 20140729153558) do
     t.string   "delta_status"
     t.string   "status_description"
     t.decimal  "nett_cost"
-    t.decimal  "avg_rating",                   precision: 7, scale: 5, default: 0.0, null: false
-    t.integer  "reviews_count",                                        default: 0,   null: false
+    t.decimal  "avg_rating",                   precision: 7, scale: 5, default: 0.0,   null: false
+    t.integer  "reviews_count",                                        default: 0,     null: false
+    t.boolean  "special",                                              default: false
   end
 
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on", using: :btree

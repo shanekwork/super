@@ -10,14 +10,48 @@
 
 <h2 style="margin-top:2%;">Our newest Products</h2>
 
+
+<% @product1 = Spree::Product.find_by_image_name("KF24001") %>
+<% @product2 = Spree::Product.find_by_image_name("KF24001") %>
+<% @product3 = Spree::Product.find_by_image_name("KF24001") %>
+<% @product4 = Spree::Product.find_by_image_name("KF24001") %>
+
 <div class="clearfix" style="text-align:center;width:100%;">
 
-	<div style="float:left;width:23%;margin-right:1%;height:280px"><%= @spee %></div>
-	<div style="float:left;width:23%;margin-left:2%;margin-right:1%;height:280px"><%= @spee2 %></div>
-	<div style="float:left;width:22%;margin-left:2%;margin-right:2%;height:280px"><%= @spee %></div>
-	<div style="float:left;width:23%;margin-left:1%;height:280px;"><%= @spee2 %></div>
+	<div style="float:left;width:23%;margin-right:1%">
+            <div><%= @product1.short_description %></div>
+            <div class="home_images"><%= link_to image_tag('http://www.op-insight.co.uk/images/product/large/' + @product1.image_name + '.jpg'), @product1 %>
+            </div>
+            <div>€<%= @product1.price %></div>
+            <div>
+                
+            </div>
+    </div>
+
+	<div style="float:left;width:23%;margin-left:2%;margin-right:1%">
+        <div><%= @product2.short_description %></div>
+        <div class="home_images"><%= link_to image_tag('http://www.op-insight.co.uk/images/product/large/' + @product2.image_name + '.jpg'), @product2 %>
+        </div>
+        <div>€<%= @product2.price %></div>
+    </div>
+	
+    <div style="float:left;width:22%;margin-left:2%;margin-right:2%">
+        <div><%= @product3.short_description %></div>
+        <div class="home_images"><%= link_to image_tag('http://www.op-insight.co.uk/images/product/large/' + @product3.image_name + '.jpg'), @product3 %>
+        </div>
+        <div>€<%= @product3.price %></div>
+    </div>
+	
+    <div style="float:left;width:23%;margin-left:1%">
+        <div><%= @product4.short_description %></div>
+        <div class="home_images"><%= link_to image_tag('http://www.op-insight.co.uk/images/product/large/' + @product4.image_name + '.jpg'), @product4 %>
+        </div>
+        <div>€<%= @product4.price %></div>
+    </div>
 
 </div>
+
+
 
 
 <script>
