@@ -3,9 +3,15 @@
 <% end %>
 
 <hr>
+
 <h2 style="text-align:center">Home Specials</h2>
-<% @special = Spree::Product.find_by_special("t") %>
-<div><%= link_to @special.image_name, @special %></div>
+
+<tbody>
+  <% @products.where(special: true).each do |e| %>
+    <td><%= link_to e.image_name, e %></td><br>
+  <% end %>
+</tbody>
+
 <hr>
 
 <% content_for :page_actions do %>

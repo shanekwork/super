@@ -9,6 +9,7 @@ module Spree
       @searcher = build_searcher(params)
       @products = @searcher.retrieve_products.ascend_by_master_price
       @taxonomies = Spree::Taxonomy.includes(root: :children)
+
     end
   end
 end
