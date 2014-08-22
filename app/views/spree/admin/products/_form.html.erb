@@ -19,6 +19,18 @@
       <%= f.error_message_on :special %>
     <% end %>
 
+    <%= f.field_container :featured do %>
+      <%= f.label :featured, raw(Spree.t(:featured) + content_tag(:span, ' *',  :class => "required")) %>
+      <%= f.text_field :featured, :class => 'fullwidth title' %>
+      <%= f.error_message_on :featured %>
+    <% end %>
+
+    <%= f.field_container :latest do %>
+      <%= f.label :latest, raw(Spree.t(:latest) + content_tag(:span, ' *',  :class => "required")) %>
+      <%= f.text_field :latest, :class => 'fullwidth title' %>
+      <%= f.error_message_on :latest %>
+    <% end %>
+
     <%= f.field_container :description do %>
       <%= f.label :description, Spree.t(:description) %>
       <%= f.text_area :description, {:rows => "#{unless @product.has_variants? then '20' else '13' end}", :class => 'fullwidth'} %>

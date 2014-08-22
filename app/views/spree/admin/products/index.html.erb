@@ -3,7 +3,6 @@
 <% end %>
 
 <hr style="margin-top:3%;">
-
 <h2 style="text-align:center">Home Specials</h2>
 
 <div class="clearfix" style="text-align:center;background:#5799d8;padding:1% 0;color:#fff;margin:1% 0;">
@@ -15,9 +14,6 @@
 
   <% @products.where(special: true).each do |e| %>
 
-    <% if e.image_name.blank? %>
-    <p>No Products Added Yet</p>
-    <% else %>
       <div style="text-align:center;margin-bottom:1%;" class="clearfix;">
         <div style="float:left;width:25%;"><%= e.image_name %></div>
         <div style="float:left;width:35%;"><%= e.name %></div>
@@ -25,11 +21,79 @@
         <div style="float:left;width:20%;"><%= link_to "Show", admin_product_path( e.id ) %></div>
         <div style="clear:both;"></div>
       </div>
-      <% end %>
+
   <% end %>
 
+<hr style="margin-bottom:3%;">
+
+
+
+
+
+
+
+<hr style="margin-top:3%;">
+<h2 style="text-align:center">Featured</h2>
+
+<div class="clearfix" style="text-align:center;background:#5799d8;padding:1% 0;color:#fff;margin:1% 0;">
+  <div style="float:left;width:25%;">Sku</div>
+  <div style="float:left;width:35%;">Name</div>
+  <div style="float:left;width:20%;">Price</div>
+  <div style="float:left;width:20%;">Link</div>
+</div>
+
+  <% @products.where(featured: true).each do |e| %>
+
+      <div style="text-align:center;margin-bottom:1%;" class="clearfix;">
+        <div style="float:left;width:25%;"><%= e.image_name %></div>
+        <div style="float:left;width:35%;"><%= e.name %></div>
+        <div style="float:left;width:20%;">€<%= e.price %></div>
+        <div style="float:left;width:20%;"><%= link_to "Show", admin_product_path( e.id ) %></div>
+        <div style="clear:both;"></div>
+      </div>
+
+  <% end %>
 
 <hr style="margin-bottom:3%;">
+
+
+
+
+
+
+
+
+
+<hr style="margin-top:3%;">
+<h2 style="text-align:center">Latest</h2>
+
+<div class="clearfix" style="text-align:center;background:#5799d8;padding:1% 0;color:#fff;margin:1% 0;">
+  <div style="float:left;width:25%;">Sku</div>
+  <div style="float:left;width:35%;">Name</div>
+  <div style="float:left;width:20%;">Price</div>
+  <div style="float:left;width:20%;">Link</div>
+</div>
+
+  <% @products.where(latest: true).each do |e| %>
+
+      <div style="text-align:center;margin-bottom:1%;" class="clearfix;">
+        <div style="float:left;width:25%;"><%= e.image_name %></div>
+        <div style="float:left;width:35%;"><%= e.name %></div>
+        <div style="float:left;width:20%;">€<%= e.price %></div>
+        <div style="float:left;width:20%;"><%= link_to "Show", admin_product_path( e.id ) %></div>
+        <div style="clear:both;"></div>
+      </div>
+
+  <% end %>
+
+<hr style="margin-bottom:3%;">
+
+
+
+
+
+
+
 
 <% content_for :page_actions do %>
   <li id="new_product_link">

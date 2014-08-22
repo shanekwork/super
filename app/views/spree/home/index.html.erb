@@ -8,13 +8,44 @@
     </ul>
 </div>
 
-<h2 style="margin-top:2%;">Our newest Products</h2>
+<h2 style="margin-top:2%;">Sale</h2>
 
 
 
 
 <div class="clearfix" style="width: 100%;">
   <% @products.where(special: true).each do |e| %>
+    <div style="float:left;width:25%;text-align:center;">
+        <div><%= link_to e.short_description, e %></div>
+        <div class="home_images"><%= link_to image_tag('http://www.op-insight.co.uk/images/product/large/' + e.image_name + '.jpg'), e %></div>
+        <div>€<%= e.price %></div>
+    </div>
+  <% end %>
+</div>
+
+
+
+
+<h2 style="margin-top:2%;">Featured</h2>
+
+
+<div class="clearfix" style="width: 100%;">
+  <% @products.where(featured: true).each do |e| %>
+    <div style="float:left;width:25%;text-align:center;">
+        <div><%= link_to e.short_description, e %></div>
+        <div class="home_images"><%= link_to image_tag('http://www.op-insight.co.uk/images/product/large/' + e.image_name + '.jpg'), e %></div>
+        <div>€<%= e.price %></div>
+    </div>
+  <% end %>
+</div>
+
+
+
+
+<h2 style="margin-top:2%;">Latest</h2>
+
+<div class="clearfix" style="width: 100%;">
+  <% @products.where(latest: true).each do |e| %>
     <div style="float:left;width:25%;text-align:center;">
         <div><%= link_to e.short_description, e %></div>
         <div class="home_images"><%= link_to image_tag('http://www.op-insight.co.uk/images/product/large/' + e.image_name + '.jpg'), e %></div>
