@@ -15,7 +15,7 @@
 
   <% @products.where(special: true).each do |e| %>
 
-    <% if e.blank? %>
+    <% if e.image_name.blank? %>
     <p>No Products Added Yet</p>
     <% else %>
       <div style="text-align:center;margin-bottom:1%;" class="clearfix;">
