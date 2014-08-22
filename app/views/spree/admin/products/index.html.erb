@@ -15,6 +15,9 @@
 
   <% @products.where(special: true).each do |e| %>
 
+    <% if @products.blank? %>
+    <p>No Products Added Yet</p>
+    <% else %>
       <div style="text-align:center;margin-bottom:1%;" class="clearfix;">
         <div style="float:left;width:25%;"><%= e.image_name %></div>
         <div style="float:left;width:35%;"><%= e.name %></div>
@@ -22,7 +25,7 @@
         <div style="float:left;width:20%;"><%= link_to "Show", admin_product_path( e.id ) %></div>
         <div style="clear:both;"></div>
       </div>
-
+      <% end %>
   <% end %>
 
 
