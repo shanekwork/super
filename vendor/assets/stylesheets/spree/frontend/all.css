@@ -173,6 +173,7 @@ html[xmlns] .clearfix {
 
 div.home_images a img {
 	max-width: 120px;
+	max-height: 120px;
 }
 
 
