@@ -11,6 +11,7 @@ module Spree
       def show
         session[:return_to] ||= request.referer
         redirect_to( :action => :edit )
+        @products = Spree::Product.where(special: true)
       end
 
       def index
@@ -19,6 +20,7 @@ module Spree
       end
 
       def update
+        @products = Spree::Product.where(special: true)
         if params[:product][:taxon_ids].present?
           params[:product][:taxon_ids] = params[:product][:taxon_ids].split(',')
         end
