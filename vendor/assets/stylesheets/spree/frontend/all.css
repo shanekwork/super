@@ -15,6 +15,14 @@
  *= require spree/frontend/spree_reviews
 */
 
+.threex3 {
+	color: #333;
+}
+
+.blue {
+	color: #00adee;
+}
+
 img {
 	width: 100%;
 	height: auto;
