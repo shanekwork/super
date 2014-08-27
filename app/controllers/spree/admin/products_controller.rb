@@ -11,12 +11,12 @@ module Spree
       def show
         session[:return_to] ||= request.referer
         redirect_to( :action => :edit )
-        @products = Spree::Product.where(special: true)
       end
 
       def index
         session[:return_to] = request.url
         respond_with(@collection)
+        @products = Spree::Product.where(special: true)
       end
 
       def update
