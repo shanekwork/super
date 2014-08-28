@@ -11,6 +11,10 @@ Spree.config do |config|
   # Example:
   # Uncomment to override the default site name.
   # config.site_name = "Spree Demo Site"
+
+  country = Spree::Country.find_by_name('Ireland')
+  config.default_country_id = country.id if country.present?
+
 end
 
 Spree.user_class = "Spree::User"
