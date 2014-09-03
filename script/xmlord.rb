@@ -1,6 +1,7 @@
 require 'builder'
-@order = Spree::Order.all.limit(5)
-  file = File.new("#{Rails.root}/public/orders.xml", 'w')
+@order = Spree::Order.all
+@address = Spree::Address.all
+  file = File.new("#{Rails.root}/public/orders#{DateTime.now}.xml", 'w')
  
   xml = Builder::XmlMarkup.new(target: file, :indent => 4)
   xml.instruct! :xml, :version=>'1.0'
@@ -8,69 +9,71 @@ require 'builder'
     @order.each do |o|
       xml.Order do
 
+
+
         xml.OrderReferences do
           xml.BuyersOrderNumber o.id
-          xml.PORef "test"
+          xml.PORef "blank"
         end
 
-        xml.OrderDate o.id
+        xml.OrderDate o.completed_at
 
         xml.OrderTotal do
-          xml.GoodsValue o.id
+          xml.GoodsValue o.total
           xml.GoodsTax o.id
           xml.TaxTotal o.id
-          xml.AmountPaid o.id
+          xml.AmountPaid o.payment_total
         end
 
         xml.Buyer do
           xml.BuyerReferences do
             xml.SuppliersCodeForBuyer o.id
           end
-          xml.Party "test"
+          xml.Party "blank"
           xml.Address do
-            xml.AddressLine "test"
-            xml.City "test"
-            xml.State "test"
+            xml.AddressLine o.payment_total
+            xml.City "blank"
+            xml.State "blank"
             xml.PostCode o.id
             xml.Country "IE"
           end
           xml.Contact do
-            xml.Name "test"
+            xml.Name "blank"
             xml.DDI o.id
-            xml.Email "test"
+            xml.Email o.email
           end
         end
 
         xml.InvoiceTo do
-          xml.Party "test"
+          xml.Party "blank"
           xml.Address do
-            xml.AddressLine "test"
-            xml.City "test"
-            xml.State "test"
+            xml.AddressLine "blank"
+            xml.City "blank"
+            xml.State "blank"
             xml.PostCode o.id
             xml.Country "IE"
           end
           xml.Contact do
-            xml.Name "test"
+            xml.Name "blank"
             xml.DDI o.id
-            xml.Email "test"
+            xml.Email "blank"
           end
         end
 
         xml.Delivery do
           xml.DeliverTo do
-            xml.Party "test"
+            xml.Party "blank"
             xml.Address do
-              xml.AddressLine "test"
-              xml.City "test"
-              xml.State "test"
+              xml.AddressLine "blank"
+              xml.City "blank"
+              xml.State "blank"
               xml.PostCode o.id
-              xml.Country "test"
+              xml.Country "blank"
             end
             xml.Contact do
-              xml.Name "test"
+              xml.Name "blank"
               xml.DDI o.id
-              xml.Email "test"
+              xml.Email "blank"
             end
             xml.DeliverToReferences do
               xml.BuyersCodeForLocation o.id
@@ -79,10 +82,10 @@ require 'builder'
         end
 
         xml.OrderLine do
-          xml.LineNumbers ""
+          xml.LineNumbers "blank"
           xml.Product do
             xml.SuppliersProductCode o.id
-            xml.Description "test"
+            xml.Description "blank"
           end
           xml.Quantity do
             xml.Amount o.id
@@ -101,7 +104,7 @@ require 'builder'
           xml.LineNumbers o.id
           xml.Product do
             xml.SuppliersProductCode o.id
-            xml.Description "test"
+            xml.Description "blank"
           end
           xml.Quantity do
             xml.Amount o.id
@@ -120,7 +123,7 @@ require 'builder'
           xml.LineNumbers o.id
           xml.Product do
             xml.SuppliersProductCode o.id
-            xml.Description "test"
+            xml.Description "blank"
           end
           xml.Quantity do
             xml.Amount o.id
@@ -139,7 +142,7 @@ require 'builder'
           xml.LineNumbers o.id
           xml.Product do
             xml.SuppliersProductCode o.id
-            xml.Description "test"
+            xml.Description "blank"
           end
           xml.Quantity do
             xml.Amount o.id
@@ -151,14 +154,14 @@ require 'builder'
               xml.TaxValue o.id
             end
           end
-          xml.CostCentre "test"
+          xml.CostCentre "blank"
         end
 
         xml.OrderLine do
           xml.LineNumbers o.id
           xml.Product do
             xml.SuppliersProductCode o.id
-            xml.Description "test"
+            xml.Description "blank"
           end
           xml.Quantity do
             xml.Amount o.id
@@ -177,7 +180,7 @@ require 'builder'
           xml.LineNumbers o.id
           xml.Product do
             xml.SuppliersProductCode o.id
-            xml.Description "test"
+            xml.Description "blank"
           end
           xml.Quantity do
             xml.Amount o.id
