@@ -9,7 +9,7 @@ Bundler.require(*Rails.groups)
 module Super
   class Application < Rails::Application
 
-    config.i18n.enforce_available_locales = false
+    I18n.enforce_available_locales = false
     
     config.to_prepare do
       # Load application's model / class decorators
