@@ -11,6 +11,9 @@ module Super
 
     I18n.enforce_available_locales = false
     StateMachine::Machine.ignore_method_conflicts = true
+
+    config.assets.enabled = true
+config.assets.digest = true
     
     config.to_prepare do
       # Load application's model / class decorators
