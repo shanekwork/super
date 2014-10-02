@@ -31,7 +31,7 @@ gem 'money', '6.0.1'
 gem 'spree', '2.2.1'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-2-stable'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
-gem 'rails_12factor', group: :production
+
 gem 'spree_favorite_products', branch: '2-2-stable'
 gem 'spree_static_content', github: 'spree/spree_static_content', branch: '2-2-stable'
 gem 'spree_reviews', github: 'spree/spree_reviews', branch: '2-2-stable'
