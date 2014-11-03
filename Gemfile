@@ -8,6 +8,7 @@ gem 'pg'
 gem 'sass-rails', '~> 4.0.2'
 
 gem 'uglifier', '>= 1.3.0'
+
 gem "asset_sync"
 
 # Use CoffeeScript for .js.coffee assets and views
@@ -25,7 +26,7 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
+gem 'rails_12factor'
 
 gem 'money', '6.0.1'
 gem 'spree', '2.2.1'
