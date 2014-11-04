@@ -1,7 +1,7 @@
 require 'builder'
 @order = Spree::Order.all
 @address = Spree::Address.all
-  file = File.new("#{Rails.root}/app/assets/orders#{DateTime.now}.xml", 'w')
+  file = File.new("#{Rails.root}/tmp/orders#{DateTime.now}.xml", 'w')
  
   xml = Builder::XmlMarkup.new(target: file, :indent => 4)
   xml.instruct! :xml, :version=>'1.0'
