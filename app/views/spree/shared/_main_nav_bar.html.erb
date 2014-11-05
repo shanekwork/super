@@ -1,14 +1,29 @@
 <nav class="columns sixteen">
 
-<% max_level = Spree::Config[:max_level_in_taxons_menu] || 2 %>
-<nav id="taxonomies" class="sidebar-item" data-hook>
-  <% @taxonomies.each do |taxonomy| %>
-    <% cache [taxonomy, max_level] do %>
-      <h6 class='taxonomy-root'><%= taxonomy.name %></h6>
-      <%= taxons_tree(taxonomy.root, @taxon, max_level) %>
+    <div id="taxonomies">
+     <ul class="navigation-list">
+        <% @taxonomies.each do |taxonomy| %>
+<li<%= ' class="current"' if @taxon && @taxon == taxonomy.root  %>><
+%= link_to taxonomy.name, seo_url(taxonomy.root), :class => 'root' %></
+li>
+        <% end %>
+    </ul>
+<% if @taxon.root.children.blank? %>
+<% else %>
+        <ul class="sub-navigation-list">
+        <% @taxonomies.each do |taxonomy| %>
+              <% if @taxon && ([@taxon] + @taxon.ancestors).include?
+(taxonomy.root) %>
+                  <% taxonomy.root.children.each do |taxon| %>
+                    <li<%= ' class="current"' if @taxon and ([@taxon] +
+@taxon.ancestors).include?(taxon) %>><%= link_to taxon.name, seo_url
+(taxon) %></li>
+                  <% end %>
+         <% end %>
     <% end %>
-  <% end %>
-</nav>
+    </ul>
+<% end %>
+</div>
 
   <ul id="main-nav-bar" class="inline" data-hook>
 
@@ -275,7 +290,7 @@
 
 
 
-    <li><a class="small_a" href="#">Paper</a>
+    <li><a class="small_a" href="#"><%= Spree::Taxonomy where id == 10 %></a>
       <ul>
         <li><a href="#">Copier/Inkjet/Laser - Paper A4</a>
           <ul>
