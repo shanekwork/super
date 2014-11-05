@@ -3,9 +3,7 @@
     <div id="taxonomies">
      <ul class="navigation-list">
         <% @taxonomies.each do |taxonomy| %>
-<li<%= ' class="current"' if @taxon && @taxon == taxonomy.root  %>><
-%= link_to taxonomy.name, seo_url(taxonomy.root), :class => 'root' %></
-li>
+<li<%= ' class="current"' if @taxon && @taxon == taxonomy.root  %>><%= link_to taxonomy.name, seo_url(taxonomy.root), :class => 'root' %></li>
         <% end %>
     </ul>
 <% if @taxon.root.children.blank? %>
@@ -15,9 +13,7 @@ li>
               <% if @taxon && ([@taxon] + @taxon.ancestors).include?
 (taxonomy.root) %>
                   <% taxonomy.root.children.each do |taxon| %>
-                    <li<%= ' class="current"' if @taxon and ([@taxon] +
-@taxon.ancestors).include?(taxon) %>><%= link_to taxon.name, seo_url
-(taxon) %></li>
+                    <li<%= ' class="current"' if @taxon and ([@taxon] + @taxon.ancestors).include?(taxon) %>><%= link_to taxon.name, seo_url(taxon) %></li>
                   <% end %>
          <% end %>
     <% end %>
