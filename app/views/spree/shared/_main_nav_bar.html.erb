@@ -1,25 +1,13 @@
 <nav class="columns sixteen">
 
-    <div id="taxonomies">
-     <ul class="navigation-list">
-        <% @taxonomies.each do |taxonomy| %>
-<li<%= ' class="current"' if @taxon && @taxon == taxonomy.root  %>><%= link_to taxonomy.name, seo_url(taxonomy.root), :class => 'root' %></li>
-        <% end %>
-    </ul>
-<% if @taxon.root.children.blank? %>
-<% else %>
-        <ul class="sub-navigation-list">
-        <% @taxonomies.each do |taxonomy| %>
-              <% if @taxon && ([@taxon] + @taxon.ancestors).include?
-(taxonomy.root) %>
-                  <% taxonomy.root.children.each do |taxon| %>
-                    <li<%= ' class="current"' if @taxon and ([@taxon] + @taxon.ancestors).include?(taxon) %>><%= link_to taxon.name, seo_url(taxon) %></li>
-                  <% end %>
-         <% end %>
+    <nav id="taxonomies" class="sidebar-item" data-hook>
+  <% @taxonomies.each do |taxonomy| %>
+    <% cache taxonomy do %>
+      <h6 class='taxonomy-root'><%= Spree.t(:shop_by_taxonomy, :taxonomy => taxonomy.name) %></h6>
+      <%= taxons_tree(taxonomy.root, @taxon,     Spree::Config[:max_level_in_taxons_menu] || 1) %>
     <% end %>
-    </ul>
-<% end %>
-</div>
+  <% end %>
+</nav>
 
   <ul id="main-nav-bar" class="inline" data-hook>
 
