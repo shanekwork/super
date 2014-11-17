@@ -1,6 +1,13 @@
 <nav class="columns sixteen">
 
-
+<nav id="taxonomies" class="sidebar-item" data-hook>
+    <% @taxonomies.each do |taxonomy| %>
+        <% cache taxonomy do %>
+            <h6 class='taxonomy-root'><%= Spree.t(:shop_by_taxonomy, :taxonomy => taxonomy.name) %></h6>
+            <%= taxons_tree(taxonomy.root, @taxon, Spree::Config[:max_level_in_taxons_menu] || 1) %>
+        <% end %>
+    <% end %>
+</nav>
 
   <ul id="main-nav-bar" class="inline" data-hook>
 
@@ -267,7 +274,7 @@
 
 
 
-    <li><a class="small_a" href="#"><%= Spree::Taxonomy where id == 10 %></a>
+    <li><a class="small_a" href="#">Paper</a>
       <ul>
         <li><a href="#">Copier/Inkjet/Laser - Paper A4</a>
           <ul>
