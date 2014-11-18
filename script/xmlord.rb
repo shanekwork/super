@@ -9,8 +9,6 @@ require 'builder'
     @order.each do |o|
       xml.Order do
 
-
-
         xml.OrderReferences do
           xml.BuyersOrderNumber o.id
           xml.PORef "blank"
@@ -198,3 +196,11 @@ require 'builder'
       end
     end
 
+# Write the file out to S3
+print "--- setting up Amazon s3 connection ---"
+amazon = S3::Service.new(access_key_id:ENV["AWS_ACCESS_KEY_ID"] , secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"])
+bucket = amazon.buckets.find("superbots")
+s3_file = bucket.objects.build("imports/orders#{DateTime.now}.xml")
+s3_file.content = file
+s3_file.save
+print "--- writting file ----"
