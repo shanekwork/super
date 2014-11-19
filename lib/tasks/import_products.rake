@@ -14,7 +14,8 @@ task :xmlord => :environment do
   desc "Load all data into XML and save on S3"
   @order = Spree::Order.all
   @address = Spree::Address.all
-  file = File.new("#{Rails.root}/tmp/orders#{DateTime.now}.xml", 'w+')
+  tmp_filename="#{Rails.root}/tmp/orders#{DateTime.now}.xml"
+  file = File.new(tmp_filename, 'w')
  
   xml = Builder::XmlMarkup.new(target: file, :indent => 4)
   xml.instruct! :xml, :version=>'1.0'
@@ -208,13 +209,17 @@ task :xmlord => :environment do
       
       end
     end
+  
+  file.close
 
   # Write the file out to S3
   print "--- setting up Amazon s3 connection ---"
   amazon = S3::Service.new(access_key_id:ENV["AWS_ACCESS_KEY_ID"] , secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"])
   bucket = amazon.buckets.find("superbots")
   s3_file = bucket.objects.build("imports/orders#{DateTime.now}.xml")
-  s3_file.content = file.read
+  f = File.open(tmp_filename,'r')
+
+  s3_file.content = f.read
   s3_file.save
   print "--- writting file ----"
 end
