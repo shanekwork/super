@@ -9,8 +9,14 @@
 
     <!--<li><a href="/additional_pages/consumables">ink &amp; toner</a></li>-->
 
+
+    <% Spree::Taxonomy.all.each do |t| %>
+        <p><%= link_to t.name, api_taxonomy_taxons_path(t.id) %></p>
+    <% end %>
+
     <li><a class="small_a" href="#">Office Supplies</a>
       <ul>
+
         <li><a href="#">Adhesives &amp; Tapes</a>
           <ul>
             <li><a href="/t/adhesives-and-tapes/clear-tape">Clear Tape</a></li>
@@ -26,6 +32,9 @@
             <li><a href="/t/adhesives-and-tapes/tapes-other">Tapes Other</a></li>
           </ul>
         </li>
+
+
+
         <li><a href="#">Arts &amp; Crafts</a>
           <ul>
             <li><a href="/t/arts-and-crafts/cutting-mats">Cutting Mats</a></li>

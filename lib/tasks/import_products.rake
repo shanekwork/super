@@ -221,5 +221,5 @@ task :xmlord => :environment do
 
   s3_file.content = f.read
   s3_file.save
-  print "--- writting file ----"
+  print "--- writing file ----"
 end
