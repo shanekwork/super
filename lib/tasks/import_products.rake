@@ -10,6 +10,11 @@ task :import, [:filename] => :environment do
 	end
 end
 
+
+
+
+
+
 task :xmlord => :environment do
   desc "Load all data into XML and save on S3"
   @order = Spree::Order.all
