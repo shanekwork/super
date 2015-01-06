@@ -15,10 +15,26 @@
     <li><a class="small_a" href="#">Office Supplies</a>
       <ul>
       <% Spree::Taxonomy.all.each do |t| %>
-        <li><a href="#"><%=t.name%></a>
+        <li><a href="#"><%= t.name %></a>
             <ul>
                 <% t.taxons.each do |taxon| %>
-                <li><a href="<%=nested_taxons_path(taxon.permalink)%>"><%=taxon.name%></a></li>
+                <li><a href="<%=nested_taxons_path(taxon.permalink)%>"><%= taxon.name %></a></li>
+                <%end%>
+            </ul>
+        </li>        
+      <% end %>
+      </ul>
+    </li>
+
+
+
+    <li><a class="small_a" href="#">Ink &amp; Toner</a>
+      <ul>
+      <% Spree::Taxonomy.all.each do |t| %>
+        <li><a href="#"><%= t.name %></a>
+            <ul>
+                <% t.taxons.each do |taxon| %>
+                <li><a href="<%=nested_taxons_path(taxon.permalink)%>"><%= taxon.name %></a></li>
                 <%end%>
             </ul>
         </li>        
@@ -29,7 +45,7 @@
 
 
 
-
+<!--
     <li><a class="small_a" href="#">Ink &amp; Toner</a>
       <ul>
         <li><a href="#">Printer/Fax/Copier Supplies</a>
@@ -607,7 +623,7 @@
       </ul>
     </li>
 
-
+-->
 
 
 
