@@ -9,5 +9,3 @@ task :import, [:filename] => :environment do
 		Spree::Product.create!(row.to_hash)
 	end
 end
-
-end

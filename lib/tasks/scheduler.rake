@@ -226,3 +226,4 @@ task :xmlord => :environment do
   else
     print "--- No new orders to process ---"
   end
+end
