@@ -14,11 +14,11 @@
 
     <li><a class="small_a" href="#">Office Supplies</a>
       <ul>
-      <% Spree::Taxonomy.all.each do |t| %>
+      <% Spree::Taxonomy.where(taxonomy_id: 10) do |t| %>
         <li><a href="#"><%= t.name %></a>
             <ul>
                 <% t.taxons.each do |taxon| %>
-                <li><a href="<%=nested_taxons_path(taxon.permalink)%>"><%= taxon.name %></a></li>
+                <li><a href="<%= nested_taxons_path(taxon.permalink) %>"><%= taxon.name %></a></li>
                 <%end%>
             </ul>
         </li>        
@@ -34,7 +34,7 @@
         <li><a href="#"><%= t.name %></a>
             <ul>
                 <% t.taxons.each do |taxon| %>
-                <li><a href="<%=nested_taxons_path(taxon.permalink)%>"><%= taxon.name %></a></li>
+                <li><a href="<%= nested_taxons_path(taxon.permalink) %>"><%= taxon.name %></a></li>
                 <%end%>
             </ul>
         </li>        
