@@ -14,41 +14,146 @@
 
     <li><a class="small_a" href="#">Office Supplies</a>
       <ul>
-      <% Spree::Taxonomy.where(taxonomy_id: 10) do |t| %>
-        <li><a href="#"><%= t.name %></a>
+      <% Spree::Taxonomy.where(id: [17, 16, 12, 18, 13, 21, 20, 15, 19, 30, 31, 32]).each do |t| %>
+        <li>
+          <%= link_to t.name, '#' %>
             <ul>
                 <% t.taxons.each do |taxon| %>
-                <li><a href="<%= nested_taxons_path(taxon.permalink) %>"><%= taxon.name %></a></li>
-                <%end%>
+                  <li>
+                    <%= link_to taxon.name, nested_taxons_path(taxon.permalink) %>                  
+                    </li>
+                <% end %>
             </ul>
         </li>        
       <% end %>
       </ul>
     </li>
+
 
 
 
     <li><a class="small_a" href="#">Ink &amp; Toner</a>
       <ul>
-      <% Spree::Taxonomy.all.each do |t| %>
-        <li><a href="#"><%= t.name %></a>
+      <% Spree::Taxonomy.where(id: [43]).each do |t| %>
+        <li>
+          <%= link_to t.name, '#' %>
             <ul>
                 <% t.taxons.each do |taxon| %>
-                <li><a href="<%= nested_taxons_path(taxon.permalink) %>"><%= taxon.name %></a></li>
-                <%end%>
+                  <li>
+                    <%= link_to taxon.name, nested_taxons_path(taxon.permalink) %>                  
+                    </li>
+                <% end %>
+            </ul>
+        </li>        
+      <% end %>
+      </ul>
+    </li>
+    
+
+
+
+
+    <li><a class="small_a" href="#">Paper</a>
+      <ul>
+      <% Spree::Taxonomy.where(id: [10]).each do |t| %>
+        <li>
+          <%= link_to t.name, '#' %>
+            <ul>
+                <% t.taxons.each do |taxon| %>
+                  <li>
+                    <%= link_to taxon.name, nested_taxons_path(taxon.permalink) %>                  
+                    </li>
+                <% end %>
             </ul>
         </li>        
       <% end %>
       </ul>
     </li>
 
+
+    <li><a class="small_a" href="#">Post &amp; Packaging</a>
+      <ul>
+      <% Spree::Taxonomy.where(id: [11, 63]).each do |t| %>
+        <li>
+          <%= link_to t.name, '#' %>
+            <ul>
+                <% t.taxons.each do |taxon| %>
+                  <li>
+                    <%= link_to taxon.name, nested_taxons_path(taxon.permalink) %>                  
+                    </li>
+                <% end %>
+            </ul>
+        </li>        
+      <% end %>
+      </ul>
+    </li>
+
+
+
+
+    <li><a class="small_a" href="#">Machines</a>
+      <ul>
+      <% Spree::Taxonomy.where(id: [42, 40, 41, 44, 50, 51, 83]).each do |t| %>
+        <li>
+          <%= link_to t.name, '#' %>
+            <ul>
+                <% t.taxons.each do |taxon| %>
+                  <li>
+                    <%= link_to taxon.name, nested_taxons_path(taxon.permalink) %>                  
+                    </li>
+                <% end %>
+            </ul>
+        </li>        
+      <% end %>
+      </ul>
+    </li>
+
+
+
+
+    <li><a class="small_a" href="#">Facilities</a>
+      <ul>
+      <% Spree::Taxonomy.where(id: [70, 61, 71, 62]).each do |t| %>
+        <li>
+          <%= link_to t.name, '#' %>
+            <ul>
+                <% t.taxons.each do |taxon| %>
+                  <li>
+                    <%= link_to taxon.name, nested_taxons_path(taxon.permalink) %>                  
+                    </li>
+                <% end %>
+            </ul>
+        </li>        
+      <% end %>
+      </ul>
+    </li>
+
+
+
+
+    <li><a class="small_a" href="#">Furniture</a>
+      <ul>
+      <% Spree::Taxonomy.where(id: [60]).each do |t| %>
+        <li>
+          <%= link_to t.name, '#' %>
+            <ul>
+                <% t.taxons.each do |taxon| %>
+                  <li>
+                    <%= link_to taxon.name, nested_taxons_path(taxon.permalink) %>                  
+                    </li>
+                <% end %>
+            </ul>
+        </li>        
+      <% end %>
+      </ul>
+    </li>
 
 
 
 <!--
     <li><a class="small_a" href="#">Ink &amp; Toner</a>
       <ul>
-        <li><a href="#">Printer/Fax/Copier Supplies</a>
+        <li><a href="#">Printer/Fax/Copier Supplies</a> TAXONOMY ID 43
           <ul>
             <li><a href="/t/printer-slash-fax-slash-copier-supplies/correctable-ribbons">Correctable Ribbons</a></li>
             <li><a href="/t/printer-slash-fax-slash-copier-supplies/list-off-tapes">List Off Tapes</a></li>
@@ -80,7 +185,7 @@
 
 
 
-    <li><a class="small_a" href="#">Paper</a>
+    <li><a class="small_a" href="#">Paper</a> TAXONOMY ID 10
       <ul>
         <li><a href="#">Copier/Inkjet/Laser - Paper A4</a>
           <ul>
@@ -222,7 +327,7 @@
 
     <li><a class="small_a" href="#">Post &amp; Packaging</a>
       <ul>
-        <li><a href="#">Envelopes</a>
+        <li><a href="#">Envelopes</a> TAXONOMY ID 11
           <ul>
             <li><a href="/t/envelopes/envelopes-c4">C4</a></li>
             <li><a href="/t/envelopes/envelopes-dl">DL</a></li>
@@ -238,7 +343,7 @@
             <li><a href="/t/envelopes/envelopes-other">Envelopes Other</a></li>
           </ul>
         </li>
-        <li><a href="#">Mailroom &amp; Warehouse</a>
+        <li><a href="#">Mailroom &amp; Warehouse</a> TAXONOMY ID 63
           <ul>
             <li><a href="/t/mailroom-and-warehouse/mailroom-and-warehouse-furniture">Mailroom &amp; Warehouse Furniture</a></li>
             <li><a href="/t/mailroom-and-warehouse/packing-materials">Packing Materials</a></li>
@@ -266,7 +371,7 @@
 
     <li><a class="small_a" href="#">Machines</a>
       <ul>
-        <li><a href="#">Computer Accessories</a>
+        <li><a href="#">Computer Accessories</a> TAXONOMY ID 42
           <ul>
             <li><a href="/t/computer-accessories/computer-bags">Computer Bags</a></li>
             <li><a href="/t/computer-accessories/equipment-security">Equipment Security</a></li>
@@ -281,7 +386,7 @@
             <li><a href="/t/computer-accessories/computer-accessories-other">Computer Accessories Other</a></li>
           </ul>
         </li>
-        <li><a href="#">Computer Hardware</a>
+        <li><a href="#">Computer Hardware</a> TAXONOMY ID 40
           <ul>
             <li><a href="/t/computer-hardware/pc-slash-workstation">Portable PCs</a></li>
             <li><a href="/t/computer-hardware/laser-printers">Laser Printers</a></li>
@@ -300,7 +405,7 @@
             <li><a href="/t/computer-hardware/ups-slash-power-filters">UPS/Power Filters</a></li>
           </ul>
         </li>
-        <li><a href="#">Computer Media Supplies</a>
+        <li><a href="#">Computer Media Supplies</a> TAXONOMY ID 41
           <ul>
             <li><a href="/t/computer-media-supplies/disks">Disks</a></li>
             <li><a href="/t/computer-media-supplies/data-tapes-and-cartridges">Data Tapes &amp; Cartridges</a></li>
@@ -310,14 +415,14 @@
             <li><a href="/t/computer-media-supplies/computer-media-supplies-other">Computer Media Supplies Other</a></li>
           </ul>
         </li>
-        <li><a href="#">Computer Software</a>
+        <li><a href="#">Computer Software</a> TAXONOMY ID 44
           <ul>
             <li><a href="/t/computer-software/business-software">Business Software</a></li>
             <li><a href="/t/computer-software/internet-and-intranet-software">Internet &amp; Intranet Software</a></li>
             <li><a href="/t/computer-software/labeling-software">Labeling Software</a></li>
           </ul>
         </li>
-        <li><a href="#">Office Machines</a>
+        <li><a href="#">Office Machines</a> TAXONOMY ID 50
           <ul>
             <li><a href="/t/office-machines/calculators-slash-adding-machines">Calculators/Adding Machines</a></li>
             <li><a href="/t/office-machines/calculators-accessories">Calculators Accessories</a></li>
@@ -343,7 +448,7 @@
             <li><a href="/t/office-machines/office-machines-other">Office Machines Other</a></li>
           </ul>
         </li>
-        <li><a href="#">Office Machine Supplies</a>
+        <li><a href="#">Office Machine Supplies</a> TAXONOMY ID 51
           <ul>
             <li><a href="/t/office-machine-supplies/dictation-tapes">Dictation Tapes</a></li>
             <li><a href="/t/office-machine-supplies/fax-rolls">Fax Rolls</a></li>
@@ -363,7 +468,7 @@
             <li><a href="/t/office-machine-supplies/office-machine-supplies-other">Office Machine Supplies Other</a></li>
           </ul>
         </li>
-        <li><a href="#">Personal Electronic Equipment</a>
+        <li><a href="#">Personal Electronic Equipment</a> TAXONOMY ID 83
           <ul>
             <li><a href="/t/personal-electronic-equipment/mobile-phone-accessories">Mobile Phone Accessories</a></li>
             <li><a href="/t/personal-electronic-equipment/media-player-accessories">Media Player Accessories</a></li>
@@ -380,7 +485,7 @@
 
     <li><a class="small_a" href="#">Facilities</a>
       <ul>
-        <li><a href="#">Catering</a>
+        <li><a href="#">Catering</a> TAXONOMY ID 70
           <ul>
             <li><a href="/t/catering/">Beverages</a></li>
             <li><a href="/t/catering/">Kitchen Appliances</a></li>
@@ -390,7 +495,7 @@
             <li><a href="/t/catering/">Catering Utensils</a></li>
           </ul>
         </li>
-        <li><a href="#">Office Environment</a>
+        <li><a href="#">Office Environment</a> TAXONOMY ID 61
           <ul>
             <li><a href="/t/office-environment/">Waste Bins</a></li>
             <li><a href="/t/office-environment/">Ashtrays</a></li>
@@ -414,7 +519,7 @@
             <li><a href="/t/office-environment/">Office Environment Other</a></li>
           </ul>
         </li>
-        <li><a href="#">Janitorial</a>
+        <li><a href="#">Janitorial</a> TAXONOMY ID 71
           <ul>
             <li><a href="/t/janitorial/">Cleaning Products</a></li>
             <li><a href="/t/janitorial/">Cleaning Equipment</a></li>
@@ -424,7 +529,7 @@
             <li><a href="/t/janitorial/">Hand Dryers</a></li>
           </ul>
         </li>
-        <li><a href="#">Safety &amp; Security</a>
+        <li><a href="#">Safety &amp; Security</a> TAXONOMY ID 62
           <ul>
             <li><a href="/t/safety-and-security/">First Aid</a></li>
             <li><a href="/t/safety-and-security/">Torches</a></li>
@@ -448,7 +553,7 @@
 
 
 
-    <li><a class="small_a" href="#">Furniture</a>
+    <li><a class="small_a" href="#">Furniture</a> TAXONOMY ID 60
       <ul>
         <li><a href="#">Desks</a>
           <ul>

@@ -8,12 +8,12 @@ task :xmlord => :environment do
   else
     @import_control = ImportControl.first
     @order = Spree::Order.where("id>?",@import_control.last_id)
-    if @order.length>0
+    if @order.length > 0
       @import_control.update_attribute(:last_id,@order.last.id)
     end
   end
 
-  if @order.length>0
+  if @order.length > 0
     @address = Spree::Address.all
     tmp_filename="#{Rails.root}/tmp/orders#{DateTime.now}.xml"
     file = File.new(tmp_filename, 'w')
