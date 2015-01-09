@@ -10,9 +10,9 @@ Spree.config do |config|
 	
   # Example:
   # Uncomment to override the default site name.
-  # config.site_name = "Spree Demo Site"
-
-  
+  config.site_name = "Office Site"
+  config.track_inventory_levels = false
+  allow_backorder_shipping = true
 
 end
 
