@@ -15,6 +15,7 @@ task :xmlord => :environment do
 
   if @order.length > 0
     @address = Spree::Address.all
+    @user = Spree::User.all
     tmp_filename="#{Rails.root}/tmp/orders#{DateTime.now}.xml"
     file = File.new(tmp_filename, 'w')
    
@@ -26,7 +27,7 @@ task :xmlord => :environment do
 
           xml.OrderReferences do
             xml.BuyersOrderNumber o.id
-            xml.PORef "blank"
+            xml.PORef @user.ship_address
           end
 
           xml.OrderDate o.completed_at
