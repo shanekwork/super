@@ -52,7 +52,7 @@ task :xmlord => :environment do
               xml.Country "IE"
             end
             xml.Contact do
-              xml.Name "blank"
+              xml.Name o.ship_address.firstname
               xml.DDI o.id
               xml.Email o.email
             end
