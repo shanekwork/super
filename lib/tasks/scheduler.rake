@@ -61,9 +61,9 @@ task :xmlord => :environment do
           xml.InvoiceTo do
             xml.Party "blank"
             xml.Address do
-              xml.AddressLine "blank"
-              xml.City "blank"
-              xml.State "blank"
+              xml.AddressLine o.ship_address.address1
+              xml.City o.ship_address.city
+              xml.State o.ship_address.state
               xml.PostCode o.id
               xml.Country "IE"
             end
