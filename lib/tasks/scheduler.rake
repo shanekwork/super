@@ -63,7 +63,7 @@ task :xmlord => :environment do
             xml.Address do
               xml.AddressLine o.ship_address.address1
               xml.City o.ship_address.city
-              xml.State o.ship_address.state
+              xml.State o.ship_address.address1
               xml.PostCode o.id
               xml.Country "IE"
             end

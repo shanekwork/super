@@ -13,7 +13,6 @@ Spree.config do |config|
   config.site_name = "Office Site"
   config.track_inventory_levels = false
   allow_backorder_shipping = true
-  company = true
 
 end
 
