@@ -27,7 +27,7 @@ task :xmlord => :environment do
 
           xml.OrderReferences do
             xml.BuyersOrderNumber o.id
-            xml.PORef "blank"
+            xml.PORef o.company
           end
 
           xml.OrderDate o.completed_at
@@ -52,7 +52,7 @@ task :xmlord => :environment do
               xml.Country "IE"
             end
             xml.Contact do
-              xml.Name o.ship_address.firstname
+              xml.Name o.ship_address.firstname + " " + o.ship_address.lastname
               xml.DDI o.id
               xml.Email o.email
             end
