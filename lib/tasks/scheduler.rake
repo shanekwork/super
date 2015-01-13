@@ -7,22 +7,26 @@ task :xmlord => :environment do
     @import_control = ImportControl.create(:last_id=> @order.last.id)
   else
     @import_control = ImportControl.first
-    @order = Spree::Order.where("id>?",@import_control.last_id)
-    if @order.length > 0
-      @import_control.update_attribute(:last_id,@order.last.id)
+    @orders = Spree::Order.where("id>?",@import_control.last_id)
+    if @orders.length > 0
+      @import_control.update_attribute(:last_id,@orders.last.id)
     end
   end
 
-  if @order.length > 0
+  if @orders.length > 0
     @address = Spree::Address.all
     @user = Spree::User.all
-    tmp_filename="#{Rails.root}/tmp/orders#{DateTime.now}.xml"
-    file = File.new(tmp_filename, 'w')
+    print "--- setting up Amazon s3 connection ---"
+    amazon = S3::Service.new(access_key_id:ENV["AWS_ACCESS_KEY_ID"] , secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"])
+    bucket = amazon.buckets.find("superbots")
+    
+      @orders.each do |o|
+        tmp_filename="#{Rails.root}/tmp/orders-#{o.id}-#{DateTime.now}.xml"
+        file = File.new(tmp_filename, 'w')
    
-    xml = Builder::XmlMarkup.new(target: file, :indent => 4)
-    xml.instruct! :xml, :version=>'1.0'
-   
-      @order.each do |o|
+        xml = Builder::XmlMarkup.new(target: file, :indent => 4)
+        xml.instruct! :xml, :version=>'1.0'
+
         xml.Order do
 
           xml.OrderReferences do
@@ -210,20 +214,20 @@ task :xmlord => :environment do
           end
         
         end
+
+        file.close
+
+        # Write the file out to S3
+        s3_file = bucket.objects.build("imports/orders-#{o.id}-#{DateTime.now}.xml")
+        f = File.open(tmp_filename,'r')
+
+        s3_file.content = f.read
+        s3_file.save
+        print "--- writing file for order #{o.id} ----"
+
       end
     
-    file.close
 
-    # Write the file out to S3
-    print "--- setting up Amazon s3 connection ---"
-    amazon = S3::Service.new(access_key_id:ENV["AWS_ACCESS_KEY_ID"] , secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"])
-    bucket = amazon.buckets.find("superbots")
-    s3_file = bucket.objects.build("imports/orders#{DateTime.now}.xml")
-    f = File.open(tmp_filename,'r')
-
-    s3_file.content = f.read
-    s3_file.save
-    print "--- writing file ----"
   else
     print "--- No new orders to process ---"
   end
