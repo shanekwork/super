@@ -27,7 +27,7 @@ task :xmlord => :environment do
 
           xml.OrderReferences do
             xml.BuyersOrderNumber o.id
-            xml.PORef o.company
+            xml.PORef "PORef"
           end
 
           xml.OrderDate o.completed_at
