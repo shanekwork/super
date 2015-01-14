@@ -19,9 +19,9 @@ task :xmlord => :environment do
     print "--- setting up Amazon s3 connection ---"
     amazon = S3::Service.new(access_key_id:ENV["AWS_ACCESS_KEY_ID"] , secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"])
     bucket = amazon.buckets.find("superbots")
-    
+
       @orders.each do |o|
-        tmp_filename="#{Rails.root}/tmp/orders-#{o.id}-#{DateTime.now}.xml"
+        tmp_filename="#{Rails.root}/tmp/orders-#{o.id}-#{DateTime.now, time_seperator: ""}.xml"
         file = File.new(tmp_filename, 'w')
    
         xml = Builder::XmlMarkup.new(target: file, :indent => 4)
@@ -40,7 +40,7 @@ task :xmlord => :environment do
             xml.GoodsValue o.total
             xml.GoodsTax o.id
             xml.TaxTotal o.id
-            xml.AmountPaid o.payment_total
+            xml.AmountPaid o.total
           end
 
           xml.Buyer do
