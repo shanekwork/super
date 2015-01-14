@@ -21,7 +21,7 @@ task :xmlord => :environment do
     bucket = amazon.buckets.find("superbots")
 
       @orders.each do |o|
-        tmp_filename="#{Rails.root}/tmp/orders-#{o.id}-#{DateTime.now, time_seperator: ""}.xml"
+        tmp_filename="#{Rails.root}/tmp/orders-#{o.id}-#{DateTime.now, :time_seperator => ''}.xml"
         file = File.new(tmp_filename, 'w')
    
         xml = Builder::XmlMarkup.new(target: file, :indent => 4)
