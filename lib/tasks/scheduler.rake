@@ -14,8 +14,10 @@ task :xmlord => :environment do
   end
 
   if @orders.length > 0
+
     @address = Spree::Address.all
     @user = Spree::User.all
+
     print "--- setting up Amazon s3 connection ---"
     amazon = S3::Service.new(access_key_id:ENV["AWS_ACCESS_KEY_ID"] , secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"])
     bucket = amazon.buckets.find("superbots")
@@ -99,118 +101,27 @@ task :xmlord => :environment do
             end
           end
 
-          xml.OrderLine do
-            xml.LineNumbers "blank"
-            xml.Product do
-              xml.SuppliersProductCode o.id
-              xml.Description "blank"
-            end
-            xml.Quantity do
-              xml.Amount o.id
-            end
-            xml.Price do
-              xml.UnitPrice o.id
-              xml.LineTax do
-                xml.TaxRate o.id
-                xml.TaxValue o.id
-              end
-            end
-            xml.CostCentre o.id
-          end
+          @orders.products.each do |p|
 
-          xml.OrderLine do
-            xml.LineNumbers o.id
-            xml.Product do
-              xml.SuppliersProductCode o.id
-              xml.Description "blank"
-            end
-            xml.Quantity do
-              xml.Amount o.id
-            end
-            xml.Price do
-              xml.UnitPrice o.id
-              xml.LineTax do
-                xml.TaxRate o.id
-                xml.TaxValue o.id
+            xml.OrderLine do
+              xml.LineNumbers "blank"
+              xml.Product do
+                xml.SuppliersProductCode o.id
+                xml.Description p.description
               end
+              xml.Quantity do
+                xml.Amount o.id
+              end
+              xml.Price do
+                xml.UnitPrice o.id
+                xml.LineTax do
+                  xml.TaxRate o.id
+                  xml.TaxValue o.id
+                end
+              end
+              xml.CostCentre o.id
             end
-            xml.CostCentre o.id
-          end
 
-          xml.OrderLine do
-            xml.LineNumbers o.id
-            xml.Product do
-              xml.SuppliersProductCode o.id
-              xml.Description "blank"
-            end
-            xml.Quantity do
-              xml.Amount o.id
-            end
-            xml.Price do
-              xml.UnitPrice o.id
-              xml.LineTax do
-                xml.TaxRate o.id
-                xml.TaxValue o.id
-              end
-            end
-            xml.CostCentre o.id
-          end
-
-          xml.OrderLine do
-            xml.LineNumbers o.id
-            xml.Product do
-              xml.SuppliersProductCode o.id
-              xml.Description "blank"
-            end
-            xml.Quantity do
-              xml.Amount o.id
-            end
-            xml.Price do
-              xml.UnitPrice o.id
-              xml.LineTax do
-                xml.TaxRate o.id
-                xml.TaxValue o.id
-              end
-            end
-            xml.CostCentre "blank"
-          end
-
-          xml.OrderLine do
-            xml.LineNumbers o.id
-            xml.Product do
-              xml.SuppliersProductCode o.id
-              xml.Description "blank"
-            end
-            xml.Quantity do
-              xml.Amount o.id
-            end
-            xml.Price do
-              xml.UnitPrice o.id
-              xml.LineTax do
-                xml.TaxRate o.id
-                xml.TaxValue o.id
-              end
-            end
-            xml.CostCentre o.id
-          end
-
-          xml.OrderLine do
-            xml.LineNumbers o.id
-            xml.Product do
-              xml.SuppliersProductCode o.id
-              xml.Description "blank"
-            end
-            xml.Quantity do
-              xml.Amount o.id
-            end
-            xml.Price do
-              xml.UnitPrice o.id
-              xml.LineTax do
-                xml.TaxRate o.id
-                xml.TaxValue o.id
-              end
-            end
-            xml.CostCentre o.id
           end
         
         end
