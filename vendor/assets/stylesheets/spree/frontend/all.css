@@ -13,6 +13,7 @@
  *= require store/spree_favorite_products
  *= require spree/frontend/spree_static_content
  *= require spree/frontend/spree_reviews
+ *= require spree/frontend/spree_paypal_express
 */
 
 .threex3 {
@@ -115,7 +116,8 @@ ul#main-nav-bar li ul li a {
 	font-size: 11px;
 }
 
-/*3rd Level*/
+/*3rd Level *= require spree/frontend/spree_paypal_express
+*/
 
 ul#main-nav-bar li ul li ul {
 	position: absolute;
@@ -215,6 +217,7 @@ div.home_images a img {
 	margin-bottom: 3%; 
 }
 
+ *= require spree/frontend/spree_paypal_express
 */
 
 

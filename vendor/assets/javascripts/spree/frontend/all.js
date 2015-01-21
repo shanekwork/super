@@ -209,4 +209,4 @@
 			me.data('unslider' + (len > 1 ? '-' + (index + 1) : ''), instance);
 		});
 	};
-})(window.jQuery, false);
+})(window.jQuery, false);//= require spree/frontend/spree_paypal_express

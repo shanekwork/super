@@ -1,4 +1,13 @@
 GIT
+  remote: git://github.com/spree-contrib/better_spree_paypal_express.git
+  revision: 25afe2b47b21aeaf0e5901636a682b0bedffa7bb
+  branch: 2-2-stable
+  specs:
+    spree_paypal_express (2.0.3)
+      paypal-sdk-merchant (= 1.106.1)
+      spree_core (~> 2.2.0)
+
+GIT
   remote: git://github.com/spree/spree_reviews.git
   revision: cf55bbd5727b874395dee87fda7c022c900bc1e9
   branch: 2-2-stable
@@ -204,6 +213,11 @@ GEM
       mime-types
     paranoia (2.0.2)
       activerecord (~> 4.0)
+    paypal-sdk-core (0.2.10)
+      multi_json (~> 1.0)
+      xml-simple
+    paypal-sdk-merchant (1.106.1)
+      paypal-sdk-core (~> 0.2.3)
     pg (0.17.1)
     polyamorous (0.6.4)
       activerecord (>= 3.0)
@@ -334,6 +348,7 @@ GEM
       tzinfo
     warden (1.2.3)
       rack (>= 1.0)
+    xml-simple (1.1.4)
 
 PLATFORMS
   ruby
@@ -355,6 +370,7 @@ DEPENDENCIES
   spree_auth_devise!
   spree_favorite_products
   spree_gateway!
+  spree_paypal_express!
   spree_reviews!
   spree_static_content!
   turbolinks
