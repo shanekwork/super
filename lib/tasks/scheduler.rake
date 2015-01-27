@@ -19,7 +19,7 @@ task :xmlord => :environment do
 
     @address = Spree::Address.all
     @user = Spree::User.all
-    @line = Spree::LineItems.all
+    @line = Spree::LineItem.all
 
     print "--- setting up Amazon s3 connection ---"
     amazon = S3::Service.new(access_key_id:ENV["AWS_ACCESS_KEY_ID"] , secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"])
