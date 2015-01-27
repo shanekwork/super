@@ -1,7 +1,9 @@
 require 'csv'
 
 task :xmlord => :environment do
+
   desc "Load all data into XML and save on S3"
+
   if ImportControl.count==0
     @order = Spree::Order.all
     @import_control = ImportControl.create(:last_id=> @order.last.id)
@@ -40,8 +42,8 @@ task :xmlord => :environment do
 
           xml.OrderTotal do
             xml.GoodsValue o.total
-            xml.GoodsTax o.id
-            xml.TaxTotal o.id
+            xml.GoodsTax o.additional_tax_total
+            xml.TaxTotal o.included_tax_total
             xml.AmountPaid o.total
           end
 
@@ -101,25 +103,25 @@ task :xmlord => :environment do
             end
           end
 
-          @orders.products.each do |p|
+          @order.products.each do |p|
 
             xml.OrderLine do
               xml.LineNumbers "blank"
               xml.Product do
-                xml.SuppliersProductCode o.id
+                xml.SuppliersProductCode p.id
                 xml.Description p.description
               end
               xml.Quantity do
-                xml.Amount o.id
+                xml.Amount "test"
               end
               xml.Price do
-                xml.UnitPrice o.id
+                xml.UnitPrice "test"
                 xml.LineTax do
-                  xml.TaxRate o.id
-                  xml.TaxValue o.id
+                  xml.TaxRate "test"
+                  xml.TaxValue "test"
                 end
               end
-              xml.CostCentre o.id
+              xml.CostCentre "test"
             end
 
           end
