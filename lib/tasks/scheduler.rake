@@ -3,7 +3,7 @@ require 'csv'
 task :xmlord => :environment do
 
   desc "Load all data into XML and save on S3"
-  @order2 = Spree::Order.products.all
+  @order2 = Spree::Order.line_items
   if ImportControl.count==0
     @order = Spree::Order.all
     @import_control = ImportControl.create(:last_id=> @order.last.id)
@@ -109,7 +109,7 @@ task :xmlord => :environment do
               xml.LineNumbers "blank"
               xml.Product do
                 xml.SuppliersProductCode p.id
-                xml.Description p.description
+                xml.Description "test"
               end
               xml.Quantity do
                 xml.Amount "test"
