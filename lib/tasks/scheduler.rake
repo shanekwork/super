@@ -3,7 +3,7 @@ require 'csv'
 task :xmlord => :environment do
 
   desc "Load all data into XML and save on S3"
-  @order2 = Spree::Order.line_items
+  
   if ImportControl.count==0
     @order = Spree::Order.all
     @import_control = ImportControl.create(:last_id=> @order.last.id)
@@ -19,6 +19,7 @@ task :xmlord => :environment do
 
     @address = Spree::Address.all
     @user = Spree::User.all
+    @line = Spree::Line_Items.all
 
     print "--- setting up Amazon s3 connection ---"
     amazon = S3::Service.new(access_key_id:ENV["AWS_ACCESS_KEY_ID"] , secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"])
@@ -103,7 +104,7 @@ task :xmlord => :environment do
             end
           end
 
-          @order2.each do |p|
+          @line.each do |p|
 
             xml.OrderLine do
               xml.LineNumbers "blank"
