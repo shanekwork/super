@@ -19,13 +19,13 @@ task :xmlord => :environment do
 
     @address = Spree::Address.all
     @user = Spree::User.all
-    @line = Spree::LineItem.all
 
     print "--- setting up Amazon s3 connection ---"
     amazon = S3::Service.new(access_key_id:ENV["AWS_ACCESS_KEY_ID"] , secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"])
     bucket = amazon.buckets.find("superbots")
 
       @orders.each do |o|
+        @line = Spree::LineItem.where(oder_id: o.id)
         tmp_filename="#{Rails.root}/tmp/orders-#{o.id}-#{DateTime.now}.xml"
         file = File.new(tmp_filename, 'w')
    
@@ -109,7 +109,7 @@ task :xmlord => :environment do
             xml.OrderLine do
               xml.LineNumbers "blank"
               xml.Product do
-                xml.SuppliersProductCode p.id
+                xml.SuppliersProductCode p.quantity
                 xml.Description "test"
               end
               xml.Quantity do
