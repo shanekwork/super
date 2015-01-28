@@ -25,7 +25,7 @@ task :xmlord => :environment do
     bucket = amazon.buckets.find("superbots")
 
       @orders.each do |o|
-        @line = Spree::LineItem.where(oder_id: o.id)
+        @line = Spree::LineItem.where(order_id: o.id)
         tmp_filename="#{Rails.root}/tmp/orders-#{o.id}-#{DateTime.now}.xml"
         file = File.new(tmp_filename, 'w')
    
