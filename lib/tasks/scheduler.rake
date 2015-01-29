@@ -50,7 +50,7 @@ task :xmlord => :environment do
 
           xml.Buyer do
             xml.BuyerReferences do
-              xml.SuppliersCodeForBuyer o.id
+              xml.SuppliersCodeForBuyer o.user_id
             end
             xml.Party o.bill_address.company
             xml.Address do
