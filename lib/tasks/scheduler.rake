@@ -26,7 +26,7 @@ task :xmlord => :environment do
 
       @orders.each do |o|
         @line = Spree::LineItem.where(order_id: o.id)
-        tmp_filename="#{Rails.root}/tmp/orders-#{o.id}-#{DateTime.now.strftime('%Y-%m-%d-%H-%M-%S')}.xml"
+        tmp_filename="#{Rails.root}/tmp/orders-#{o.id}-#{DateTime.now.strftime('%d-%m-%Y-%H/%M/%S')}.xml"
         file = File.new(tmp_filename, 'w')
    
         xml = Builder::XmlMarkup.new(target: file, :indent => 4)
