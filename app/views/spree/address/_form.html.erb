@@ -23,7 +23,7 @@
     <%= form.text_field :address2 %>
   </p>
   <p class="field" id=<%="#{address_id}city" %>>
-    <%= form.label :city, Spree.t(:city) %><span class="required">*</span><br />
+    <%= form.label :city, Spree.t(:town_or_city) %><span class="required">*</span><br />
     <%= form.text_field :city, :class => 'required' %>
   </p>
   <p class="field" id=<%="#{address_id}country" %>>
