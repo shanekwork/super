@@ -26,6 +26,7 @@ task :xmlord => :environment do
 
       @orders.each do |o|
         @line = Spree::LineItem.where(order_id: o.id)
+        @prod = Spree::Product.where(variant_id: @line.id)
         tmp_filename="#{Rails.root}/tmp/orders-#{o.id}-#{Time.now.strftime('%d-%m-%Y-%H-%M-%S')}.xml"
         file = File.new(tmp_filename, 'w')
    
@@ -107,7 +108,7 @@ task :xmlord => :environment do
           @line.each do |p|
 
             xml.OrderLine do
-              xml.LineNumbers "blank"
+              xml.LineNumbers p.image_name
               xml.Product do
                 xml.SuppliersProductCode p.quantity
                 xml.Description "test"
