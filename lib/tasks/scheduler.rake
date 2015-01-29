@@ -52,13 +52,13 @@ task :xmlord => :environment do
             xml.BuyerReferences do
               xml.SuppliersCodeForBuyer o.id
             end
-            xml.Party "blank"
+            xml.Party o.bill_address.company
             xml.Address do
               xml.AddressLine o.payment_total
-              xml.City "blank"
-              xml.State "blank"
-              xml.PostCode o.id
-              xml.Country "IE"
+              xml.City o.ship_address.city
+              xml.State o.ship_address.address1
+              xml.PostCode o.bill_address.zipcode
+              xml.Country o.ship_address.country.name
             end
             xml.Contact do
               xml.Name o.ship_address.firstname
@@ -68,35 +68,35 @@ task :xmlord => :environment do
           end
 
           xml.InvoiceTo do
-            xml.Party "blank"
+            xml.Party o.bill_address.company
             xml.Address do
-              xml.AddressLine o.ship_address.address1
-              xml.City o.ship_address.city
-              xml.State o.ship_address.address1
-              xml.PostCode o.id
-              xml.Country "IE"
+              xml.AddressLine o.bill_address.address1
+              xml.City o.bill_address.city
+              xml.State o.bill_address.address1
+              xml.PostCode o.bill_address.zipcode
+              xml.Country o.bill_address.country.name
             end
             xml.Contact do
-              xml.Name "blank"
+              xml.Name o.bill_address.firstname
               xml.DDI o.id
-              xml.Email "blank"
+              xml.Email o.email
             end
           end
 
           xml.Delivery do
             xml.DeliverTo do
-              xml.Party "blank"
+              xml.Party o.ship_address.company
               xml.Address do
-                xml.AddressLine "blank"
-                xml.City "blank"
-                xml.State "blank"
-                xml.PostCode o.id
-                xml.Country "blank"
+                xml.AddressLine o.ship_address.address1
+                xml.City o.ship_address.city
+                xml.State o.ship_address.address1
+                xml.PostCode o.ship_address.zipcode
+                xml.Country o.ship_address.country.name
               end
               xml.Contact do
-                xml.Name "blank"
+                xml.Name o.ship_address.firstname
                 xml.DDI o.id
-                xml.Email "blank"
+                xml.Email o.email
               end
               xml.DeliverToReferences do
                 xml.BuyersCodeForLocation o.id
