@@ -118,8 +118,8 @@ task :xmlord => :environment do
               xml.Price do
                 xml.UnitPrice p.product.price
                 xml.LineTax do
-                  xml.TaxRate p.product.tax_category_id
-                  xml.TaxValue p.product.additional_tax_total
+                  xml.TaxRate p.tax_category_id
+                  xml.TaxValue p.additional_tax_total
                 end
               end
               xml.CostCentre "test"
