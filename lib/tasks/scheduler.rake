@@ -107,19 +107,19 @@ task :xmlord => :environment do
           @line.each do |p|
 
             xml.OrderLine do
-              xml.LineNumbers p.product.sku
+              xml.LineNumbers "Line Numbers"
               xml.Product do
-                xml.SuppliersProductCode p.quantity
-                xml.Description "test"
+                xml.SuppliersProductCode p.product.sku
+                xml.Description p.product.description
               end
               xml.Quantity do
-                xml.Amount "test"
+                xml.Amount p.quantity
               end
               xml.Price do
-                xml.UnitPrice "test"
+                xml.UnitPrice p.product.price
                 xml.LineTax do
-                  xml.TaxRate "test"
-                  xml.TaxValue "test"
+                  xml.TaxRate p.product.tax_category_id
+                  xml.TaxValue p.product.additional_tax_total
                 end
               end
               xml.CostCentre "test"
