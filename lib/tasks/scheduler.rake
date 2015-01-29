@@ -36,7 +36,7 @@ task :xmlord => :environment do
 
           xml.OrderReferences do
             xml.BuyersOrderNumber o.id
-            xml.PORef "PORef"
+            xml.PORef o.id
           end
 
           xml.OrderDate o.completed_at
@@ -44,8 +44,8 @@ task :xmlord => :environment do
           xml.OrderTotal do
             xml.GoodsValue o.total
             xml.GoodsTax o.additional_tax_total
-            xml.TaxTotal o.included_tax_total
-            xml.AmountPaid o.total
+            xml.TaxTotal o.additional_tax_total
+            xml.AmountPaid o.payment_total
           end
 
           xml.Buyer do
