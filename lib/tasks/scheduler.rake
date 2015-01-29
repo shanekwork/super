@@ -43,7 +43,7 @@ task :xmlord => :environment do
 
           xml.OrderTotal do
             xml.GoodsValue o.total
-            xml.GoodsTax o.additional_tax_total
+            xml.GoodsTax o.item_total
             xml.TaxTotal o.additional_tax_total
             xml.AmountPaid o.payment_total
           end
@@ -54,15 +54,15 @@ task :xmlord => :environment do
             end
             xml.Party o.bill_address.company
             xml.Address do
-              xml.AddressLine o.payment_total
-              xml.City o.ship_address.city
-              xml.State o.ship_address.address1
+              xml.AddressLine o.bill_address.address1
+              xml.City o.bill_address.city
+              xml.State o.bill_address.address1
               xml.PostCode o.bill_address.zipcode
-              xml.Country o.ship_address.country.name
+              xml.Country o.bill_address.country.name
             end
             xml.Contact do
-              xml.Name o.ship_address.firstname
-              xml.DDI o.id
+              xml.Name o.bill_address.firstname
+              xml.DDI o.bill_address.phone
               xml.Email o.email
             end
           end
@@ -78,7 +78,7 @@ task :xmlord => :environment do
             end
             xml.Contact do
               xml.Name o.bill_address.firstname
-              xml.DDI o.id
+              xml.DDI o.bill_address.phone
               xml.Email o.email
             end
           end
@@ -95,7 +95,7 @@ task :xmlord => :environment do
               end
               xml.Contact do
                 xml.Name o.ship_address.firstname
-                xml.DDI o.id
+                xml.DDI o.ship_address.phone
                 xml.Email o.email
               end
               xml.DeliverToReferences do
@@ -110,7 +110,7 @@ task :xmlord => :environment do
               xml.LineNumbers "Line Numbers"
               xml.Product do
                 xml.SuppliersProductCode p.product.sku
-                xml.Description p.product.description
+                xml.Description p.product.short_description
               end
               xml.Quantity do
                 xml.Amount p.quantity
