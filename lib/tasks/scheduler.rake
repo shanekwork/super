@@ -132,7 +132,7 @@ task :xmlord => :environment do
         file.close
 
         # Write the file out to S3
-        s3_file = bucket.objects.build("imports/orders-#{o.id}-#{DateTime.now}.xml")
+        s3_file = bucket.objects.build("imports/orders-#{o.id}-#{Time.now.strftime('%d-%m-%Y-%H-%M-%S')}.xml")
         f = File.open(tmp_filename,'r')
 
         s3_file.content = f.read
