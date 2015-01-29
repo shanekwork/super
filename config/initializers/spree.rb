@@ -14,6 +14,8 @@ Spree.config do |config|
   config.track_inventory_levels = false
   allow_backorder_shipping = true
   config.company = true
+  config.alternative_billing_phone = true
+  config.alternative_shipping_phone = true
 
 end
 
