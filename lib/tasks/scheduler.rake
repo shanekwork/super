@@ -56,7 +56,7 @@ task :xmlord => :environment do
             xml.Address do
               xml.AddressLine o.bill_address.address1
               xml.City o.bill_address.city
-              xml.State o.bill_address.address1
+              xml.State o.bill_address.address2
               xml.PostCode o.bill_address.zipcode
               xml.Country o.bill_address.country.name
             end
@@ -72,7 +72,7 @@ task :xmlord => :environment do
             xml.Address do
               xml.AddressLine o.bill_address.address1
               xml.City o.bill_address.city
-              xml.State o.bill_address.address1
+              xml.State o.bill_address.address2
               xml.PostCode o.bill_address.zipcode
               xml.Country o.bill_address.country.name
             end
@@ -89,7 +89,7 @@ task :xmlord => :environment do
               xml.Address do
                 xml.AddressLine o.ship_address.address1
                 xml.City o.ship_address.city
-                xml.State o.ship_address.address1
+                xml.State o.ship_address.address2
                 xml.PostCode o.ship_address.zipcode
                 xml.Country o.ship_address.country.name
               end
