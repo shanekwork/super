@@ -1,6 +1,6 @@
 <style type="text/css">
-  .hideIt {display: none !important;}
-  .showIt {display: block !important;}
+  .hideIt {display: none;}
+  .showIt {display: block;}
 </style>
 
 <fieldset id="payment" data-hook>
@@ -79,7 +79,7 @@
   });
 
   $( "input#use_existing_card_yes" ).click(function() {
-    $("div.form-buttons").addClass('showIt');
+    $("div.form-buttons").removeClass('hideIt');
   });
 
 </script>
