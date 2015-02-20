@@ -19,6 +19,6 @@
 	display: block;
 }
 
-#logo img {
+figure#logo img {
 	width: 150px !important;
 }
