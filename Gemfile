@@ -38,3 +38,4 @@ gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git
 gem 'spree_favorite_products', branch: '2-2-stable'
 gem 'spree_static_content', github: 'spree/spree_static_content', branch: '2-2-stable'
 gem 'spree_reviews', github: 'spree/spree_reviews', branch: '2-2-stable'
+gem 'spree_address_book', :git => 'git://github.com/romul/spree_address_book.git', branch: '2-2-stable'
