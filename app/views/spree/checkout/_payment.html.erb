@@ -1,3 +1,7 @@
+<style type="text/css">
+  .hideIt {display: none !important};
+</style>
+
 <fieldset id="payment" data-hook>
   <legend align="center"><%= Spree.t(:payment_information) %></legend>
   <div data-hook="checkout_payment_step">
@@ -69,16 +73,9 @@
 
 <script>
 
-  $( "input#order_payments_attributes__payment_method_id_5" ).focus(function() {
+  $( "input#order_payments_attributes__payment_method_id_5" ).click(function() {
     $("div.form-buttons").addClass('hideIt');
   });
 
 </script>
 
-<script>
-
-  $( "#use_existing_card_no" ).click(function() {
-    $("div.form-buttons").removeClass('hideIt');
-  });
-
-</script>
