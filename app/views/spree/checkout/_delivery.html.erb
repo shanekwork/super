@@ -1,3 +1,4 @@
+<% @pro = Spree::Product.all %>
 <fieldset id='shipping_method' data-hook>
   <legend align="center"><%= Spree.t(:delivery) %></legend>
   <div class="inner" data-hook="shipping_method_inner">
@@ -25,9 +26,8 @@
             </thead>
             <tbody>
               <% ship_form.object.manifest.each do |item| %>
-              <% @pro = Spree::Product.all %>
                 <tr class="stock-item">
-                  <td class="item-image"><%= link_to image_tag('http://www.op-insight.co.uk/images/product/large/' + @pro.image_name + '.jpg'), @pro %></td>
+                  <td class="item-image"><%= image_tag('http://www.op-insight.co.uk/images/product/large/' + @pro.image_name + '.jpg') %></td>
                   <td class="item-name"><%= item.variant.name %></td>
                   <td class="item-qty"><%= item.quantity %></td>
                   <td class="item-price"><%= display_price(item.variant) %></td>
