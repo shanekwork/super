@@ -12,6 +12,7 @@ Spree.config do |config|
   # Uncomment to override the default site name.
   config.site_name = "Office Site"
   config.logo = "store/logo.png"
+  config.admin_interface_logo = "store/logo.png"
   config.track_inventory_levels = false
   allow_backorder_shipping = true
   config.company = true
