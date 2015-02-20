@@ -76,5 +76,12 @@
       $('');
     }
   };
+
+  if($('input#order_payments_attributes__payment_method_id_5').not(':checked')){
+    $('div.form-buttons').show();
+  }
+  else {
+    $('div.form-buttons').hide();
+  }
   
 </script>
