@@ -6,6 +6,9 @@
 <!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
   <head data-hook="inside_head">
     <%= render :partial => 'spree/shared/head' %>
+    <style type="text/css">
+      figure#logo img {width: 150px !important;}
+    </style>
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
 
