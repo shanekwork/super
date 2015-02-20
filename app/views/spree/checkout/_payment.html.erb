@@ -69,11 +69,8 @@
 
 <script>
   
-  if($('input#order_payments_attributes__payment_method_id_5').is(':checked')){
+  if ($('input[value=5]]:checked').length > 0) {
     $('div.form-buttons').hide();
-  }
-  else {
-    $('div.form-buttons').show();
   }
   
 </script>
