@@ -1,5 +1,6 @@
 <style type="text/css">
-  .hideIt {display: none !important};
+  .hideIt {display: none !important;}
+  .showIt {display: block !important;}
 </style>
 
 <fieldset id="payment" data-hook>
@@ -75,6 +76,10 @@
 
   $( "input#order_payments_attributes__payment_method_id_5" ).click(function() {
     $("div.form-buttons").addClass('hideIt');
+  });
+
+  $( "input#order_payments_attributes__payment_method_id_5" ).click(function() {
+    $("div.form-buttons").addClass('showIt');
   });
 
 </script>
