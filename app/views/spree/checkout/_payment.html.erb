@@ -69,16 +69,16 @@
 
 <script>
 
-  $( "input#order_payments_attributes__payment_method_id_5" ).focus(function() {
-    $("div.form-buttons").hide();
+  $( "input#order_payments_attributes__payment_method_id_5" ).click(function() {
+    $("div.form-buttons").addClass('hideIt');
   });
 
 </script>
 
 <script>
 
-  $( "#use_existing_card_no" ).focus(function() {
-    $("div.form-buttons").show();
+  $( "#use_existing_card_no" ).click(function() {
+    $("div.form-buttons").removeClass('hideIt');
   });
 
 </script>
