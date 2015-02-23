@@ -1,4 +1,3 @@
-module Spree
 class Contact < MailForm::Base
   attribute :name, :validate => true
   attribute :email, :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
@@ -14,5 +13,4 @@ class Contact < MailForm::Base
       :from => %("#{name}" <#{email}>)
     }
   end
-end
 end
