@@ -1,3 +1,4 @@
+module Spree
 class ContactsController < ApplicationController
   def new
     @contact = Contact.new
@@ -13,4 +14,5 @@ class ContactsController < ApplicationController
       render :new
     end
   end
+end
 end
