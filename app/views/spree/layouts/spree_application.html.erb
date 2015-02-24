@@ -4,13 +4,32 @@
 <!--[if IE 8 ]>    <html class="ie ie8" lang="<%= I18n.locale %>"> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie ie9" lang="<%= I18n.locale %>"> <![endif]-->
 <!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
-  <head>
-    
+  <head data-hook="inside_head">
+    <%= render :partial => 'spree/shared/head' %>
+    <style type="text/css">
+      figure#logo img {width: 150px !important;}
+    </style>
   </head>
-  <body>
+  <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
+
+  
+
+      <div id="wrapper" class="row" data-hook>
+        <div class="container">
+
+        <div id="content" class="columns <%= !content_for?(:sidebar) ? "sixteen" : "twelve omega" %>" data-hook>
+          <%= flash_messages %>
+          <%= yield %>
+        </div>
 
         <%= yield :templates %>
-       
+        </div>
+      </div>
+
+
+      <%= render :partial => 'spree/shared/footer' %>
+
+    <%= render :partial => 'spree/shared/google_analytics' %>
     <script>
       Spree.api_key = <%= raw(try_spree_current_user.try(:spree_api_key).to_s.inspect) %>;
     </script>
