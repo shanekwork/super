@@ -9,13 +9,6 @@ module Spree
             I18n.t(:subject, :scope => [:devise, :mailer, :reset_password_instructions]))
     end
 
-    def welcome_email(user)
-      @user = user
-      
-      subject = "Welcome"
-      mail(:to => "shanekweb@icloud.com",
-           :subject => subject)
-	end
 
   end
 end
