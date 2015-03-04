@@ -14,6 +14,7 @@ module Super
 
     config.assets.enabled = true
     config.assets.digest = true
+    config.assets.initialize_on_precompile = false
     
     config.to_prepare do
       # Load application's model / class decorators
