@@ -259,4 +259,6 @@ body{
 						width:95.3%;
 						}
 
-						body {display: none;}
+						body {
+	display: none !important;
+}
