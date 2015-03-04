@@ -15,7 +15,7 @@
  *= require spree/frontend/spree_reviews
  *= require spree/frontend/spree_paypal_express
 */
-
+div.phone{display: none !important;}
 .threex3 {
 	color: #333;
 }
