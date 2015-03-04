@@ -235,6 +235,9 @@ body{
 			float:left;
 			width:100%;
 			}
+			#header IMG{
+				width:auto;
+				}
 			#main-menu{
 				background:#191919;
 				}
@@ -256,8 +259,4 @@ body{
 						width:95.3%;
 						}
 
-
-
-
-
-
+						body {display: none;}
