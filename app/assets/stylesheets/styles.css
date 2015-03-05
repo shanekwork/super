@@ -197,7 +197,7 @@ body{
 							    padding:0!important;
 							    width:auto;
 								}
-								#main-menu NAV UL A.selected
+								#main-menu NAV UL A.selected,
 								#main-menu NAV UL A:hover{
 									color:#19b794;
 									}
