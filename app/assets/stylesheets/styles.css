@@ -36,6 +36,9 @@ body{
 			float:left;
 			width:100%;
 			}
+		#header{
+			margin:0;
+			}
 			#header .header-content{
 				float:left;
 				padding:0.6em 0;
@@ -178,7 +181,7 @@ body{
 						border:none;
 					    float:left;
 					    margin:0;
-					    padding:3.35em 0;
+					    padding:3.45em 0;
 					    width:100%;
 						}
 						#main-menu NAV UL LI{
@@ -189,7 +192,7 @@ body{
 						#main-menu NAV UL LI:first-child{
 						    margin:0;
 							}
-							#main-menu NAV UL A{
+							#main-menu NAV UL LI A{
 								color:#ffffff;
 							    float:left;
 							    font-family:'Roboto', sans-serif;
@@ -197,8 +200,8 @@ body{
 							    padding:0!important;
 							    width:auto;
 								}
-								#main-menu NAV UL A.selected,
-								#main-menu NAV UL A:hover{
+								#main-menu NAV UL LI A.selected,
+								#main-menu NAV UL LI A:hover{
 									color:#19b794;
 									}
 			#wrapper .container{
@@ -213,7 +216,7 @@ body{
 						width:100%!important;
 						}
 						#content .banner H1{
-							position:relative;
+							position:absolute;
 							top:-5000em;
 							}
 					#content .main-content{
