@@ -1,0 +1,150 @@
+.container{
+	width:1280px;
+	}
+html,
+body{
+	font:1em/1.4 Arial, Helvetica, sans-serif;
+	color:#191919;
+	margin:0;
+	}
+	body{
+		background:#eeeeee url("/assets/background.png") repeat-x left top;
+		}
+		#header,
+		#wrapper,
+		#footer{
+			float:left;
+			width:100%;
+			}
+			#header .header-content{
+				float:left;
+				padding:0.6em 0;
+				width:100%;
+				}
+				nav#top-nav-bar{
+					float:left;
+					margin:0;
+					text-align:left;
+					width:57%;
+					}
+					nav#top-nav-bar UL{
+						float:left;
+						margin:0;
+						width:100%;
+						}
+						nav#top-nav-bar UL LI{
+							float:left;
+							margin:0 0 0 1em;
+							padding:0;
+							width:auto;
+							}
+						nav#top-nav-bar UL LI:first-child{
+							margin:0;
+							}
+							nav#top-nav-bar UL LI A{
+							    background:#19b894 url("/assets/button-bck.png") repeat-x left top;
+							    color:#ffffff;
+							    float:left;
+							    font-size:0.75em;
+							    font-weight:normal;
+							    padding:1em 1.75em;
+							    text-transform:none;
+							    width:auto;
+								}
+								nav#top-nav-bar UL LI A:hover,
+								nav#top-nav-bar UL LI#search-bar INPUT[type="submit"]:hover{
+								    background:#1a1a1a url("/assets/button-bck-hover.png") repeat-x left top;
+								    color:#19b794;
+									}
+						nav#top-nav-bar UL LI#search-bar{
+							float:right;
+							width:18.9em;
+							}
+							nav#top-nav-bar UL LI#search-bar INPUT{
+								border:1px solid #bbbbbb;
+								border-right:none;
+								color:#a5a5a5;
+								float:left;
+								padding:0.9em 0.85em;
+								width:16.4em;
+								}
+								nav#top-nav-bar UL LI#search-bar INPUT[type="submit"]{
+									background:#19b894 url("/assets/button-bck.png") repeat-x left top;
+									border:none;
+									color:#ffffff;
+									float:left;
+									font-size:0.9em;
+									font-weight:normal;
+									padding:0.76em 1.15em;
+									text-transform:uppercase;
+									width:auto;
+									}
+				#link-to-cart{
+					float:left;
+					margin:0 0 0 4.35em;
+					width:18.3%;
+					}
+					#link-to-cart A{
+						background:transparent url("/assets/cart.png") no-repeat left top;
+						color:#191919;
+						float:right;
+						font-size:0.75em;
+						min-height:1.4em;
+						padding:1.1em 0 1.1em 4.5em;
+						width:auto;
+						}
+						#link-to-cart A:hover{
+							background:transparent url("/assets/cart-hover.png") no-repeat left top;
+							}
+				#header .phone{
+					float:left;
+					margin:0 0 0 1.8em;
+					width:17%;
+					}
+					#header .phone IMG{
+						float:left;
+						max-width:1.6em;
+						width:auto;
+						}
+					#header .phone .inside{
+						float:left;
+						padding:0 0 0 0.8em;
+						width:auto;
+						}
+						#header .phone .inside P{
+							color:#19b794;
+							font-size:0.8em;
+							font-weight:bold;
+							margin:0 0 0.2em 0;
+							padding:0;
+							text-transform:uppercase;
+							}
+						#header .phone .inside A{
+							color:#191919;
+							font-size:1.5em;
+							line-height:0.8em;
+							}
+							#header .phone .inside A:hover{
+								color:#19b794;
+								}
+			#main-menu{
+				background:#191919;
+				float:left;
+				width:100%;
+				}
+			#wrapper .container{
+				background:#ffffff;
+				}
+				#content{
+					float:left;
+					margin:0;
+					width:100%;
+					}
+					#content .banner{
+						width:100%!important;
+						}
+					#content .main-content{
+						float:left;
+						padding:0 2.5em;
+						width:95.3%;
+						}
