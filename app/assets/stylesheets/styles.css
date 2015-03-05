@@ -36,9 +36,9 @@ body{
 							float:left;
 							margin:0 0 0 1em;
 							padding:0;
-							width:100%;
+							width:auto;
 							}
-						nav#top-nav-bar UL LI:fist-child{
+						nav#top-nav-bar UL LI:first-child{
 							margin:0;
 							}
 							nav#top-nav-bar UL LI A{
@@ -74,8 +74,10 @@ body{
 									color:#ffffff;
 									float:left;
 									font-size:0.9em;
+									font-weight:normal;
 									padding:0.76em 1.15em;
-									width:16.4em;
+									text-transform:uppercase;
+									width:auto;
 									}
 				#link-to-cart{
 					float:left;
