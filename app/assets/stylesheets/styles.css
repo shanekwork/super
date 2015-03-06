@@ -195,7 +195,7 @@ body{
 						    margin:0;
 							}
 							#main-menu NAV UL LI A,
-							#main-menu NAV UL LI:firs-child A{
+							#main-menu NAV UL LI:first-child A{
 								color:#ffffff;
 							    float:left;
 							    font-family:'Roboto', sans-serif;
@@ -215,7 +215,7 @@ body{
 							    float:left;
 							    left:0;
 							    padding:2.2em 0.95em;
-							    top:2.2em;
+							    top:5.7em;
 							    width:13.8em;
 								}
 								#main-menu NAV UL LI UL LI{
