@@ -204,6 +204,34 @@ body{
 								#main-menu NAV UL LI A:hover{
 									color:#19b794;
 									}
+							#main-menu NAV UL LI UL{
+								background:#ffffff;
+								border:none;
+								border-bottom:3px solid #19b794;
+								border-top:3px solid #19b794;
+							    float:left;
+							    left:0;
+							    padding:2.2em 0.95em;
+							    top:2.2em;
+								}
+								#main-menu NAV UL LI UL LI{
+									margin:0.4em 0 0 0;
+									width:13.1em;
+									}
+								#main-menu NAV UL LI UL LI:first-child{
+									margin:0;
+									}
+									#main-menu NAV UL LI UL LI A{
+										color:#5b5b5b;
+										font-size:0.85em;
+										line-height:1.2em;
+									    padding:0.5em!important;
+										}
+										#main-menu NAV UL LI UL LI A.selected,
+										#main-menu NAV UL LI UL LI A:hover{
+											background:#19b794;
+											color:#ffffff;
+											}
 			#wrapper .container{
 				background:#ffffff;
 				}
