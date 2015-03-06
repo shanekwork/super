@@ -194,14 +194,16 @@ body{
 						#main-menu NAV UL LI:first-child{
 						    margin:0;
 							}
-							#main-menu NAV UL LI A,
-							#main-menu NAV UL LI:first-child A{
+							#main-menu NAV UL LI A{
 								color:#ffffff;
 							    float:left;
 							    font-family:'Roboto', sans-serif;
 							    font-weight:normal;
 							    padding:0;
 							    width:auto;
+								}
+							#main-menu NAV UL LI:first-child A{
+							    padding:0;
 								}
 								#main-menu NAV UL LI A.selected,
 								#main-menu NAV UL LI A:hover{
@@ -238,7 +240,22 @@ body{
 											background:#19b794!important;
 											color:#ffffff;
 											}
-											
+									#main-menu NAV UL LI UL LI UL{
+										border:none;
+										border-bottom:3px solid #19b794;
+										border-top:3px solid #19b794;
+										box-shadow:0 1px 4px #a6a6a6;
+										left:14.75em;
+										padding:1.7em 0.95em;
+										top:0;
+										}
+										#main-menu NAV UL LI UL LI UL LI{
+											width:100%;
+											}
+											#main-menu NAV UL LI UL LI UL LI A{
+												color:#5b5b5b;
+												width:94.5%;
+												}	
 			#wrapper .container{
 				background:#ffffff;
 				}
