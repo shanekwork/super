@@ -181,29 +181,63 @@ body{
 						border:none;
 					    float:left;
 					    margin:0;
-					    padding:3.45em 0;
+					    padding:0;
 					    width:100%;
 						}
 						#main-menu NAV UL LI{
 						    float:left;
 						    margin:0 0 0 3em;
+						    padding:3.45em 0;
 						    width:auto;
 							}
 						#main-menu NAV UL LI:first-child{
 						    margin:0;
 							}
-							#main-menu NAV UL LI A{
+							#main-menu NAV UL LI A,
+							#main-menu NAV UL LI:li:firs-child A{
 								color:#ffffff;
 							    float:left;
 							    font-family:'Roboto', sans-serif;
 							    font-weight:normal;
-							    padding:0!important;
+							    padding:0;
 							    width:auto;
 								}
 								#main-menu NAV UL LI A.selected,
 								#main-menu NAV UL LI A:hover{
 									color:#19b794;
 									}
+							#main-menu NAV UL LI UL{
+								background:#ffffff;
+								border:none;
+								border-bottom:3px solid #19b794;
+								border-top:3px solid #19b794;
+							    float:left;
+							    left:0;
+							    padding:2.2em 0.95em;
+							    top:2.2em;
+							    width:13.8em;
+								}
+								#main-menu NAV UL LI UL LI{
+									margin:0.4em 0 0 0;
+									padding:0;
+									width:100%;
+									}
+								#main-menu NAV UL LI UL LI:first-child{
+									margin:0;
+									}
+									#main-menu NAV UL LI UL LI A{
+										color:#5b5b5b;
+										font-size:0.85em;
+										line-height:1.2em;
+									    padding:0.5em!important;
+									    width:94.8%;
+										}
+										#main-menu NAV UL LI UL LI A.selected,
+										#main-menu NAV UL LI UL LI A:hover{
+											background:#19b794!important;
+											color:#ffffff;
+											}
+											
 			#wrapper .container{
 				background:#ffffff;
 				}
