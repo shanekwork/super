@@ -275,8 +275,15 @@ body{
 							position:absolute;
 							top:-5000em;
 							}
-					#content .main-content{
+					#content .main-content,
+					#footer .main-footer{
 						float:left;
 						padding:0 2.5em;
-						width:95.3%;
+						width:93.8%;
 						}
+				#footer{
+					border:none!important;
+				    color:#191919;
+				    margin:0;
+				    padding:0!important;
+					}
