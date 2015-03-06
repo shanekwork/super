@@ -12,12 +12,40 @@
 	background:#191919;
 	color:#19b794;
 	}
+H2{
+	color:#19b794;
+	text-transform:uppercase;
+	}
+H3{
+	color:#191919;
+	text-transform:uppercase;
+	}
 A{
 	color:#19b794;
 	}
 	A:hover{
 		color:#191919;
 		}
+UL{
+
+	float:left;
+	width:100%;
+	}
+	UL LI{
+		float:left;
+		font-size:0.95em;
+		line-height:1.2em;
+		margin:0 1.3em 0.8em 0;
+		padding:0;
+		width:240px;
+		}
+		UL LI:before{
+			color:#19b794;
+		    content:"•";
+		    float:left;
+		    font-size:1.3em;
+		    padding:0 0.4em 0 0;
+			}
 .container{
 	width:1280px;
 	}
@@ -269,6 +297,7 @@ body{
 					width:100%;
 					}
 					#content .banner{
+						height:493px!important;
 						width:100%!important;
 						}
 						#content .banner H1{
@@ -278,8 +307,8 @@ body{
 					#content .main-content,
 					#footer .main-footer{
 						float:left;
-						padding:0 2.5em;
-						width:93.8%;
+						padding:0 1.85em;
+						width:95.4%;
 						}
 				#footer{
 					border:none!important;
@@ -287,3 +316,28 @@ body{
 				    margin:0;
 				    padding:0!important;
 					}
+					#footer H3{
+						color:#191919;
+						font-family:'Roboto', sans-serif;
+					    font-size:1.95em;
+					    font-weight:normal;
+					    text-transform:uppercase;
+						}
+					#footer .left-footerContent{
+						float:left;
+						width:42.5%;
+						}
+						#footer .left-footerContent .footer-right{
+							float:left;
+							margin:0;
+							width:100%;
+							}
+					#footer .right-footerContent{
+						float:left;
+						margin:0 0 0 2.6em;
+						width:54%;
+						}
+					#footer #bottom-footerContent{
+						float:left;
+						width:100%;
+						}
