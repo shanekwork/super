@@ -180,6 +180,7 @@ body{
 					#main-menu NAV UL{
 						border:none;
 					    float:left;
+					    font-weight:normal;
 					    margin:0;
 					    padding:0;
 					    width:100%;
@@ -194,7 +195,7 @@ body{
 						    margin:0;
 							}
 							#main-menu NAV UL LI A,
-							#main-menu NAV UL LI:li:firs-child A{
+							#main-menu NAV UL LI:firs-child A{
 								color:#ffffff;
 							    float:left;
 							    font-family:'Roboto', sans-serif;
