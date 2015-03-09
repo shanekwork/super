@@ -1,3 +1,4 @@
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css') screen;
 @import url('http://fonts.googleapis.com/css?family=Roboto') screen;
 
 ::selection{
@@ -18,6 +19,9 @@ H2{
 	}
 H3{
 	color:#191919;
+	font-family:'Roboto', sans-serif;
+    font-size:1.95em;
+    font-weight:normal;
 	text-transform:uppercase;
 	}
 A{
@@ -35,9 +39,9 @@ UL{
 		float:left;
 		font-size:0.95em;
 		line-height:1.2em;
-		margin:0 1.3em 0.8em 0;
+		margin:0 0 0.8em 0;
 		padding:0;
-		width:240px;
+		width:100%;
 		}
 		UL LI:before{
 			color:#19b794!important;
@@ -49,6 +53,9 @@ UL{
 		UL LI A{
 			color:#191919!important;
 			}
+			UL LI A:hover{
+				color:#19b794!important;
+				}
 .container{
 	width:1280px;
 	}
@@ -103,7 +110,7 @@ body{
 							}
 							nav#top-nav-bar UL LI A{
 							    background:#19b894 url("/assets/button-bck.png") repeat-x left top;
-							    color:#ffffff;
+							    color:#ffffff!important;
 							    float:left;
 							    font-size:0.75em;
 							    font-weight:normal;
@@ -114,11 +121,11 @@ body{
 								nav#top-nav-bar UL LI A:hover,
 								nav#top-nav-bar UL LI#search-bar INPUT[type="submit"]:hover{
 								    background:#1a1a1a url("/assets/button-bck-hover.png") repeat-x left top;
-								    color:#19b794;
+								    color:#19b794!important;
 									}
 						nav#top-nav-bar UL LI#search-bar{
 							float:right;
-							width:18.9em;
+							width:19.8em;
 							}
 							nav#top-nav-bar UL LI#search-bar INPUT{
 								border:1px solid #bbbbbb;
@@ -135,7 +142,7 @@ body{
 									float:left;
 									font-size:0.9em;
 									font-weight:normal;
-									padding:0.76em 1.15em;
+									padding:0.9em 1.15em;
 									text-transform:uppercase;
 									width:auto;
 									}
@@ -225,14 +232,14 @@ body{
 						#main-menu NAV UL LI{
 						    float:left;
 						    margin:0 0 0 3em;
-						    padding:3.45em 0;
+						    padding:3.66em 0;
 						    width:auto;
 							}
 						#main-menu NAV UL LI:first-child{
 						    margin:0;
 							}
 							#main-menu NAV UL LI A{
-								color:#ffffff;
+								color:#ffffff!important;
 							    float:left;
 							    font-family:'Roboto', sans-serif;
 							    font-weight:normal;
@@ -244,7 +251,7 @@ body{
 								}
 								#main-menu NAV UL LI A.selected,
 								#main-menu NAV UL LI A:hover{
-									color:#19b794;
+									color:#19b794!important;
 									}
 							#main-menu NAV UL LI UL{
 								background:#ffffff;
@@ -256,7 +263,7 @@ body{
 							    min-height:10em;
 							    padding:2.2em 0 2.2em 0.95em;
 							    top:5.7em;
-							    width:14.8em;
+							    width:14.85em;
 								}
 								#main-menu NAV UL LI UL LI{
 									margin:0.4em 0 0 0;
@@ -267,7 +274,7 @@ body{
 									margin:0;
 									}
 									#main-menu NAV UL LI UL LI A{
-										color:#5b5b5b;
+										color:#5b5b5b!important;
 										font-size:0.85em;
 										line-height:1.2em;
 									    padding:0.5em!important;
@@ -276,14 +283,14 @@ body{
 										#main-menu NAV UL LI UL LI A.selected,
 										#main-menu NAV UL LI UL LI A:hover{
 											background:#19b794!important;
-											color:#ffffff;
+											color:#ffffff!important;
 											}
 									#main-menu NAV UL LI UL LI UL{
 										border:none;
 										border-bottom:3px solid #19b794;
 										border-top:3px solid #19b794;
 										box-shadow:0 1px 4px #a6a6a6;
-										left:14.75em;
+										left:15.6em;
 										padding:1.7em 0.95em;
 										top:0;
 										}
@@ -292,10 +299,14 @@ body{
 											width:100%;
 											}
 											#main-menu NAV UL LI UL LI UL LI A{
-												color:#5b5b5b;
+												color:#5b5b5b!important;
 												padding:0.5em!important;
 												width:94.5%;
 												}
+												#main-menu NAV UL LI UL LI UL LI A:hover{
+													background:#19b794!important;
+													color:#ffffff!important;
+													}
 			#wrapper .container{
 				background:#ffffff;
 				box-shadow:0 15px 18px #a6a6a6;
@@ -326,26 +337,43 @@ body{
 				    padding:0!important;
 					}
 					#footer H3{
-						color:#191919;
-						font-family:'Roboto', sans-serif;
-					    font-size:1.95em;
-					    font-weight:normal;
-					    text-transform:uppercase;
+						margin:0 1.3em 0.25em 0;
 						}
 					#footer .left-footerContent{
 						float:left;
-						width:42.5%;
-						}
-						#footer .left-footerContent .footer-right{
+						width:45.9%;
+						}						
+						#footer .left-footerContent #footer-right{
 							float:left;
 							margin:0;
 							width:100%;
 							}
+							#footer .left-footerContent #footer-right UL{
+								margin:0;
+								}
+								#footer .left-footerContent #footer-right UL LI{
+									float:left;
+									margin:0 2.6em 0.8em 0;
+									width:15.8em;
+									}
 					#footer .right-footerContent{
 						float:left;
 						margin:0 0 0 2.6em;
-						width:54%;
+						width:54.1%;
 						}
+						#footer .right-footerContent H3{
+							margin:0 0 0.25em 0;
+							}
+						#footer .right-footerContent .left-fc,
+						#footer .right-footerContent .right-fc{
+							float:left;
+							margin:0;
+							width:47.75%;
+							}
+						#footer .right-footerContent .right-fc{
+							margin:0 0 0 2.5em;
+							width:46.1%;
+							}
 					#footer #bottom-footerContent{
 						float:left;
 						width:100%;
