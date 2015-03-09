@@ -112,7 +112,7 @@ body{
 							    background:#19b894 url("/assets/button-bck.png") repeat-x left top;
 							    color:#ffffff!important;
 							    float:left;
-							    font-size:0.75em;
+							    font-size:0.8em;
 							    font-weight:normal;
 							    padding:1em 1.75em;
 							    text-transform:none;
@@ -231,7 +231,7 @@ body{
 						}
 						#main-menu NAV UL LI{
 						    float:left;
-						    margin:0 0 0 3em;
+						    margin:0 0 0 2.45em;
 						    padding:3.66em 0;
 						    width:auto;
 							}
@@ -243,11 +243,12 @@ body{
 							    float:left;
 							    font-family:'Roboto', sans-serif;
 							    font-weight:normal;
+							    font-size:1em!important;
 							    padding:0;
 							    width:auto;
 								}
 							#main-menu NAV UL LI:first-child A{
-							    padding:0;
+							    padding:0!important;
 								}
 								#main-menu NAV UL LI A.selected,
 								#main-menu NAV UL LI A:hover{
@@ -273,9 +274,10 @@ body{
 								#main-menu NAV UL LI UL LI:first-child{
 									margin:0;
 									}
-									#main-menu NAV UL LI UL LI A{
+									#main-menu NAV UL LI UL LI A,
+									#main-menu NAV UL LI UL LI:first-child A{
 										color:#5b5b5b!important;
-										font-size:0.85em;
+										font-size:0.9em!important;
 										line-height:1.2em;
 									    padding:0.5em!important;
 									    width:95.5%;
@@ -298,7 +300,8 @@ body{
 											padding:0;
 											width:100%;
 											}
-											#main-menu NAV UL LI UL LI UL LI A{
+											#main-menu NAV UL LI UL LI UL LI A,
+											#main-menu NAV UL LI UL LI UL LI:first-child A{
 												color:#5b5b5b!important;
 												padding:0.5em!important;
 												width:94.5%;
@@ -358,7 +361,7 @@ body{
 									}
 					#footer .right-footerContent{
 						float:left;
-						margin:0 0 0 2.6em;
+						margin:0;
 						width:54.1%;
 						}
 						#footer .right-footerContent H3{
