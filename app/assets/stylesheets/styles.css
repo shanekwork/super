@@ -14,7 +14,7 @@
 	}
 H2{
 	color:#19b794;
-	font-size:1.2em;
+	font-size:1.15em;
 	font-weight:normal;
 	text-transform:uppercase;
 	}
@@ -339,7 +339,6 @@ body{
 						width:95.4%;
 						}
 						#tabs{
-							background:#19b794;
 							float:left;
 							width:100%;
 							}
@@ -350,25 +349,37 @@ body{
 								}
 								#tabs UL LI{
 									font-size:1em;
+									list-style:none;
 									margin:0;
 									width:auto;
+									}
+								#tabs UL LI.ui-tabs-active,
+								#tabs UL LI:hover{
+									background:#191919;
 									}
 									#tabs UL LI H2{
 										float:left;
 										margin:0;
-										padding:0.5em;
+										padding:0;
 										width:auto;
 										}
 										#tabs UL LI H2 A{
 											color:#ffffff!important;
 											float:left;
 											font-size:1em;
+											padding:0.8em 1.4em;
 											width:auto;
 											}
 											#tabs UL LI.ui-tabs-active H2 A,
 											#tabs UL LI H2 A:hover{
 												color:#19b794!important;
 												}
+							#tabs #special_sale,
+							#tabs #featured,
+							#tabs #latest{
+								float:left;
+								width:100%;
+								}
 				#footer{
 					border:none!important;
 				    color:#191919;
