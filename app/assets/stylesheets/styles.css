@@ -40,14 +40,23 @@ UL{
 		width:240px;
 		}
 		UL LI:before{
-			color:#19b794;
+			color:#19b794!important;
 		    content:"•";
 		    float:left;
 		    font-size:1.3em;
 		    padding:0 0.4em 0 0;
 			}
+		UL LI A{
+			color:#191919!important;
+			}
 .container{
 	width:1280px;
+	}
+nav#top-nav-bar UL LI::before,
+#main-menu NAV UL LI:before,
+#content .banner UL LI:before{
+    content:none;
+    font-size:1em;
 	}
 html,
 body{
