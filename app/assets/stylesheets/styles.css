@@ -292,7 +292,7 @@ body{
 										border-bottom:3px solid #19b794;
 										border-top:3px solid #19b794;
 										box-shadow:0 1px 4px #a6a6a6;
-										left:15.6em;
+										left:15.65em;
 										padding:1.7em 0.95em;
 										top:0;
 										}
@@ -303,6 +303,7 @@ body{
 											#main-menu NAV UL LI UL LI UL LI A,
 											#main-menu NAV UL LI UL LI UL LI:first-child A{
 												color:#5b5b5b!important;
+												font-size:1em!important;
 												padding:0.5em!important;
 												width:94.5%;
 												}
