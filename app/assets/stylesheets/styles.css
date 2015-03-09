@@ -14,6 +14,8 @@
 	}
 H2{
 	color:#19b794;
+	font-size:1.2em;
+	font-weight:normal;
 	text-transform:uppercase;
 	}
 H3{
@@ -61,7 +63,8 @@ UL{
 nav#top-nav-bar UL LI::before,
 #main-menu NAV UL LI:before,
 #content .banner UL LI:before,
-#footer .right-footerContent UL LI:before{
+#footer .right-footerContent UL LI:before,
+#tabs UL LI:before{
     content:none;
     font-size:1em;
 	}
@@ -321,7 +324,8 @@ body{
 					width:100%;
 					}
 					#content .banner{
-						height:493px!important;
+						height:458px!important;
+						margin:0 0 2.5em 0;
 						width:100%!important;
 						}
 						#content .banner H1{
@@ -334,6 +338,37 @@ body{
 						padding:0 1.85em;
 						width:95.4%;
 						}
+						#tabs{
+							background:#19b794;
+							float:left;
+							width:100%;
+							}
+							#tabs UL{
+								background:#19b794;
+								float:left;
+								width:100%;
+								}
+								#tabs UL LI{
+									font-size:1em;
+									margin:0;
+									width:auto;
+									}
+									#tabs UL LI H2{
+										float:left;
+										margin:0;
+										padding:0.5em;
+										width:auto;
+										}
+										#tabs UL LI H2 A{
+											color:#ffffff!important;
+											float:left;
+											font-size:1em;
+											width:auto;
+											}
+											#tabs UL LI.ui-tabs-active H2 A,
+											#tabs UL LI H2 A:hover{
+												color:#19b794!important;
+												}
 				#footer{
 					border:none!important;
 				    color:#191919;
