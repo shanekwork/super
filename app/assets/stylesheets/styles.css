@@ -464,7 +464,7 @@ body{
 													width:auto;
 													}
 					#footer #bottom-footerContent{
-						border:2px solid #dddcdb;
+						border-top:2px solid #dddcdb;
 						float:left;
 						width:100%;
 						}
