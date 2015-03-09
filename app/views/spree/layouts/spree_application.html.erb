@@ -29,11 +29,10 @@
         </div>
 
         <%= yield :templates %>
+
+        <%= render :partial => 'spree/shared/footer' %>
         </div>
       </div>
-
-
-      <%= render :partial => 'spree/shared/footer' %>
 
     <%= render :partial => 'spree/shared/google_analytics' %>
     <script>
