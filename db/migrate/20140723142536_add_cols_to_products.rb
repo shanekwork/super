@@ -30,5 +30,6 @@ class AddColsToProducts < ActiveRecord::Migration
   	add_column :spree_products, :delta_status, :string
   	add_column :spree_products, :status_description, :string
   	add_column :spree_products, :nett_cost, :decimal
+  	add_column :spree_products, :catalogue, :integer
   end
 end
