@@ -374,10 +374,59 @@ body{
 							margin:0;
 							width:47.75%;
 							}
+							#footer .right-footerContent .left-fc I{
+								color:#19b794;
+								float:left;
+								font-size:1em;
+								margin:0 0.2em 0 0;
+								min-width:1.1em;
+								width:auto;
+								}
+							#footer .right-footerContent .left-fc I.fa-mobile{
+								font-size:1.5em;
+								min-width:0.75em;
+								}
+							#footer .right-footerContent .left-fc SPAN{
+								float:left;
+								width:93%;
+								}
 						#footer .right-footerContent .right-fc{
 							margin:0 0 0 2.5em;
 							width:46.1%;
 							}
+							#contact_newsletter{
+								float:left;
+								width:100%;
+								}
+								#contact_newsletter FIELDSET{
+									border:none;
+									padding:0;
+									}
+									#contact_newsletter FIELDSET DIV{
+									    float:left;
+									    padding:0.9em 0.85em;
+									    width:75%;
+										}
+										#contact_newsletter FIELDSET LABEL{
+											position:absolute;
+											top:-5000em;
+											}
+										#contact_newsletter FIELDSET INPUT{
+											border:1px solid #bbbbbb;
+										    color:#a5a5a5;
+										    float:left;
+										    padding:0.9em 0.85em;
+										    width:99.5%;
+											}
+									#contact_newsletter FIELDSET DIV.button{
+									    float:left;
+									    padding:0 0 0 0.5em;
+									    width:22.35%;
+										}
+										#contact_newsletter FIELDSET DIV.button INPUT#submit{
+										    background:transparent url("/assets/images/newsletter-button.png") no-repeat left top;
+										    width:100%;
+											}
 					#footer #bottom-footerContent{
 						float:left;
 						width:100%;
