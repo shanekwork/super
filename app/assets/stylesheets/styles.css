@@ -325,7 +325,7 @@ body{
 					}
 					#content .flash.notice,
 					#content .flash.success{
-						background:#ffffff url("/assets/error-icon.png") no-repeat 33% 50%;
+						background:#ffffff url("/assets/success-icon.png") no-repeat 33% 50%;
 						color:#ff0000;
 						float:left;
 						font-size:1.5em;
@@ -339,8 +339,8 @@ body{
 					    width:98.2%;
 					    z-index:10;
 						}
-					#content .flash.success{
-						background:#ffffff url("/assets/success-icon.png") no-repeat 33% 50%;
+					#content .flash.error{
+						background:#ffffff url("/assets/error-icon.png") no-repeat 33% 50%;
 						color:#01d901;
 						}
 					#content .banner{
