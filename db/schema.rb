@@ -11,10 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150310110505) do
+ActiveRecord::Schema.define(version: 20150310112407) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "catalogues", force: true do |t|
+    t.string   "name"
+    t.boolean  "active"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "import_controls", force: true do |t|
     t.integer  "last_id",    default: 0
@@ -446,9 +453,11 @@ ActiveRecord::Schema.define(version: 20150310110505) do
     t.boolean  "featured",                                             default: false
     t.boolean  "latest",                                               default: false
     t.integer  "catalogue"
+    t.integer  "catalogue_id"
   end
 
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on", using: :btree
+  add_index "spree_products", ["catalogue_id"], name: "index_spree_products_on_catalogue_id", using: :btree
   add_index "spree_products", ["deleted_at"], name: "index_spree_products_on_deleted_at", using: :btree
   add_index "spree_products", ["name"], name: "index_spree_products_on_name", using: :btree
   add_index "spree_products", ["slug"], name: "index_spree_products_on_slug", using: :btree

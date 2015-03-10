@@ -28,6 +28,7 @@ module Spree
     has_many :option_types, through: :product_option_types
     has_many :product_properties, dependent: :destroy, inverse_of: :product
     has_many :properties, through: :product_properties
+    belongs_to :catalogue
 
     has_many :classifications, dependent: :delete_all, inverse_of: :product
     has_many :taxons, through: :classifications
