@@ -338,6 +338,9 @@ body{
 						padding:0 1.85em;
 						width:95.4%;
 						}
+					#content .main-content{
+						margin:0 0 0.3em 0;
+						}
 						#tabs{
 							float:left;
 							width:100%;
@@ -345,6 +348,7 @@ body{
 							#tabs UL{
 								background:#19b794;
 								float:left;
+								margin:0 0 1.25em 0;
 								width:100%;
 								}
 								#tabs UL LI{
@@ -382,11 +386,54 @@ body{
 								width:100%;
 								}
 								#tabs .product{
-									border:8px solid #dddcdb;
-									float:left;
-									margin:0 20px;
-									
+									border:0.5em solid #dddcdb;
+								    float:left;
+								    margin:0 0.94em 1.9em;
+								    max-height:16.3em;
+								    min-height:16.9em;
+								    padding:2.2em 0.9em;
+								    width:18.85%;
 									}
+									#tabs .product .product-desc,
+									#tabs .product .home_images,
+									#tabs .product .product-price{
+									    float:left;
+									    width:100%;
+										}
+									#tabs .product .product-desc{
+										margin:0 0 1.45em 0;
+										}
+										#tabs .product .product-desc A{
+											color:#191919;
+											float:left;
+											font-size:1em;
+											max-height:3em;
+											overflow:hidden;
+											text-align:center;
+											width:auto;
+											}
+											#tabs .product .product-desc A:hover{
+												color:#19b794;
+												}
+									#tabs .product .home_images{
+										margin:0 0 1.45em 0;
+										text-align:center;
+										}
+										#tabs .product .home_images A IMG{
+											max-height:7.4em;
+										    max-width:9.1em;
+										    min-height:7.4em;
+										    min-width:5.1em;
+											}
+									#tabs .product .product-price{
+										border-top:0.15em solid #dddcdb;
+										color:#19b794;
+									    float:left;
+									    font-size:1.85em;
+									    padding:0.55em 0 0 0;
+									    text-align:center;
+									    width:100%;
+										}
 				#footer{
 					border:none!important;
 				    color:#191919;
