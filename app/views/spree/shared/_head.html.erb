@@ -56,6 +56,19 @@
 	        });
 	        return false; // prevent page refresh
 	    });
+
+		/* Add class to nav-bar links */
+		$("#nav-bar li a").each(function(){
+			if($(this).html === "Favorite Products"){
+				$(this).addClass("favProds");
+			}
+			if(($(this).html === "create account") || ($(this).html === "My Account")){
+				$(this).addClass("account");
+			}
+			if(($(this).html === "Login") || ($(this).html === "Logout")){
+				$(this).addClass("logInOut");
+			}
+		});
 	});
 </script>
 

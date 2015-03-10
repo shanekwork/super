@@ -341,7 +341,7 @@ body{
 					    z-index:10;
 						}
 					#content .flash.error{
-						background:#ffffff url("/assets/error-icon.png") no-repeat 33% 50%;
+						background:#ffffff url("/assets/error-icon.png") no-repeat 31.5% 50%;
 						color:#ff0000;
 						}
 					#content .banner{
@@ -409,9 +409,10 @@ body{
 								#tabs .product{
 									border:0.5em solid #dddcdb;
 								    float:left;
-								    margin:0 0.94em 1.9em;
-								    max-height:16.3em;
-								    min-height:16.9em;
+								    margin:0 0.94em 1.9em 0.94em;
+								    max-height:19em;
+								    min-height:19em;
+								    overflow:hidden;
 								    padding:2.2em 0.9em;
 								    width:18.85%;
 									}
@@ -441,7 +442,7 @@ body{
 										text-align:center;
 										}
 										#tabs .product .home_images A IMG{
-											max-height:7.4em;
+											max-height:9.1em;
 										    max-width:9.1em;
 										    min-height:7.4em;
 										    min-width:5.1em;
