@@ -324,9 +324,10 @@ body{
 					width:100%;
 					}
 					#content .flash.notice,
-					#content .flash.success{
+					#content .flash.success,
+					#content .flash.error{
 						background:#ffffff url("/assets/success-icon.png") no-repeat 33% 50%;
-						color:#ff0000;
+						color:#01d901;
 						float:left;
 						font-size:1.5em;
 					    font-style:italic;
@@ -341,7 +342,7 @@ body{
 						}
 					#content .flash.error{
 						background:#ffffff url("/assets/error-icon.png") no-repeat 33% 50%;
-						color:#01d901;
+						color:#ff0000;
 						}
 					#content .banner{
 						height:458px!important;
