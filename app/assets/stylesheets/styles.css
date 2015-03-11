@@ -105,6 +105,7 @@ body{
 						nav#top-nav-bar UL LI{
 							float:left;
 							margin:0 0 0 1em;
+							max-width:10.7em;
 							padding:0;
 							width:auto;
 							}
@@ -130,28 +131,29 @@ body{
 							    background:#19b894 url("/assets/favourite-icon.png") no-repeat 16.5% 50%;
 								}
 								nav#top-nav-bar UL LI.favProds A:hover{
-								    background:#19b894 url("/assets/favourite-iconHover.png") no-repeat 16.5% 50%;
+								    background:#191919 url("/assets/favourite-iconHover.png") no-repeat 16.5% 50%;
 									}
 							nav#top-nav-bar UL LI.account A{
 							    background:#19b894 url("/assets/account-icon.png") no-repeat 16.5% 50%;
 								}
 								nav#top-nav-bar UL LI.account A:hover{
-								    background:#19b894 url("/assets/account-iconHover.png") no-repeat 16.5% 50%;
+								    background:#191919 url("/assets/account-iconHover.png") no-repeat 16.5% 50%;
 									}
 							nav#top-nav-bar UL LI.logIn A{
 							    background:#19b894 url("/assets/login-icon.png") no-repeat 16.5% 50%;
 								}
 								nav#top-nav-bar UL LI.logIn A:hover{
-								    background:#19b894 url("/assets/login-iconHover.png") no-repeat 16.5% 50%;
+								    background:#191919 url("/assets/login-iconHover.png") no-repeat 16.5% 50%;
 									}
 							nav#top-nav-bar UL LI.logOut A{
 							    background:#19b894 url("/assets/logout-icon.png") no-repeat 16.5% 50%;
 								}
 								nav#top-nav-bar UL LI.logOut A:hover{
-								    background:#19b894 url("/assets/logout-iconHover.png") no-repeat 16.5% 50%;
+								    background:#191919 url("/assets/logout-iconHover.png") no-repeat 16.5% 50%;
 									}
 						nav#top-nav-bar UL LI#search-bar{
 							float:right;
+							max-width:19.8em;
 							width:19.8em;
 							}
 							nav#top-nav-bar UL LI#search-bar INPUT{
