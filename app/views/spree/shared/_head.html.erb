@@ -65,8 +65,11 @@
 			if(($(this).attr('href') == "/user/spree_user/sign_up") || ($(this).attr('href') == "/account")){
 				$(this).parent().addClass("account");
 			}
-			if(($(this).attr('href') == "/login") || ($(this).attr('href') == "/logout")){
-				$(this).parent().addClass("logInOut");
+			if($(this).attr('href') == "/login"){
+				$(this).parent().addClass("logIn");
+			}
+			if($(this).attr('href') == "/logout"){
+				$(this).parent().addClass("logOut");
 			}
 		});
 	});
