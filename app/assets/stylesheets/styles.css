@@ -95,7 +95,7 @@ body{
 					float:left;
 					margin:0;
 					text-align:left;
-					width:57%;
+					width:58%;
 					}
 					nav#top-nav-bar UL{
 						float:left;
@@ -128,28 +128,28 @@ body{
 								    color:#19b794!important;
 									}
 							nav#top-nav-bar UL LI.favProds A{
-							    background:#19b894 url("/assets/favourite-icon.png") no-repeat 16.5% 50%;
+							    background:#19b894 url("/assets/favourite-icon.png") no-repeat 2em 50%;
 								}
 								nav#top-nav-bar UL LI.favProds A:hover{
-								    background:#191919 url("/assets/favourite-iconHover.png") no-repeat 16.5% 50%;
+								    background:#191919 url("/assets/favourite-iconHover.png") no-repeat 2em 50%;
 									}
 							nav#top-nav-bar UL LI.account A{
-							    background:#19b894 url("/assets/account-icon.png") no-repeat 16.5% 50%;
+							    background:#19b894 url("/assets/account-icon.png") no-repeat 2em 50%;
 								}
 								nav#top-nav-bar UL LI.account A:hover{
-								    background:#191919 url("/assets/account-iconHover.png") no-repeat 16.5% 50%;
+								    background:#191919 url("/assets/account-iconHover.png") no-repeat 2em 50%;
 									}
 							nav#top-nav-bar UL LI.logIn A{
-							    background:#19b894 url("/assets/login-icon.png") no-repeat 16.5% 50%;
+							    background:#19b894 url("/assets/login-icon.png") no-repeat 2em 50%;
 								}
 								nav#top-nav-bar UL LI.logIn A:hover{
-								    background:#191919 url("/assets/login-iconHover.png") no-repeat 16.5% 50%;
+								    background:#191919 url("/assets/login-iconHover.png") no-repeat 2em 50%;
 									}
 							nav#top-nav-bar UL LI.logOut A{
-							    background:#19b894 url("/assets/logout-icon.png") no-repeat 16.5% 50%;
+							    background:#19b894 url("/assets/logout-icon.png") no-repeat 2em 50%;
 								}
 								nav#top-nav-bar UL LI.logOut A:hover{
-								    background:#191919 url("/assets/logout-iconHover.png") no-repeat 16.5% 50%;
+								    background:#191919 url("/assets/logout-iconHover.png") no-repeat 2em 50%;
 									}
 						nav#top-nav-bar UL LI#search-bar{
 							float:right;
@@ -177,7 +177,7 @@ body{
 									}
 				#link-to-cart{
 					float:left;
-					margin:0 0 0 4.35em;
+					margin:0 0 0 3.5em;
 					width:18.3%;
 					}
 					#link-to-cart A{
