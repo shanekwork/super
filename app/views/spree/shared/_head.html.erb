@@ -59,13 +59,13 @@
 
 		/* Add class to nav-bar links */
 		$("#nav-bar li a").each(function(){
-			if($(this).html === "/favorite_products"){
+			if($(this).attr('href') == "/favorite_products"){
 				$(this).parent().addClass("favProds");
 			}
-			if(($(this).html === "/user/spree_user/sign_up") || ($(this).html === "/account")){
+			if(($(this).attr('href') == "/user/spree_user/sign_up") || ($(this).attr('href') == "/account")){
 				$(this).parent().addClass("account");
 			}
-			if(($(this).html === "/login") || ($(this).html === "/logout")){
+			if(($(this).attr('href') == "/login") || ($(this).attr('href') == "/logout")){
 				$(this).parent().addClass("logInOut");
 			}
 		});
