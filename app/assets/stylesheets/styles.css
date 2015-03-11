@@ -117,7 +117,7 @@ body{
 							    float:left;
 							    font-size:0.8em;
 							    font-weight:normal;
-							    padding:1em 1.75em;
+							    padding:1em 1.75em 1em 3.8em;
 							    text-transform:none;
 							    width:auto;
 								}
@@ -125,6 +125,30 @@ body{
 								nav#top-nav-bar UL LI#search-bar INPUT[type="submit"]:hover{
 								    background:#1a1a1a url("/assets/button-bck-hover.png") repeat-x left top;
 								    color:#19b794!important;
+									}
+							nav#top-nav-bar UL LI.favProds A{
+							    background:#19b894 url("/assets/favourite-icon.png") no-repeat 16.5% 50%;
+								}
+								nav#top-nav-bar UL LI.favProds A:hover{
+								    background:#19b894 url("/assets/favourite-iconHover.png") no-repeat 16.5% 50%;
+									}
+							nav#top-nav-bar UL LI.account A{
+							    background:#19b894 url("/assets/account-icon.png") no-repeat 16.5% 50%;
+								}
+								nav#top-nav-bar UL LI.account A:hover{
+								    background:#19b894 url("/assets/account-iconHover.png") no-repeat 16.5% 50%;
+									}
+							nav#top-nav-bar UL LI.logIn A{
+							    background:#19b894 url("/assets/login-icon.png") no-repeat 16.5% 50%;
+								}
+								nav#top-nav-bar UL LI.logIn A:hover{
+								    background:#19b894 url("/assets/login-iconHover.png") no-repeat 16.5% 50%;
+									}
+							nav#top-nav-bar UL LI.logOut A{
+							    background:#19b894 url("/assets/logout-icon.png") no-repeat 16.5% 50%;
+								}
+								nav#top-nav-bar UL LI.logOut A:hover{
+								    background:#19b894 url("/assets/logout-iconHover.png") no-repeat 16.5% 50%;
 									}
 						nav#top-nav-bar UL LI#search-bar{
 							float:right;
