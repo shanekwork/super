@@ -673,18 +673,18 @@ body{
 											padding:0;
 											}
 							#reviews A.button{
-								background:#19b794;
+								background:#19b794 url("/assets/write-icon.png") no-repeat 1.8em center;
 								border:none;
 								color:#ffffff;
 							    float:right;
 							    font-size:0.85em;
 							    font-weight:normal;
 							    margin:0;
-							    padding:1em 1.75em;
+							    padding:1em 1.75em 1em 3em;
 							    width:auto;
 								}
 								#reviews A.button:hover{
-									background:#191919;
+									background:#191919 url("/assets/write-iconHover.png") no-repeat 1.8em center;
 									color:#19b794;
 									}
 				#footer{
