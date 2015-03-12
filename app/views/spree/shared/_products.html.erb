@@ -1,5 +1,3 @@
-TEST
-
 <%
   paginated_products = @searcher.retrieve_products if params.key?(:keywords)
   paginated_products ||= products
