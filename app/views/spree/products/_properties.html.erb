@@ -1,4 +1,3 @@
-TEST
 <% unless @product_properties.empty? %>  
   <h6 class="product-section-title"><%= Spree.t('properties')%></h6>
   <table id="product-properties" class="table-display" data-hook>
@@ -7,7 +6,7 @@ TEST
         <% css_class = cycle('even', 'odd', :name => "properties") %>
         <tr class="<%= css_class %>">
           <td><strong><%= product_property.property.presentation %></strong></td>
-          <td><%= product_property.value %></td>
+          <td><%= product_property.value %></td>EUR
         </tr>
       <% end %>
       <% reset_cycle('properties') %>
