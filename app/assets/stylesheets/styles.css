@@ -62,7 +62,8 @@ nav#top-nav-bar UL LI::before,
 #main-menu NAV UL LI:before,
 #content .banner UL LI:before,
 #footer .right-footerContent UL LI:before,
-#tabs UL LI:before{
+#tabs UL LI:before,
+#product-images #thumbnails UL LI:before{
     content:none;
     font-size:1em;
 	}
@@ -511,14 +512,30 @@ body{
 							#product-images #main-image{
 							    border:0.5em solid #dddcdb;
 							    float:left;
+							    margin:0 0 1em 0;
 							    padding:2.2em 0.9em;
+							    text-align:center;
 							    width:18.3em;
 								}
-							#content [data-hook="product_left_part"]{
-								float:left;
-								margin:0 2.5em 0 0;
-								width:27.8%;
+								#product-images #main-image IMG{
+									max-width:18.3em;
+    								min-width:14.3em;
+									}
+							#product-images #thumbnails{
+							    float:left;
+							    width:100%;
 								}
+								#product-images #thumbnails UL{
+								    margin:0;
+									}
+									#product-images #thumbnails UL LI{
+									    border:0.25em solid #dddcdb;
+									    margin:0 0.45em 1em 0.45em;
+									    width:auto;
+										}
+										#product-images #thumbnails UL LI A IMG{
+											padding:0;
+											}
 						#content [data-hook="product_right_part"]{
 							float:left;
 							margin:0;
@@ -565,13 +582,13 @@ body{
 									    top:-5000em;
 										}
 									#content [data-hook="product_right_part"] #cart-form #product-price .price,
-									#content [data-hook="product_right_part"] #cart-form #product-price SPAN[itemprop="priceCurrency"]{
+									#content [data-hook="product_right_part"] #cart-form #product-price SPAN.priceCurrency{
 									    color:#19b794;
 									    font-size:1.85em;
 									    font-weight:normal;
 									    margin:0 0.5em 0 0;
 										}
-									#content [data-hook="product_right_part"] #cart-form #product-price SPAN[itemprop="priceCurrency"]{
+									#content [data-hook="product_right_part"] #cart-form #product-price SPAN.priceCurrency{
 									    display:none;
 										}
 									#content [data-hook="product_right_part"] #cart-form #product-price SPAN.priceNormal{
@@ -585,8 +602,8 @@ body{
 										}
 						#reviews{
 							float:left;
-							margin:0 2.5em 0 0;
-							width:27.8%;
+							margin:0;
+							width:100%;
 							}
 				#footer{
 					border:none!important;
