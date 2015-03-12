@@ -81,8 +81,8 @@
 		});
 
 		/* Show priceCurrency SPAN and add class to old price SPAN */
-		if ($("#product-price DIV SPAN[itemprop='priceCurrency']").text().length > 0){
-			$("#product-price DIV SPAN[itemprop='priceCurrency']").attr("style", "display:inline!important");
+		if ($("#product-price DIV SPAN.priceCurrency").text().length > 0){
+			$("#product-price DIV SPAN.priceCurrency").attr("style", "display:inline!important");
 			$("#product-price DIV SPAN.price.selling").addClass("priceNormal");
 		}    
 	});
