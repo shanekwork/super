@@ -78,6 +78,12 @@
 				$(this).parent().addClass("logOut");
 			}
 		});
+
+		/**/
+		if ($("#product-price DIV SPAN").attr("itemprop", "priceCurrency").text().length > 0){
+			$("#product-price DIV SPAN").attr("itemprop", "priceCurrency").css("display", "block");
+			$("#product-price DIV SPAN").attr("class", "price selling").addClass("priceNormal");
+		}    
 	});
 </script>
 
