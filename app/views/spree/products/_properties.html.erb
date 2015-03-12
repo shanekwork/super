@@ -6,7 +6,7 @@
         <% css_class = cycle('even', 'odd', :name => "properties") %>
         <tr class="<%= css_class %>">
           <td><strong><%= product_property.property.presentation %></strong></td>
-          <td><%= product_property.value %></td>EUR
+          <td><%= product_property.value %>EUR</td>
         </tr>
       <% end %>
       <% reset_cycle('properties') %>
