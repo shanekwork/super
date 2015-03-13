@@ -588,7 +588,7 @@ body{
 									#content [data-hook="product_right_part"] #cart-form #product-price,
 									#content [data-hook="product_right_part"] #cart-form .add-to-cart{
 									    float:left;
-									    margin:0 0 1em;
+									    margin:0 0 1em 0;
 									    width:100%;
 										}
 										#content [data-hook="product_right_part"] #cart-form #product-price H6{
