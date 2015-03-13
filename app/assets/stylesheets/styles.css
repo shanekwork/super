@@ -677,7 +677,7 @@ body{
 											padding:0;
 											}
 							#reviews A.button,
-							#content-new_review INPUT.button{
+							#content-new-review INPUT.button{
 								background:#19b794 url("/assets/write-icon.png") no-repeat 1.8em center;
 								border:none;
 								color:#ffffff;
@@ -688,18 +688,20 @@ body{
 							    padding:1em 1.75em 1em 3.5em;
 							    width:auto;
 								}
-								#reviews A.button:hover{
+								#reviews A.button:hover,
+								#content-new-review INPUT.button:hover{
 									background:#191919 url("/assets/write-iconHover.png") no-repeat 1.8em center;
 									color:#19b794;
 									}
-						#content-new-review{
-							border:1px solid #dddcdb;
+						#content-new-review{							
 							float:left;
-							width:94.5%;
+							width:100%;
 							}
 							#new_review{
+								border:1px solid #dddcdb;
 								float:left;
-								width:100%;
+								padding:2em;
+								width:94.5%;
 								}
 								#new_review > DIV{
 									float:left;
@@ -721,17 +723,20 @@ body{
 											}
 										#new_review .label-field SPAN.required{
 											color:#19b794;
-											font-size:1em;
 											}
 										#new_review .stars-field INPUT,
-										#new_review .text-field INPUT{
+										#new_review .text-field INPUT,
+										#new_review .text-field TEXTAREA{
 											border:1px solid #bbbbbb;
     										color:#19b794;
     										padding:0.9em 0.85em;
 											}
-							#content-new_review INPUT.button{
+							#content-new-review INPUT.button{
 								background:#19b794 url("/assets/submit-icon.png") no-repeat 1.8em center;
 								}
+								#content-new-review INPUT.button:hover{
+									background:#191919 url("/assets/submit-iconHover.png") no-repeat 1.8em center;
+									}
 				#footer{
 					border:none!important;
 				    color:#191919;
