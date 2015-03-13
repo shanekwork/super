@@ -68,7 +68,8 @@ nav#top-nav-bar UL LI::before,
 #content .banner UL LI:before,
 #footer .right-footerContent UL LI:before,
 #tabs UL LI:before,
-#product-images #thumbnails UL LI:before{
+#product-images #thumbnails UL LI:before,
+#errorExplanation UL LI:before{
     content:none;
     font-size:1em;
 	}
@@ -83,6 +84,27 @@ nav#top-nav-bar UL LI::before,
 	#content BUTTON:hover{
 		background:#1a1a1a;
 		color:#19b794;
+		}
+#errorExplanation{
+    background:#f2dede url("/assets/errorBig-icon.png") no-repeat left top;
+    border:1px solid #e45353;
+    float:left;
+    padding:2em 2em 2em 14em;
+    width:77.6%;
+	}
+	#errorExplanation H2{
+    	text-align:left;
+		}
+	#errorExplanation H2,
+	#errorExplanation UL LI{
+    	color:#ff0000;
+		}
+	#errorExplanation P{
+    	color:#ff0000;
+    	font-weight:normal;
+		}
+	#errorExplanation UL{
+    	width:97.4%;
 		}
 html,
 body{
