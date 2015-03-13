@@ -86,14 +86,15 @@ nav#top-nav-bar UL LI::before,
 		color:#19b794;
 		}
 #errorExplanation{
-    background:#f2dede url("/assets/errorBig-icon.png") no-repeat left top;
+    background:#f2dede url("/assets/errorBig-icon.png") no-repeat 3em 3em;
     border:1px solid #e45353;
     float:left;
+    margin:0 0 2em 0!important;
     padding:2em 2em 2em 14em;
-    width:77.6%;
+    width:77.5%!important;
 	}
 	#errorExplanation H2{
-    	text-align:left;
+    	text-align:left!important;
 		}
 	#errorExplanation H2,
 	#errorExplanation UL LI{
@@ -104,7 +105,7 @@ nav#top-nav-bar UL LI::before,
     	font-weight:normal;
 		}
 	#errorExplanation UL{
-    	width:97.4%;
+    	width:96.4%;
 		}
 html,
 body{
