@@ -10,9 +10,14 @@
 	background:#191919;
 	color:#19b794;
 	}
+H1{
+	color:#191919;
+	font-size:1.5em;
+	font-weight:normal;
+	}
 H2{
 	color:#19b794;
-	font-size:1.15em;
+	font-size:1.4em;
 	font-weight:normal;
 	text-transform:uppercase;
 	}
@@ -430,6 +435,7 @@ body{
 									}
 									#tabs UL LI H2{
 										float:left;
+										font-size:1.15em
 										margin:0;
 										padding:0;
 										width:auto;
@@ -612,10 +618,7 @@ body{
 							margin:0;
 							}
 							#reviews H6{
-								color:#19b794;
 							    float:left;
-							    font-size:1.5em;
-							    font-weight:normal;
 							    margin:0 0 1em 0;
 							    text-align:center;
 							    width:100%;
@@ -680,13 +683,21 @@ body{
 							    font-size:0.85em;
 							    font-weight:normal;
 							    margin:0;
-							    padding:1em 1.75em 1em 3em;
+							    padding:1em 1.75em 1em 3.5em;
 							    width:auto;
 								}
 								#reviews A.button:hover{
 									background:#191919 url("/assets/write-iconHover.png") no-repeat 1.8em center;
 									color:#19b794;
 									}
+						#content-new-review{
+							float:left;
+							width:100%;
+							}
+							#new_review{
+								float:left;
+								width:100%;
+								}
 				#footer{
 					border:none!important;
 				    color:#191919;
