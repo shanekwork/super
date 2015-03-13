@@ -708,14 +708,16 @@ body{
 									margin:0 0 1em 0;
 									width:100%;
 									}
+									#new_review .stars-field,
 									#new_review .label-field,
 									#new_review .text-field{
 										float:left;
-										margin:0 0 0.3em 0;
-										width:100%;
+										margin:0;
+										width:72.2%;
 										}
 									#new_review .label-field{
-										margin:0 0 0.3em 0;
+										margin:0 2em 0 0;
+										width:25%;
 										}
 										#new_review .label-field LABEL{
 											color:#191919;
@@ -724,12 +726,12 @@ body{
 										#new_review .label-field SPAN.required{
 											color:#19b794;
 											}
-										#new_review .stars-field INPUT,
 										#new_review .text-field INPUT,
 										#new_review .text-field TEXTAREA{
 											border:1px solid #bbbbbb;
     										color:#19b794;
     										padding:0.9em 0.85em;
+    										width:50%;
 											}
 							#content-new-review INPUT.button{
 								background:#19b794 url("/assets/submit-icon.png") no-repeat 1.8em center;
