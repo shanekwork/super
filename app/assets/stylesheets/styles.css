@@ -1,0 +1,658 @@
+::selection{
+	background:#191919;
+	color:#19b794;
+	}
+::-moz-selection{
+	background:#191919;
+	color:#19b794;
+	}
+::-webkit-selection{
+	background:#191919;
+	color:#19b794;
+	}
+H1{
+	color:#191919;
+	font-size:1.5em;
+	font-weight:normal;
+	}
+H2{
+	color:#19b794;
+	font-size:1.4em;
+	font-weight:normal;
+	text-transform:uppercase;
+	}
+H3{
+	color:#191919;
+	font-family:'Roboto', sans-serif;
+    font-size:1.95em;
+    font-weight:normal;
+	text-transform:uppercase;
+	}
+A{
+	color:#19b794;
+	}
+	A:hover{
+		color:#191919;
+		}
+UL{
+
+	float:left;
+	width:100%;
+	}
+	UL LI{
+		float:left;
+		font-size:0.95em;
+		line-height:1.2em;
+		margin:0 0 0.8em 0;
+		padding:0;
+		width:100%;
+		}
+		UL LI:before{
+			color:#19b794!important;
+		    content:"•";
+		    float:left;
+		    font-size:1.3em;
+		    padding:0 0.4em 0 0;
+			}
+		UL LI A{
+			color:#191919!important;
+			}
+			UL LI A:hover{
+				color:#19b794!important;
+				}
+.container{
+	width:1280px;
+	}
+nav#top-nav-bar UL LI::before,
+#main-menu NAV UL LI:before,
+#content .banner UL LI:before,
+#footer .right-footerContent UL LI:before,
+#tabs UL LI:before,
+#product-images #thumbnails UL LI:before{
+    content:none;
+    font-size:1em;
+	}
+#content BUTTON{
+	background:#19b894;
+    border:none;
+    color:#ffffff;
+    font-size:0.8em;
+    font-weight:normal;
+    padding:1em 1.75em;
+	}
+	#content BUTTON:hover{
+		background:#1a1a1a;
+		color:#19b794;
+		}
+html,
+body{
+	font:1em/1.4 Arial, Helvetica, sans-serif;
+	color:#191919;
+	margin:0;
+	}
+	body{
+		background:#eeeeee url("/assets/background.png") repeat-x left top;
+		}
+		#header,
+		#wrapper,
+		#footer{
+			float:left;
+			width:100%;
+			}
+		#header{
+			margin:0;
+			}
+			#header .header-content{
+				float:left;
+				padding:0.6em 0;
+				width:100%;
+				}
+				nav#top-nav-bar{
+					float:left;
+					margin:0;
+					text-align:left;
+					width:58%;
+					}
+					nav#top-nav-bar UL{
+						float:left;
+						margin:0;
+						width:100%;
+						}
+						nav#top-nav-bar UL LI{
+							float:left;
+							margin:0 0 0 1em;
+							max-width:10.7em;
+							padding:0;
+							width:auto;
+							}
+						nav#top-nav-bar UL LI:first-child{
+							margin:0;
+							}
+							nav#top-nav-bar UL LI A{
+							    background:#19b894;
+							    color:#ffffff!important;
+							    float:left;
+							    font-size:0.8em;
+							    font-weight:normal;
+							    padding:1em 1.75em 1em 3.8em;
+							    text-transform:none;
+							    width:auto;
+								}
+								nav#top-nav-bar UL LI A:hover,
+								nav#top-nav-bar UL LI#search-bar INPUT[type="submit"]:hover{
+								    background:#1a1a1a;
+								    color:#19b794!important;
+									}
+							nav#top-nav-bar UL LI.favProds A{
+							    background:#19b894 url("/assets/favourite-icon.png") no-repeat 2em 50%;
+								}
+								nav#top-nav-bar UL LI.favProds A:hover{
+								    background:#191919 url("/assets/favourite-iconHover.png") no-repeat 2em 50%;
+									}
+							nav#top-nav-bar UL LI.account A{
+							    background:#19b894 url("/assets/account-icon.png") no-repeat 2em 50%;
+								}
+								nav#top-nav-bar UL LI.account A:hover{
+								    background:#191919 url("/assets/account-iconHover.png") no-repeat 2em 50%;
+									}
+							nav#top-nav-bar UL LI.logIn A{
+							    background:#19b894 url("/assets/login-icon.png") no-repeat 2em 50%;
+								}
+								nav#top-nav-bar UL LI.logIn A:hover{
+								    background:#191919 url("/assets/login-iconHover.png") no-repeat 2em 50%;
+									}
+							nav#top-nav-bar UL LI.logOut A{
+							    background:#19b894 url("/assets/logout-icon.png") no-repeat 2em 50%;
+								}
+								nav#top-nav-bar UL LI.logOut A:hover{
+								    background:#191919 url("/assets/logout-iconHover.png") no-repeat 2em 50%;
+									}
+						nav#top-nav-bar UL LI#search-bar{
+							float:right;
+							max-width:19.8em;
+							width:19.8em;
+							}
+							nav#top-nav-bar UL LI#search-bar INPUT{
+								border:1px solid #bbbbbb;
+								border-right:none;
+								color:#a5a5a5;
+								float:left;
+								padding:0.9em 0.85em;
+								width:16.4em;
+								}
+								nav#top-nav-bar UL LI#search-bar INPUT[type="submit"]{
+									background:#19b894;
+									border:none;
+									color:#ffffff;
+									float:left;
+									font-size:0.9em;
+									font-weight:normal;
+									padding:0.9em 1.15em;
+									text-transform:uppercase;
+									width:auto;
+									}
+				#link-to-cart{
+					float:left;
+					margin:0 0 0 3.5em;
+					width:18.3%;
+					}
+					#link-to-cart A{
+						background:transparent url("/assets/cart.png") no-repeat left top;
+						color:#191919;
+						float:right;
+						font-size:0.75em;
+						min-height:1.4em;
+						padding:1.1em 0 1.1em 4.5em;
+						width:auto;
+						}
+						#link-to-cart A:hover{
+							background:transparent url("/assets/cart-hover.png") no-repeat left top;
+							}
+				#header .phone{
+					float:left;
+					margin:0 0 0 1.8em;
+					width:17%;
+					}
+					#header .phone IMG{
+						float:left;
+						max-width:1.6em;
+						width:auto;
+						}
+					#header .phone .inside{
+						float:left;
+						padding:0 0 0 0.8em;
+						width:auto;
+						}
+						#header .phone .inside P{
+							color:#19b794;
+							font-size:0.8em;
+							font-weight:bold;
+							margin:0 0 0.2em 0;
+							padding:0;
+							text-transform:uppercase;
+							}
+						#header .phone .inside A{
+							color:#191919;
+							font-size:1.5em;
+							line-height:0.8em;
+							}
+							#header .phone .inside A:hover{
+								color:#19b794;
+								}
+			#main-menu{
+				background:#191919;
+				float:left;
+				padding:0;
+				width:100%;
+				}				
+				#main-menu FIGURE{
+				    float:left;
+				    margin:0;
+				    padding:0.95em 0;
+				    width:auto;
+					}
+					#main-menu FIGURE A{
+					    float:left;
+					    width:auto;
+						}
+						#main-menu FIGURE A IMG{
+						    float:left;
+						    max-width:14.2em;
+						    padding:0;
+						    width:auto!important;
+							}
+				#main-menu NAV{
+				    float:left;
+				    margin:0 0 0 4.2em;
+				    width:77%;
+					}
+					#main-menu NAV UL{
+						border:none;
+					    float:left;
+					    font-weight:normal;
+					    margin:0;
+					    padding:0;
+					    width:100%;
+						}
+						#main-menu NAV UL LI{
+						    float:left;
+						    margin:0 0 0 2.45em;
+						    padding:3.66em 0;
+						    width:auto;
+							}
+						#main-menu NAV UL LI:first-child{
+						    margin:0;
+							}
+							#main-menu NAV UL LI A{
+								color:#ffffff!important;
+							    float:left;
+							    font-family:'Roboto', sans-serif;
+							    font-weight:normal;
+							    font-size:1em!important;
+							    padding:0;
+							    width:auto;
+								}
+							#main-menu NAV UL LI:first-child A{
+							    padding:0!important;
+								}
+								#main-menu NAV UL LI A.selected,
+								#main-menu NAV UL LI A:hover{
+									color:#19b794!important;
+									}
+							#main-menu NAV UL LI UL{
+								background:#ffffff;
+								border:none;
+								border-bottom:3px solid #19b794;
+								border-top:3px solid #19b794;
+							    float:left;
+							    left:0;
+							    min-height:10em;
+							    padding:2.2em 0 2.2em 0.95em;
+							    top:5.7em;
+							    width:14.85em;
+								}
+								#main-menu NAV UL LI UL LI{
+									margin:0.4em 0 0 0;
+									padding:0 0.95em 0 0;
+									width:93.5%;
+									}
+								#main-menu NAV UL LI UL LI:first-child{
+									margin:0;
+									}
+									#main-menu NAV UL LI UL LI A,
+									#main-menu NAV UL LI UL LI:first-child A{
+										color:#5b5b5b!important;
+										font-size:0.9em!important;
+										line-height:1.2em;
+									    padding:0.5em!important;
+									    width:95.5%;
+										}
+										#main-menu NAV UL LI UL LI A.selected,
+										#main-menu NAV UL LI UL LI A:hover{
+											background:#19b794!important;
+											color:#ffffff!important;
+											}
+									#main-menu NAV UL LI UL LI UL{
+										border:none;
+										border-bottom:3px solid #19b794;
+										border-top:3px solid #19b794;
+										box-shadow:0 1px 4px #a6a6a6;
+										left:15.65em;
+										padding:1.7em 0.95em;
+										top:0;
+										}
+										#main-menu NAV UL LI UL LI UL LI{
+											padding:0;
+											width:100%;
+											}
+											#main-menu NAV UL LI UL LI UL LI A,
+											#main-menu NAV UL LI UL LI UL LI:first-child A{
+												color:#5b5b5b!important;
+												font-size:1em!important;
+												padding:0.5em!important;
+												width:94.5%;
+												}
+												#main-menu NAV UL LI UL LI UL LI A:hover{
+													background:#19b794!important;
+													color:#ffffff!important;
+													}
+			#wrapper .container{
+				background:#ffffff;
+				box-shadow:0 15px 18px #a6a6a6;
+				}
+				#content{
+					float:left;
+					margin:0;
+					width:100%;
+					}
+					#content .flash.notice,
+					#content .flash.success,
+					#content .flash.error{
+						background:#ffffff url("/assets/success-icon.png") no-repeat 33% 50%;
+						color:#01d901;
+						float:left;
+						font-size:1.5em;
+					    font-style:italic;
+					    margin:0;
+					    padding:0.5em;
+					    position:absolute;
+					    text-align:center;
+					    text-transform:uppercase;
+					    top:0;
+					    width:98.2%;
+					    z-index:10;
+						}
+					#content .flash.error{
+						background:#ffffff url("/assets/error-icon.png") no-repeat 31.5% 50%;
+						color:#ff0000;
+						}
+					#content .banner{
+						height:458px!important;
+						margin:0 0 2.5em 0;
+						width:100%!important;
+						}
+						#content .banner H1{
+							position:absolute;
+							top:-5000em;
+							}
+					#content,
+					#content .main-content,
+					#footer .main-footer{
+						float:left;
+						padding:0 1.85em;
+						width:95.4%;
+						}
+					#content{
+						padding:3em 1.85em;
+						}
+					.home #content{
+						padding:0;
+						width:100%;
+						}
+					#content .main-content{
+						margin:0 0 0.3em 0;
+						}
+						#tabs{
+							float:left;
+							width:100%;
+							}
+							#tabs UL{
+								background:#19b794;
+								float:left;
+								margin:0 0 1.25em 0;
+								width:100%;
+								}
+								#tabs UL LI{
+									background:transparent url("/assets/separator.png") no-repeat right center;
+									font-size:1em;
+									list-style:none;
+									margin:0;
+									width:auto;
+									}
+								#tabs UL LI.ui-tabs-active,
+								#tabs UL LI:hover{
+									background:#191919;
+									}
+									#tabs UL LI H2{
+										float:left;
+										font-size:1.15em
+										margin:0;
+										padding:0;
+										width:auto;
+										}
+										#tabs UL LI H2 A{
+											color:#ffffff!important;
+											float:left;
+											font-size:1em;
+											padding:0.8em 1.4em;
+											width:auto;
+											}
+											#tabs UL LI.ui-tabs-active H2 A,
+											#tabs UL LI H2 A:hover{
+												color:#19b794!important;
+												}
+							#tabs #special_sale,
+							#tabs #featured,
+							#tabs #latest{
+								float:left;
+								width:100%;
+								}
+								#tabs .product{
+									border:0.5em solid #dddcdb;
+								    float:left;
+								    margin:0 0.94em 1.9em 0.94em;
+								    max-height:19em;
+								    min-height:19em;
+								    overflow:hidden;
+								    padding:2.2em 0.9em;
+								    width:18.85%;
+									}
+									#tabs .product .product-desc,
+									#tabs .product .home_images,
+									#tabs .product .product-price{
+									    float:left;
+									    width:100%;
+										}
+									#tabs .product .product-desc{
+										margin:0 0 1.45em 0;
+										}
+										#tabs .product .product-desc A{
+											color:#191919;
+											float:left;
+											font-size:1em;
+											max-height:3em;
+											overflow:hidden;
+											text-align:center;
+											width:auto;
+											}
+											#tabs .product .product-desc A:hover{
+												color:#19b794;
+												}
+									#tabs .product .home_images{
+										margin:0 0 1.45em 0;
+										text-align:center;
+										}
+										#tabs .product .home_images A IMG{
+											max-height:9.1em;
+										    max-width:9.1em;
+										    min-height:7.4em;
+										    min-width:5.1em;
+											}
+									#tabs .product .product-price{
+										border-top:0.15em solid #dddcdb;
+										color:#19b794;
+									    float:left;
+									    font-size:1.85em;
+									    padding:0.55em 0 0 0;
+									    text-align:center;
+									    width:100%;
+										}
+
+				#footer{
+					border:none!important;
+				    color:#191919;
+				    margin:0;
+				    padding:0!important;
+					}
+					#footer H3{
+						margin:0 1.3em 0.25em 0;
+						}
+					#footer #top-footerContent{
+						float:left;
+						margin:0 0 1.2em 0;
+						width:100%;
+						}
+						#footer .left-footerContent{
+							float:left;
+							width:45.9%;
+							}						
+							#footer .left-footerContent #footer-right{
+								float:left;
+								margin:0;
+								width:100%;
+								}
+								#footer .left-footerContent #footer-right UL{
+									margin:0;
+									}
+									#footer .left-footerContent #footer-right UL LI{
+										float:left;
+										margin:0 2.6em 0.8em 0;
+										width:15.8em;
+										}
+						#footer .right-footerContent{
+							float:left;
+							margin:0;
+							width:54.1%;
+							}
+							#footer .right-footerContent H3{
+								margin:0 0 0.25em 0;
+								}
+							#footer .right-footerContent .left-fc,
+							#footer .right-footerContent .right-fc{
+								float:left;
+								margin:0;
+								width:47.75%;
+								}
+								#footer .right-footerContent .left-fc I{
+									color:#19b794;
+									float:left;
+									font-size:1em;
+									margin:0 0.2em 0 0;
+									min-width:1.1em;
+									width:auto;
+									}
+								#footer .right-footerContent .left-fc I.fa-mobile{
+									font-size:1.5em;
+									min-width:0.75em;
+									}
+								#footer .right-footerContent .left-fc SPAN{
+									float:left;
+									width:93%;
+									}
+							#footer .right-footerContent .right-fc{
+								margin:0 0 0 2.5em;
+								width:46.1%;
+								}
+								FORM#contact_newsletter{
+									float:left;
+									width:100%;
+									}
+									FORM#contact_newsletter FIELDSET{
+										border:none;
+										padding:0;
+										}
+										FORM#contact_newsletter FIELDSET DIV{
+										    float:left;
+										    padding:0;
+										    width:75%;
+											}
+											FORM#contact_newsletter FIELDSET LABEL{
+												position:absolute;
+												top:-5000em;
+												}
+											FORM#contact_newsletter FIELDSET INPUT{
+												border:1px solid #bbbbbb;
+											    color:#a5a5a5;
+											    float:left;
+											    padding:0.9em 0.85em;
+											    width:99.5%;
+												}
+										FORM#contact_newsletter FIELDSET DIV.button{
+										    float:left;
+										    margin:0 0 0 0.5em;
+										    width:22.35%;
+											}
+											FORM#contact_newsletter FIELDSET DIV.button INPUT#submit{
+											    background:transparent url("/assets/newsletter-button.png") no-repeat left top;
+											    border:none;
+											    min-height:3.5em;
+											    padding:0;
+											    width:100%;
+												}
+												FORM#contact_newsletter FIELDSET DIV.button INPUT#submit:hover{
+												    background:transparent url("/assets/newsletter-buttonHover.png") no-repeat left top;
+													}
+								#footer .right-footerContent .right-fc .social{
+									float:left;
+									margin:0.9em 0 0 0;
+									width:100%;
+									}
+									#footer .right-footerContent .right-fc .social UL{
+										margin:0;
+										}
+										#footer .right-footerContent .right-fc .social UL LI{
+											float:left;
+											margin:0 0 0 1.95em;
+											width:auto;
+											}
+										#footer .right-footerContent .right-fc .social UL LI:first-child{
+											margin:0 0 0 0.35em;
+											}
+											#footer .right-footerContent .right-fc .social UL LI A{
+												float:left;
+												width:auto;
+												}
+												#footer .right-footerContent .right-fc .social UL LI A IMG{
+													float:left;
+													max-width:3em;
+													width:auto;
+													}
+					#footer #bottom-footerContent{
+						border-top:2px solid #dddcdb;
+						float:left;
+						width:100%;
+						}
+						#footer #bottom-footerContent P{
+							color:#a5a5a5;
+							font-size:0.9em;
+							margin:0;
+							padding:0.8em 0;
+							text-align:center;
+							}
+							#footer #bottom-footerContent P A{
+								color:#a5a5a5;
+								font-size:1em;
+								}
+								#footer #bottom-footerContent P A:hover{
+									color:#19b794;
+									}
