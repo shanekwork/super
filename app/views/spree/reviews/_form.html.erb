@@ -2,23 +2,45 @@
   <%= render "spree/shared/error_messages", :target => review %>
 
   <div class="review_rating_field">
-    <%= f.label :rating %> <span class="required">*</span>
-    <%= render "spree/reviews/stars", :stars => review.rating, :edit_enabled => true %>
+    <div class="label-field">
+      <%= f.label :rating %>
+      <span class="required">*</span>
+    </div>
+
+    <div class="stars-field">
+      <%= render "spree/reviews/stars", :stars => review.rating, :edit_enabled => true %>
+    </div>
   </div>
 
   <div class="review_name_field">
-    <%= f.label :name %> <span class="required">*</span><br />
-    <%= f.text_field :name, :maxlength => "255", :size => "50" %>
+    <div class="label-field">
+      <%= f.label :name %>
+      <span class="required">*</span>
+    </div>
+
+    <div class="text-field">
+      <%= f.text_field :name, :maxlength => "255", :size => "50" %>
+    </div>
   </div>
 
   <div class="review_title_field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title, :maxlength => "255", :size => "50" %>
+    <div class="label-field">
+      <%= f.label :title %>
+    </div>
+
+    <div class="text-field">
+      <%= f.text_field :title, :maxlength => "255", :size => "50" %>
+    </div>
   </div>
 
   <div class="review_review_field">
-    <%= f.label :review %> <span class="required">*</span><br />
-    <%= f.text_area :review, :wrap => "virtual", :rows => "10", :cols => "50" %>
+    <div class="label-field">
+      <%= f.label :review %> <span class="required">*</span>
+    </div>
+
+    <div class="text-field">
+      <%= f.text_area :review, :wrap => "virtual", :rows => "10", :cols => "50" %>
+    </div>
   </div>
 
   <div class="review_submit">
