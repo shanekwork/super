@@ -84,44 +84,54 @@ FORM{
 			width:72.2%;
 			}
 			FORM P{
+				float:left;
 				margin:0 0 1em 0;
 				padding:0;
+				width:100%;
 				}
-			FORM LABEL{
-				color:#191919;
-				float:left;
-				font-size:1em;
-				margin:0 2em 0 0;
-				width:25%;
+			FORM DIV P{
+				margin:0;
 				}
-			FORM BR{
-				display:none;
-				}
-			FORM SPAN.required{
-				color:#19b794;
-				}
-			FORM INPUT,
-			FORM TEXTAREA{
-				border:1px solid #bbbbbb!important;
-				color:#19b794;
-				padding:0.9em 0.85em!important;
-				width:36.2%;
-				}
+				FORM LABEL{
+					color:#191919;
+					float:left;
+					font-size:1em;
+					margin:0 2em 0 0;
+					width:25%;
+					}
+				FORM BR{
+					display:none;
+					}
+				FORM SPAN.required{
+					color:#19b794;
+					}
+				FORM INPUT,
+				FORM TEXTAREA{
+					border:1px solid #bbbbbb!important;
+					color:#19b794;
+					padding:0.9em 0.85em!important;
+					width:36.2%;
+					}
+				FORM P INPUT[type="checkbox"]{
+				    float:left;
+				    margin:0.25em 0.5em 0 27.8%;
+				    width:auto;
+					}
 			A.button,
 			INPUT.button{
-				background:#19b794 url("/assets/write-icon.png") no-repeat 1.8em center;
-				border:none;
+				background:#19b794 url("/assets/submit-icon.png") no-repeat 1.8em center;
+				border:none!important;
 				color:#ffffff;
 			    float:right;
 			    font-size:0.85em;
 			    font-weight:normal;
 			    margin:0;
-			    padding:1em 1.75em 1em 3.5em;
+			    padding:1em 1.75em 1em 3.5em!important;
 			    width:auto;
 				}
-				#reviews A.button:hover,
-				#content-new-review INPUT.button:hover{
-					background:#191919 url("/assets/write-iconHover.png") no-repeat 1.8em center;
+				A.button:hover,
+				INPUT.button:hover{
+					background:#191919 url("/assets/submit-iconHover.png") no-repeat 1.8em center;
 					color:#19b794;
 					}
 .container{
@@ -761,22 +771,11 @@ body{
 										#reviews .review .reviewBody .feedback_review P{
 											padding:0;
 											}
-							#reviews A.button,
-							#content-new-review INPUT.button{
+							#reviews A.button{
 								background:#19b794 url("/assets/write-icon.png") no-repeat 1.8em center;
-								border:none;
-								color:#ffffff;
-							    float:right;
-							    font-size:0.85em;
-							    font-weight:normal;
-							    margin:0;
-							    padding:1em 1.75em 1em 3.5em;
-							    width:auto;
 								}
-								#reviews A.button:hover,
-								#content-new-review INPUT.button:hover{
+								#reviews A.button:hover{
 									background:#191919 url("/assets/write-iconHover.png") no-repeat 1.8em center;
-									color:#19b794;
 									}
 						#content-new-review{							
 							float:left;
@@ -806,7 +805,9 @@ body{
 										}
 										#new_review .label-field LABEL{
 											color:#191919;
+											float:none;
 											font-size:1em;
+											margin:0;
 											width:auto;
 											}
 										#new_review .label-field SPAN.required{
@@ -819,12 +820,6 @@ body{
     										padding:0.9em 0.85em;
     										width:50%;
 											}
-							#content-new-review INPUT.button{
-								background:#19b794 url("/assets/submit-icon.png") no-repeat 1.8em center;
-								}
-								#content-new-review INPUT.button:hover{
-									background:#191919 url("/assets/submit-iconHover.png") no-repeat 1.8em center;
-									}
 				#footer{
 					border:none!important;
 				    color:#191919;
@@ -891,7 +886,9 @@ body{
 								width:46.1%;
 								}
 								FORM#contact_newsletter{
+									border:none;
 									float:left;
+									padding:0;
 									width:100%;
 									}
 									FORM#contact_newsletter FIELDSET{
