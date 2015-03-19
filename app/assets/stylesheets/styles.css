@@ -15,7 +15,8 @@ H1{
 	font-size:1.5em;
 	font-weight:normal;
 	}
-H2{
+H2,
+H6{
 	color:#19b794;
 	font-size:1.4em;
 	font-weight:normal;
@@ -27,6 +28,14 @@ H3{
     font-size:1.95em;
     font-weight:normal;
 	text-transform:uppercase;
+	}
+#reviews H2,
+#content-new-review H2,
+#existing-customer H6{
+    float:left;
+    margin:0 0 1em 0;
+    text-align:center;
+    width:100%;
 	}
 A{
 	color:#19b794;
@@ -640,13 +649,6 @@ body{
 						#reviews{
 							margin:0;
 							}
-							#reviews H2,
-							#content-new-review H2{
-							    float:left;
-							    margin:0 0 1em 0;
-							    text-align:center;
-							    width:100%;
-								}
 							#reviews .review{
 								float:left;
 								margin:0 0 2em 0;
@@ -692,7 +694,7 @@ body{
 									width:73%;
 									}
 									#reviews .review .reviewBody .feedback_review{
-										border-top:0.15em solid #dddcdb;
+										border-top:0.15em dotted #dddcdb;
 									    float:left;
 									    width:100%;
 										}
