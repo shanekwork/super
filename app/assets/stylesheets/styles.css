@@ -139,15 +139,31 @@ TABLE{
 .container{
 	width:1280px;
 	}
+.ui-widget-header{
+    background:#191919;
+    border:none;
+    border-radius:0;
+	}
+	.ui-widget-header .ui-state-default{
+		background:#ffffff;
+		border-radius:0;
+		}
+		.ui-state-default .ui-icon{
+		    background-image:url("/assets/ui-icons_19b794_256x240.png");
+			}
 .ui-dialog{
-	position:absolute!important;
-	width:500px!important;
+	background:#ffffff;
+    border:none;
+    border-radius:0;
+    box-shadow:0 0 1em #000000;
+    padding:0;
+    position:absolute;
+    width:500px;
 	}
 .flash.notice,
 .flash.success,
 .flash.error{
 	background:#ffffff url("/assets/success-icon.png") no-repeat 50% 25%;
-	box-shadow:0 0 1em #000000;
 	color:#01d901;
 	float:left;
 	font-size:1.5em;
@@ -156,7 +172,7 @@ TABLE{
     padding:6em 3em 4em 3em;
     text-align:center;
     text-transform:uppercase;
-    width:71%!important;
+    width:71%;
 	}
 .flash.error{
 	background:#ffffff url("/assets/error-icon.png") no-repeat 50% 25%;
