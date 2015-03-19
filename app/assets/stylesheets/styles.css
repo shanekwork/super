@@ -89,9 +89,6 @@ FORM{
 				padding:0;
 				width:100%;
 				}
-			FORM DIV P{
-				margin:0;
-				}
 				FORM LABEL{
 					color:#191919;
 					float:left;
@@ -134,6 +131,11 @@ FORM{
 					background:#191919 url("/assets/submit-iconHover.png") no-repeat 1.8em center;
 					color:#19b794;
 					}
+TABLE{
+	float:left;
+    margin:0 0 1em 0;
+    width:100%;
+	}
 .container{
 	width:1280px;
 	}
