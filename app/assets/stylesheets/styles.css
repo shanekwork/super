@@ -69,6 +69,65 @@ UL{
 			UL LI A:hover{
 				color:#19b794!important;
 				}
+FORM{
+	border:1px solid #dddcdb;
+	float:left;
+	padding:2em;
+	width:94.5%;
+	}
+	FORM > DIV{
+		float:left;
+		margin:0 0 1em 0;
+		width:100%;
+		}
+		FORM .stars-field,
+		FORM .label-field,
+		FORM .text-field{
+			float:left;
+			margin:0;
+			width:72.2%;
+			}
+			FORM P{
+				margin:0 0 1em 0;
+				padding:0;
+				}
+			FORM LABEL{
+				color:#191919;
+				float:left;
+				font-size:1em;
+				margin:0 2em 0 0;
+				width:25%;
+				}
+			FORM BR{
+				display:none;
+				}
+			FORM SPAN.required{
+				color:#19b794;
+				}
+			FORM INPUT,
+			FORM TEXTAREA{
+				border:1px solid #bbbbbb!important;
+				color:#19b794;
+				padding:0.9em 0.85em!important;
+				width:36.2%;
+				}
+			A.button,
+			INPUT.button{
+				background:#19b794 url("/assets/write-icon.png") no-repeat 1.8em center;
+				border:none;
+				color:#ffffff;
+			    float:right;
+			    font-size:0.85em;
+			    font-weight:normal;
+			    margin:0;
+			    padding:1em 1.75em 1em 3.5em;
+			    width:auto;
+				}
+				#reviews A.button:hover,
+				#content-new-review INPUT.button:hover{
+					background:#191919 url("/assets/write-iconHover.png") no-repeat 1.8em center;
+					color:#19b794;
+					}
 .container{
 	width:1280px;
 	}
@@ -204,25 +263,30 @@ body{
 							max-width:19.8em;
 							width:19.8em;
 							}
-							nav#top-nav-bar UL LI#search-bar INPUT{
-								border:1px solid #bbbbbb;
-								border-right:none;
-								color:#a5a5a5;
-								float:left;
-								padding:0.9em 0.85em;
-								width:16.4em;
+							nav#top-nav-bar UL LI#search-bar FORM{
+								border:none;
+								padding:0;
+								width:100%;
 								}
-								nav#top-nav-bar UL LI#search-bar INPUT[type="submit"]{
-									background:#19b894;
-									border:none;
-									color:#ffffff;
+								nav#top-nav-bar UL LI#search-bar INPUT{
+									border:1px solid #bbbbbb!important;
+									border-right:none;
+									color:#a5a5a5;
 									float:left;
-									font-size:0.9em;
-									font-weight:normal;
-									padding:0.9em 1.15em;
-									text-transform:uppercase;
-									width:auto;
+									padding:0.9em 0.85em;
+									width:16.4em;
 									}
+									nav#top-nav-bar UL LI#search-bar INPUT[type="submit"]{
+										background:#19b894;
+										border:none!important;
+										color:#ffffff;
+										float:left;
+										font-size:0.9em;
+										font-weight:normal;
+										padding:0.9em 1.15em!important;
+										text-transform:uppercase;
+										width:auto;
+										}
 				#link-to-cart{
 					float:left;
 					margin:0 0 0 3.5em;
@@ -747,6 +811,7 @@ body{
 										#new_review .label-field LABEL{
 											color:#191919;
 											font-size:1em;
+											width:auto;
 											}
 										#new_review .label-field SPAN.required{
 											color:#19b794;
