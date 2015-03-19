@@ -18,9 +18,13 @@ H1{
 H2,
 H6{
 	color:#19b794;
+	float:left;
 	font-size:1.4em;
 	font-weight:normal;
+	margin:0 0 1em 0;
+	text-align:center;
 	text-transform:uppercase;
+	width:100%;
 	}
 H3{
 	color:#191919;
@@ -28,14 +32,6 @@ H3{
     font-size:1.95em;
     font-weight:normal;
 	text-transform:uppercase;
-	}
-#reviews H2,
-#content-new-review H2,
-#existing-customer H6{
-    float:left;
-    margin:0 0 1em 0;
-    text-align:center;
-    width:100%;
 	}
 A{
 	color:#19b794;
