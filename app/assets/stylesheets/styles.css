@@ -139,6 +139,25 @@ TABLE{
 .container{
 	width:1280px;
 	}
+
+.flash.notice,
+.flash.success,
+.flash.error{
+	background:#ffffff url("/assets/success-icon.png") no-repeat 50% 30%;
+	color:#01d901;
+	float:left;
+	font-size:1.5em;
+    font-style:italic;
+    margin:0;
+    padding:6em 3em 3em 3em;
+    text-align:center;
+    text-transform:uppercase;
+    width:100%!important;
+	}
+.flash.error{
+	background:#ffffff url("/assets/error-icon.png") no-repeat 31.5% 50%;
+	color:#ff0000;
+	}
 nav#top-nav-bar UL LI::before,
 #main-menu NAV UL LI:before,
 #content .banner UL LI:before,
@@ -469,27 +488,6 @@ body{
 					margin:0;
 					width:100%;
 					}
-					#content .flash.notice,
-					#content .flash.success,
-					#content .flash.error{
-						background:#ffffff url("/assets/success-icon.png") no-repeat 33% 50%;
-						color:#01d901;
-						float:left;
-						font-size:1.5em;
-					    font-style:italic;
-					    margin:0;
-					    padding:0.5em;
-					    position:absolute;
-					    text-align:center;
-					    text-transform:uppercase;
-					    top:0;
-					    width:98.2%;
-					    z-index:10;
-						}
-					#content .flash.error{
-						background:#ffffff url("/assets/error-icon.png") no-repeat 31.5% 50%;
-						color:#ff0000;
-						}
 					#content .banner{
 						height:458px!important;
 						margin:0 0 2.5em 0;
