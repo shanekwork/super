@@ -139,23 +139,27 @@ TABLE{
 .container{
 	width:1280px;
 	}
-
+.ui-dialog{
+	position:absolute!important;
+	width:500px;
+	}
 .flash.notice,
 .flash.success,
 .flash.error{
-	background:#ffffff url("/assets/success-icon.png") no-repeat 50% 30%;
+	background:#ffffff url("/assets/success-icon.png") no-repeat 50% 25%;
+	box-shadow:0 0 1em #000000;
 	color:#01d901;
 	float:left;
 	font-size:1.5em;
     font-style:italic;
     margin:0;
-    padding:6em 3em 3em 3em;
+    padding:6em 3em 4em 3em;
     text-align:center;
     text-transform:uppercase;
-    width:100%!important;
+    width:71%!important;
 	}
 .flash.error{
-	background:#ffffff url("/assets/error-icon.png") no-repeat 31.5% 50%;
+	background:#ffffff url("/assets/error-icon.png") no-repeat 50% 25%;
 	color:#ff0000;
 	}
 nav#top-nav-bar UL LI::before,
