@@ -562,12 +562,16 @@ body{
 							}
 							#tabs UL{
 								background:#19b794;
+								border:none;
+								border-radius:0;
 								float:left;
 								margin:0 0 1.25em 0;
 								width:100%;
 								}
 								#tabs UL LI{
 									background:transparent url("/assets/separator.png") no-repeat right center;
+									border:none;
+									border-radius:0;
 									font-size:1em;
 									list-style:none;
 									margin:0;
