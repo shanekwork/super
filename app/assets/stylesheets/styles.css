@@ -148,25 +148,10 @@ TABLE{
 	overflow:hidden;
 	width:1280px;
 	}
-.ui-widget-header{
-    background:#19b794;
+.ui-widget-content{
+    background:#ffffff;
     border:none;
-    border-radius:0;
 	}
-	.ui-widget-header .ui-state-default{
-		background:#ffffff;
-		border:none;
-		border-radius:0;
-		}
-		.ui-state-hover{
-			border:1px solid #4c996b!important;
-			}
-		.ui-state-default .ui-icon{
-		    background-image:url("/assets/ui-icons_191919_256x240.png");
-			}
-		.ui-state-hover .ui-icon{
-		    background-image:url("/assets/ui-icons_19b794_256x240.png");
-			}
 .ui-dialog{
 	background:#ffffff;
     border:none;
@@ -175,27 +160,46 @@ TABLE{
     padding:0;
     width:500px!important;
 	}
-.flash.notice,
-.flash.success,
-.flash.error,
-.flash.alert{
-	background:transparent url("/assets/success-icon.png") no-repeat 50% 25%;
-	color:#191919;
-	float:left;
-	font-size:1.5em;
-    font-style:italic;
-    margin:0;
-    padding:6em 3em 4em 3em;
-    text-align:center;
-    text-transform:uppercase;
-    width:68.3%;
-	}
-.flash.error{
-	background:transparent url("/assets/error-icon.png") no-repeat 50% 25%;
-	}
-.flash.alert{
-	background:transparent url("/assets/alert-icon.png") no-repeat 50% 25%;
-	}
+	.ui-dialog .ui-widget-header{
+	    background:#19b794;
+	    border:none;
+	    border-radius:0;
+		}
+		.ui-dialog .ui-widget-header .ui-state-default{
+			background:#ffffff;
+			border:none;
+			border-radius:0;
+			}
+			.ui-dialog .ui-state-hover{
+				border:1px solid #4c996b!important;
+				}
+			.ui-dialog .ui-state-default .ui-icon{
+			    background-image:url("/assets/ui-icons_191919_256x240.png");
+				}
+			.ui-dialog .ui-state-hover .ui-icon{
+			    background-image:url("/assets/ui-icons_19b794_256x240.png");
+				}
+	.flash.notice,
+	.flash.success,
+	.flash.error,
+	.flash.alert{
+		background:transparent url("/assets/success-icon.png") no-repeat 50% 25%;
+		color:#191919;
+		float:left;
+		font-size:1.5em;
+	    font-style:italic;
+	    margin:0;
+	    padding:6em 3em 4em 3em;
+	    text-align:center;
+	    text-transform:uppercase;
+	    width:68.3%;
+		}
+	.flash.error{
+		background:transparent url("/assets/error-icon.png") no-repeat 50% 25%;
+		}
+	.flash.alert{
+		background:transparent url("/assets/alert-icon.png") no-repeat 50% 25%;
+		}
 nav#top-nav-bar UL LI::before,
 #main-menu NAV UL LI:before,
 #content .banner UL LI:before,
@@ -600,7 +604,7 @@ body{
 								#tabs .product{
 									border:0.5em solid #dddcdb;
 								    float:left;
-								    margin:0 0.94em 1.9em 0.94em;
+								    margin:0 0.77em 1.9em 0.77em;
 								    max-height:19em;
 								    min-height:19em;
 								    overflow:hidden;
