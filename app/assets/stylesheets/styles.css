@@ -147,6 +147,9 @@ TABLE{
 .container{
 	width:1280px;
 	}
+.ui-widget{
+	font-family:Arial, Helvetica, sans-serif;
+	}
 .ui-widget-content{
     background:#ffffff;
     border:none;
@@ -243,6 +246,21 @@ nav#top-nav-bar UL LI::before,
 		}
 	#errorExplanation UL{
     	width:96.4%;
+		}
+.pagination{
+	float:left;
+	margin:1em 0;
+	text-align:right;
+	width:100%;
+	}
+	.pagination .page{
+		margin:0 0.5em;
+		padding:0.2em;
+		width:auto;
+		}
+	.pagination .current{
+		background:#191919;
+		color:#19b794;
 		}
 html,
 body{
@@ -735,35 +753,40 @@ body{
 								    float:left;
 								    width:auto;
 									}
-									#content [data-hook="product_right_part"] #cart-form #product-price,
-									#content [data-hook="product_right_part"] #cart-form .add-to-cart{
-									    float:left;
-									    margin:0 0 1em 0;
+									#content [data-hook="product_right_part"] #cart-form FORM{
+									    border:none;
+									    padding:0;
 									    width:100%;
 										}
-										#content [data-hook="product_right_part"] #cart-form #product-price H6{
-										    position:absolute;
-										    top:-5000em;
+										#content [data-hook="product_right_part"] #cart-form #product-price,
+										#content [data-hook="product_right_part"] #cart-form .add-to-cart{
+										    float:left;
+										    margin:0 0 1em 0;
+										    width:100%;
 											}
-										#content [data-hook="product_right_part"] #cart-form #product-price .price,
-										#content [data-hook="product_right_part"] #cart-form #product-price SPAN.priceCurrency{
-										    color:#19b794;
-										    font-size:1.85em;
-										    font-weight:normal;
-										    margin:0 0.5em 0 0;
-											}
-										#content [data-hook="product_right_part"] #cart-form #product-price SPAN.priceCurrency{
-										    display:none;
-											}
-										#content [data-hook="product_right_part"] #cart-form #product-price SPAN.priceNormal{
-										    color:#b4b4b4;
-										    font-size:1.25em;
-										    text-decoration:line-through;
-											}
-										#content [data-hook="product_right_part"] #cart-form .add-to-cart INPUT{
-											margin:0.65em 0.5em 0.65em 0;
-											padding:0.25em 0 0.25em 0.5em!important;
-											}
+											#content [data-hook="product_right_part"] #cart-form #product-price H6{
+											    position:absolute;
+											    top:-5000em;
+												}
+											#content [data-hook="product_right_part"] #cart-form #product-price .price,
+											#content [data-hook="product_right_part"] #cart-form #product-price SPAN.priceCurrency{
+											    color:#19b794;
+											    font-size:1.85em;
+											    font-weight:normal;
+											    margin:0 0.5em 0 0;
+												}
+											#content [data-hook="product_right_part"] #cart-form #product-price SPAN.priceCurrency{
+											    display:none;
+												}
+											#content [data-hook="product_right_part"] #cart-form #product-price SPAN.priceNormal{
+											    color:#b4b4b4;
+											    font-size:1.25em;
+											    text-decoration:line-through;
+												}
+											#content [data-hook="product_right_part"] #cart-form .add-to-cart INPUT{
+												margin:0.65em 0.5em 0.65em 0;
+												padding:0.25em 0 0.25em 0.5em!important;
+												}
 						#reviews{
 							margin:0;
 							}
@@ -873,60 +896,64 @@ body{
     										padding:0.9em 0.85em;
     										width:50%;
 											}
-					#content UL#products LI{
-						border:0.5em solid #dddcdb;
-					    float:left;
+					#content UL#products{
 					    margin:0 0.77em 1.9em;
-					    max-height:19em;
-					    min-height:19em;
-					    overflow:hidden;
-					    padding:2.2em 0.9em;
-					    width:18.85%;
 						}
-						#content UL#products LI .product-desc{
+						#content UL#products LI{
+							border:0.5em solid #dddcdb;
 						    float:left;
-						    margin:0 0 1.45em 0;
-						    width:100%;
+						    margin:0 0.77em 1.9em;
+						    max-height:19em;
+						    min-height:19em;
+						    overflow:hidden;
+						    padding:2.2em 0.9em;
+						    width:18.85%;
 							}
-							#content UL#products LI .product-desc A{
-								border:none;
-							    color:#191919;
+							#content UL#products LI .product-desc{
 							    float:left;
-							    max-height:3em;
-							    overflow:hidden;
+							    margin:0 0 1.45em 0;
+							    width:100%;
+								}
+								#content UL#products LI .product-desc A{
+									border:none;
+								    color:#191919;
+								    float:left;
+								    max-height:3em;
+								    overflow:hidden;
+								    text-align:center;
+								    width:auto;
+									}
+							#content UL#products LI .product-image{
+							    border:none;
+							    float:left;
+							    margin:0 0 1.45em 0;
+							    padding:0;
 							    text-align:center;
-							    width:auto;
+							    width:100%;
 								}
-						#content UL#products LI .product-image{
-						    border:none;
-						    float:left;
-						    margin:0 0 1.45em 0;
-						    padding:0;
-						    text-align:center;
-						    width:100%;
-							}
-							#content UL#products LI .product-image A IMG{
-							    max-height:9.1em;
-							    max-width:9.1em;
-							    min-height:7.4em;
-							    min-width:5.1em;
-								}
-						#content UL#products LI .product-price{
-						    color:#19b794;
-						    float:left;
-						    padding:0.55em 0 0 0;
-						    text-align:center;
-						    width:100%;
-							}
-							#content UL#products LI .product-price SPAN{
-							    border-top:0.15em solid #dddcdb;
+								#content UL#products LI .product-image A IMG{
+								    max-height:9.1em;
+								    max-width:9.1em;
+								    min-height:7.4em;
+								    min-width:5.1em;
+									}
+							#content UL#products LI .product-price{
 							    color:#19b794;
 							    float:left;
-							    font-size:1.85em;
 							    padding:0.55em 0 0 0;
 							    text-align:center;
 							    width:100%;
 								}
+								#content UL#products LI .product-price SPAN{
+								    border-top:0.15em solid #dddcdb;
+								    color:#19b794;
+								    float:left;
+								    font-size:1.85em;
+								    padding:0.55em 0 0 0;
+								    text-align:center;
+								    width:100%;
+									}
+					}
 				#footer{
 					border:none!important;
 				    color:#191919;
