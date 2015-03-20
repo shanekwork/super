@@ -145,7 +145,6 @@ TABLE{
     width:100%;
 	}
 .container{
-	overflow:hidden;
 	width:1280px;
 	}
 .ui-widget-content{
@@ -524,6 +523,7 @@ body{
 			#wrapper .container{
 				background:#ffffff;
 				box-shadow:0 15px 18px #a6a6a6;
+				overflow:hidden;
 				}
 				#content{
 					float:left;
