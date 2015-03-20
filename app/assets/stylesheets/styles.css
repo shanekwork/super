@@ -881,9 +881,6 @@ body{
     										padding:0.9em 0.85em;
     										width:50%;
 											}
-					#content UL#products{
-					    margin:0 0.77em 1.9em;
-						}
 						#content UL#products LI{
 							border:0.5em solid #dddcdb;
 						    float:left;
@@ -938,7 +935,6 @@ body{
 								    text-align:center;
 								    width:100%;
 									}
-					}
 				#footer{
 					border:none!important;
 				    color:#191919;
