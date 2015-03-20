@@ -205,7 +205,8 @@ nav#top-nav-bar UL LI::before,
 #footer .right-footerContent UL LI:before,
 #tabs UL LI:before,
 #product-images #thumbnails UL LI:before,
-#errorExplanation UL LI:before{
+#errorExplanation UL LI:before,
+#content UL#products LI:before{
     content:none;
     font-size:1em;
 	}
@@ -583,7 +584,7 @@ body{
 									}
 									#tabs UL LI H2{
 										float:left;
-										font-size:1.15em;
+										font-size:1.1em;
 										margin:0;
 										padding:0;
 										width:auto;
@@ -872,6 +873,60 @@ body{
     										padding:0.9em 0.85em;
     										width:50%;
 											}
+					#content UL#products LI{
+						border:0.5em solid #dddcdb;
+					    float:left;
+					    margin:0 0.77em 1.9em;
+					    max-height:19em;
+					    min-height:19em;
+					    overflow:hidden;
+					    padding:2.2em 0.9em;
+					    width:18.85%;
+						}
+						#content UL#products LI .product-desc{
+						    float:left;
+						    margin:0 0 1.45em 0;
+						    width:100%;
+							}
+							#content UL#products LI .product-desc A{
+								border:none;
+							    color:#191919;
+							    float:left;
+							    max-height:3em;
+							    overflow:hidden;
+							    text-align:center;
+							    width:auto;
+								}
+						#content UL#products LI .product-image{
+						    border:none;
+						    float:left;
+						    margin:0 0 1.45em 0;
+						    padding:0;
+						    text-align:center;
+						    width:100%;
+							}
+							#content UL#products LI .product-image A IMG{
+							    max-height:9.1em;
+							    max-width:9.1em;
+							    min-height:7.4em;
+							    min-width:5.1em;
+								}
+						#content UL#products LI .product-price{
+						    color:#19b794;
+						    float:left;
+						    padding:0.55em 0 0 0;
+						    text-align:center;
+						    width:100%;
+							}
+							#content UL#products LI .product-price SPAN{
+							    border-top:0.15em solid #dddcdb;
+							    color:#19b794;
+							    float:left;
+							    font-size:1.85em;
+							    padding:0.55em 0 0 0;
+							    text-align:center;
+							    width:100%;
+								}
 				#footer{
 					border:none!important;
 				    color:#191919;
