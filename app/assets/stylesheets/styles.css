@@ -150,9 +150,12 @@ TABLE{
 		border-radius:0;
 		}
 		.ui-state-hover{
-			border:1px solid #7affe2;
+			border:1px solid #4c996b;
 			}
 		.ui-state-default .ui-icon{
+		    background-image:url("/assets/ui-icons_191919_256x240.png");
+			}
+		.ui-state-hover .ui-icon{
 		    background-image:url("/assets/ui-icons_19b794_256x240.png");
 			}
 .ui-dialog{
