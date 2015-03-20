@@ -33,9 +33,17 @@ H3{
     font-weight:normal;
 	text-transform:uppercase;
 	}
+P{
+	color:#191919;
+	font-size:1em;
+	text-align:justify;
+	}
+P A,
 A{
 	color:#19b794;
+	font-size:1em;
 	}
+	P A:hover,
 	A:hover{
 		color:#191919;
 		}
@@ -137,6 +145,7 @@ TABLE{
     width:100%;
 	}
 .container{
+	overflow:hidden;
 	width:1280px;
 	}
 .ui-widget-header{
@@ -168,7 +177,8 @@ TABLE{
 	}
 .flash.notice,
 .flash.success,
-.flash.error{
+.flash.error,
+.flash.alert{
 	background:transparent url("/assets/success-icon.png") no-repeat 50% 25%;
 	color:#191919;
 	float:left;
@@ -182,6 +192,9 @@ TABLE{
 	}
 .flash.error{
 	background:transparent url("/assets/error-icon.png") no-repeat 50% 25%;
+	}
+.flash.alert{
+	background:transparent url("/assets/alert-icon.png") no-repeat 50% 25%;
 	}
 nav#top-nav-bar UL LI::before,
 #main-menu NAV UL LI:before,
@@ -693,6 +706,7 @@ body{
 								    float:left;
 								    font-size:1em;
 								    margin:0 0 1em 0;
+								    text-align:justify;
 								    width:60%;
 									}							
 								#content [data-hook="product_right_part"] A.favorite_link{
@@ -739,7 +753,7 @@ body{
 											}
 										#content [data-hook="product_right_part"] #cart-form .add-to-cart INPUT{
 											margin:0.65em 0.5em 0.65em 0;
-											padding:0.25em 0 0.25em 0.5em;
+											padding:0.25em 0 0.25em 0.5em!important;
 											}
 						#reviews{
 							margin:0;
@@ -795,6 +809,11 @@ body{
 										}
 										#reviews .review .reviewBody .feedback_review P{
 											padding:0;
+											}
+										#reviews .review .reviewBody .feedback_review FORM{
+											border:none;
+											padding:0;
+											width:100%;
 											}
 							#reviews A.button{
 								background:#19b794 url("/assets/write-icon.png") no-repeat 1.8em center;
@@ -943,7 +962,7 @@ body{
 											}
 											FORM#contact_newsletter FIELDSET DIV.button INPUT#submit{
 											    background:transparent url("/assets/newsletter-button.png") no-repeat left top;
-											    border:none;
+											    border:none!important;
 											    min-height:3.5em;
 											    padding:0;
 											    width:100%;
