@@ -247,21 +247,6 @@ nav#top-nav-bar UL LI::before,
 	#errorExplanation UL{
     	width:96.4%;
 		}
-.pagination{
-	float:left;
-	margin:1em 0;
-	text-align:right;
-	width:100%;
-	}
-	.pagination .page{
-		margin:0 0.5em;
-		padding:0.2em;
-		width:auto;
-		}
-	.pagination .current{
-		background:#191919;
-		color:#19b794;
-		}
 html,
 body{
 	font:1em/1.4 Arial, Helvetica, sans-serif;
