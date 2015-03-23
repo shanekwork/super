@@ -210,7 +210,8 @@ nav#top-nav-bar UL LI::before,
 #tabs UL LI:before,
 #product-images #thumbnails UL LI:before,
 #errorExplanation UL LI:before,
-#content UL#products LI:before{
+#content UL#products LI:before,
+#breadcrumbs UL LI:before{
     content:none;
     font-size:1em;
 	}
@@ -1017,10 +1018,10 @@ body{
 						    width:auto;
 							}
 							#content .taxon H3 A{
-							    color:#19b794;
+							    color:#191919;
 								}
 								#content .taxon H3 A:hover{
-								    color:#191919;
+								    color:#19b794;
 									}
 				#footer{
 					border:none!important;
