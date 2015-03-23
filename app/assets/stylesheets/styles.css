@@ -12,11 +12,14 @@
 	}
 H1{
 	color:#191919;
+	float:left;
 	font-size:1.5em;
 	font-weight:normal;
+	margin:0 0 1em 0;
+	text-align:center;
 	text-transform:uppercase;
+	width:100%;
 	}
-H1,
 H2,
 H6{
 	color:#19b794;
@@ -764,6 +767,7 @@ body{
 									border-bottom:0.15em solid #dddcdb;
 								    color:#191919;
 								    font-weight:normal;
+								    text-align:inherit;
 									}
 								#content [data-hook="product_right_part"] [data-hook="description"]{
 									clear:both;
