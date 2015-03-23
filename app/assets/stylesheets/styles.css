@@ -258,6 +258,14 @@ nav#top-nav-bar UL LI::before,
 		padding:0.2em;
 		width:auto;
 		}
+		.pagination .page A{
+			color:#19b794;
+			padding:0.2em;
+			}
+			.pagination .page A:hover{
+				background:#191919;
+				color:#19b794;
+				}
 	.pagination .current{
 		background:#191919;
 		color:#19b794;
@@ -902,6 +910,7 @@ body{
 						#content UL#products LI{
 							border:0.5em solid #dddcdb;
 						    float:left;
+						    font-size:1.1em;
 						    margin:0 0.77em 1.9em;
 						    max-height:19em;
 						    min-height:19em;
@@ -918,6 +927,9 @@ body{
 									border:none;
 								    color:#191919;
 								    float:left;
+								    font-size:1em;
+								    font-weight:normal;
+								    height:auto;
 								    max-height:3em;
 								    overflow:hidden;
 								    text-align:center;
@@ -944,14 +956,20 @@ body{
 							    text-align:center;
 							    width:100%;
 								}
+							#content UL#products LI .product-price{
+							    border-top:0.25em solid #dddcdb;
+							    color:#19b794;
+							    float:left;
+							    font-size:1em;
+							    padding:0.55em 0 0 0;
+							    text-align:center;
+							    width:100%;
+								}
 								#content UL#products LI .product-price SPAN{
-								    border-top:0.15em solid #dddcdb;
 								    color:#19b794;
-								    float:left;
 								    font-size:1.85em;
-								    padding:0.55em 0 0 0;
-								    text-align:center;
-								    width:100%;
+								    line-height:1.4em;
+								    padding:0;
 									}
 				#footer{
 					border:none!important;
