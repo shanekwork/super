@@ -1107,17 +1107,27 @@ body{
 						    text-align:center;
 						    width:100%;
 							}
-							#content FORM#update-cart .links #checkout-link{
-								clear:both;
+							#content FORM#update-cart .links .checkout-button{
 							    float:right;
+							    margin:1em 0 0 0;
 							    width:100%;
 								}
+								#content FORM#update-cart .links .checkout-button BUTTON{
+								    float:right;
+								    width:auto;
+									}
 					#content #empty-carted FORM{
 						border:none;
 					    float:left;
 					    padding:0;
 					    width:100%;
 						}
+						#content #empty-carted FORM #clear_cart_link INPUT,
+						#content #empty-carted FORM #clear_cart_link A{
+						    float:left;
+						    margin:0 1em 0 0;
+						    width:auto;
+							}
 
 				#footer{
 					border:none!important;
