@@ -39,6 +39,12 @@ H3{
     margin:0 0 0.5em 0;
 	text-transform:uppercase;
 	}
+H4{
+	color:#19b794;
+    font-size:1.1em;
+    font-weight:normal;
+    margin:0 0 0.5em 0;
+	}
 P{
 	color:#191919;
 	font-size:1em;
@@ -97,7 +103,7 @@ DL{
 		float:left;
 	    margin:0 0 0.5em 0;
 	    padding:0;
-	    width:87.5%;
+	    width:87.3%;
 		}
 FORM{
 	border:1px solid #dddcdb;
@@ -1061,6 +1067,38 @@ body{
 							margin:0;
 						    width:98.2%;
 							}
+					#content FORM#update-cart{
+					    border:none;
+					    float:left;
+					    padding:0;
+					    width:100%;
+						}
+						#content TABLE#cart-detail TD.cart-item-image IMG{
+							display:inline!important;
+						    max-width:50px;
+							}
+						#content TABLE#cart-detail TD.cart-item-description H4{
+							margin:0;
+							}
+							#content TABLE#cart-detail TD.cart-item-description H4 A{
+								font-weight:normal;
+								}
+						#content TABLE#cart-detail TD.cart-item-description SPAN{
+							font-size:0.9em;
+							}
+						#content TABLE#cart-detail TD.cart-item-price,
+						#content TABLE#cart-detail TD.cart-item-total{
+							color:#19b794!important;
+						    font-size:1em!important;
+						    font-weight:normal!important;
+							}
+						#content TABLE#cart-detail TD.cart-item-quantity INPUT{
+							padding:0.25em 0 0.25em 0.5em!important;
+							}
+						#content TABLE#cart-detail TD.cart-item-total{
+						    font-weight:bold!important;
+							}
+
 				#footer{
 					border:none!important;
 				    color:#191919;
