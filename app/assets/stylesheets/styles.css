@@ -1098,6 +1098,26 @@ body{
 						#content TABLE#cart-detail TD.cart-item-total{
 						    font-weight:bold!important;
 							}
+						#content TABLE#cart-detail TR.total-price H5{
+							font-size:1.4em;
+						    font-weight:normal;
+							}
+						#content FORM#update-cart .links{
+						    float:left;
+						    text-align:center;
+						    width:100%;
+							}
+							#content FORM#update-cart .links #checkout-link{
+								clear:both;
+							    float:right;
+							    width:100%;
+								}
+					#content #empty-carted FORM{
+						border:none;
+					    float:left;
+					    padding:0;
+					    width:100%;
+						}
 
 				#footer{
 					border:none!important;
