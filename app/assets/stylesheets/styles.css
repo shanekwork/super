@@ -36,11 +36,14 @@ H3{
 	font-family:'Roboto', sans-serif;
     font-size:1.2em;
     font-weight:normal;
+    margin:0 0 0.5em 0;
 	text-transform:uppercase;
 	}
 P{
 	color:#191919;
 	font-size:1em;
+	margin:0 0 1em 0;
+	padding:0;
 	text-align:justify;
 	}
 P A,
@@ -78,6 +81,24 @@ UL{
 			UL LI A:hover{
 				color:#19b794!important;
 				}
+DL{
+	float:left;
+	margin:0 0 1em 0;
+	width:100%;
+	}
+	DL DT{
+		float:left;
+	    min-width:8em;
+	    margin:0 0 0.5em 0;
+	    padding:0 1.5em 0 0;
+	    width:10.5%;
+		}
+	DL DD{
+		float:left;
+	    margin:0 0 0.5em 0;
+	    padding:0;
+	    width:87.5%;
+		}
 FORM{
 	border:1px solid #dddcdb;
 	float:left;
@@ -1028,6 +1049,18 @@ body{
 								#content .taxon H3 A:hover{
 								    color:#19b794;
 									}
+					#content .account-summary,
+					#content .account-my-orders,
+					#content #users-address-list-empty,
+					#content #new_address_link{
+					    float:left;
+					    margin:0 0 1em 0;
+					    width:100%;
+						}
+						#content .account-summary DL{
+							margin:0;
+						    width:98.2%;
+							}
 				#footer{
 					border:none!important;
 				    color:#191919;
