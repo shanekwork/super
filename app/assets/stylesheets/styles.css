@@ -930,7 +930,7 @@ body{
 								    font-size:1em;
 								    font-weight:normal;
 								    height:auto;
-								    max-height:3em;
+								    max-height:2.5em;
 								    overflow:hidden;
 								    text-align:center;
 								    width:auto;
@@ -939,6 +939,8 @@ body{
 							    border:none;
 							    float:left;
 							    margin:0 0 1.45em 0;
+							    max-height:9.35em;
+							    min-height:9.35em;
 							    padding:0;
 							    text-align:center;
 							    width:100%;
@@ -968,6 +970,7 @@ body{
 								#content UL#products LI .product-price SPAN{
 								    color:#19b794;
 								    font-size:1.85em;
+								    font-weight:normal;
 								    line-height:1.4em;
 								    padding:0;
 									}
