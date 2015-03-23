@@ -14,6 +14,7 @@ H1{
 	color:#191919;
 	font-size:1.5em;
 	font-weight:normal;
+	text-transform:uppercase;
 	}
 H2,
 H6{
@@ -29,7 +30,7 @@ H6{
 H3{
 	color:#191919;
 	font-family:'Roboto', sans-serif;
-    font-size:1.95em;
+    font-size:1.2em;
     font-weight:normal;
 	text-transform:uppercase;
 	}
@@ -270,6 +271,33 @@ nav#top-nav-bar UL LI::before,
 		background:#191919;
 		color:#19b794;
 		}
+#breadcrumbs{
+	border:none;
+    float:left;
+    margin:0 0 1em 0;
+    padding:3em 1.85em 0 1.85em;
+    width:100%;
+	}
+	#breadcrumbs UL{
+	    margin:0;
+		}
+		#breadcrumbs UL LI{
+			margin:0;
+			padding:0 0.8em 0 0;
+		    width:auto;
+			}
+			#breadcrumbs UL LI A{
+				padding:0 0.8em 0 0;
+				}
+			#breadcrumbs UL LI SPAN{
+				font-weight:normal;
+				text-transform:none;
+				}
+				#breadcrumbs UL LI SPAN A,
+				#breadcrumbs UL LI SPAN A:hover{
+					color:#19b794!important;
+					cursor:text;
+					}
 html,
 body{
 	font:1em/1.4 Arial, Helvetica, sans-serif;
@@ -974,6 +1002,26 @@ body{
 								    line-height:1.4em;
 								    padding:0;
 									}
+					#content H2.taxon-title{
+					    font-size:1.4em;
+						}
+					#content .taxon{
+					    float:left;
+					    margin:0 0 0.5em 0;
+					    width:100%;
+						}
+						#content .taxon H3{
+						    float:left;
+						    margin:0 0.5em 0 0;
+						    min-width:10em;
+						    width:auto;
+							}
+							#content .taxon H3 A{
+							    color:#19b794;
+								}
+								#content .taxon H3 A:hover{
+								    color:#191919;
+									}
 				#footer{
 					border:none!important;
 				    color:#191919;
@@ -981,6 +1029,7 @@ body{
 				    padding:0!important;
 					}
 					#footer H3{
+						font-size:1.95em;
 						margin:0 1.3em 0.25em 0;
 						}
 					#footer #top-footerContent{
