@@ -1204,9 +1204,13 @@ body{
 									#content #checkout .thirteen.columns OL LI.current-first SPAN{
 										color:#19b794;
 										}
-						#content #checkout .row .columns{
+						#content #checkout .row .columns.alpha{
 						    float:left;
 						    width:74%;
+							}						
+						#content #checkout .row H1.columns.alpha{
+							margin:0 0 1em 0;
+						    width:100%;
 							}
 							#content #checkout .row .columns FORM{
 							    float:left;
