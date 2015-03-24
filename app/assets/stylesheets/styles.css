@@ -143,11 +143,15 @@ FORM{
 					color:#19b794;
 					}
 				FORM INPUT,
-				FORM TEXTAREA{
+				FORM TEXTAREA,
+				FORM SELECT{
 					border:1px solid #bbbbbb!important;
 					color:#19b794;
 					padding:0.9em 0.85em!important;
 					width:36.2%;
+					}
+				FORM SELECT{
+					padding:0.58em 0.85em!important;
 					}
 				FORM P INPUT[type="checkbox"]{
 				    float:left;
@@ -1072,76 +1076,73 @@ body{
 					    float:left;
 					    padding:0;
 					    width:100%;
-						}						
-						#content TABLE#cart-detail TR.alt.line-item{
-							background:#f4fefc;
+						}
+						#content TABLE#cart-detail TD.cart-item-image IMG{
+							display:inline!important;
+						    max-width:50px;
 							}
-							#content TABLE#cart-detail TD.cart-item-image IMG{
-								display:inline!important;
-							    max-width:50px;
+						#content TABLE#cart-detail TR.line-item TD{
+							text-align:center;
+							}
+						#content TABLE#cart-detail TR.line-item TD.cart-item-description{
+							text-align:left;
+							}
+							#content TABLE#cart-detail TD.cart-item-description H4{
+								margin:0;
 								}
-							#content TABLE#cart-detail TR.line-item TD{
-								text-align:center;
+								#content TABLE#cart-detail TD.cart-item-description H4 A{
+									font-weight:normal;
+									}
+							#content TABLE#cart-detail TD.cart-item-description SPAN{
+								font-size:0.9em;
 								}
-							#content TABLE#cart-detail TR.line-item TD.cart-item-description{
-								text-align:left;
+							#content TABLE#cart-detail TD.cart-item-price,
+							#content TABLE#cart-detail TD.cart-item-total{
+								color:#19b794!important;
+							    font-size:1em!important;
+							    font-weight:normal!important;
 								}
-								#content TABLE#cart-detail TD.cart-item-description H4{
-									margin:0;
+							#content TABLE#cart-detail TD.cart-item-quantity INPUT{
+								padding:0.25em 0 0.25em 0.5em!important;
+								}
+							#content TABLE#cart-detail TD.cart-item-total{
+							    font-weight:bold!important;
+								}
+							#content TABLE#cart-detail TR.total-price H5{
+								font-size:1.4em;
+							    font-weight:normal;
+								}
+						#content FORM#update-cart .links{
+						    float:left;
+						    text-align:center;
+						    width:100%;
+							}
+							#content FORM#update-cart .links BUTTON#update-button{
+							    background:#19b794 url("/assets/update-icon.png") no-repeat center center;
+							    color:#19b794;
+							    font-size:1px;
+							    height:41em;
+							    width:53em;
+								}
+								#content FORM#update-cart .links BUTTON#update-button:hover{
+								    background:#191919 url("/assets/update-iconHover.png") no-repeat center center;
+								    color:#191919;
 									}
-									#content TABLE#cart-detail TD.cart-item-description H4 A{
-										font-weight:normal;
-										}
-								#content TABLE#cart-detail TD.cart-item-description SPAN{
-									font-size:0.9em;
-									}
-								#content TABLE#cart-detail TD.cart-item-price,
-								#content TABLE#cart-detail TD.cart-item-total{
-									color:#19b794!important;
-								    font-size:1em!important;
-								    font-weight:normal!important;
-									}
-								#content TABLE#cart-detail TD.cart-item-quantity INPUT{
-									padding:0.25em 0 0.25em 0.5em!important;
-									}
-								#content TABLE#cart-detail TD.cart-item-total{
-								    font-weight:bold!important;
-									}
-								#content TABLE#cart-detail TR.total-price H5{
-									font-size:1.4em;
-								    font-weight:normal;
-									}
-							#content FORM#update-cart .links{
-							    float:left;
-							    text-align:center;
+							#content FORM#update-cart .links .checkout-button{
+							    float:right;
+							    margin:1em 0 0 0;
 							    width:100%;
 								}
-								#content FORM#update-cart .links BUTTON#update-button{
-								    background:#19b794 url("/assets/update-icon.png") no-repeat center center;
-								    color:#19b794;
-								    font-size:1px;
-								    height:41em;
-								    width:53em;
+								#content FORM#update-cart .links .checkout-button BUTTON{
+									background:#19b794 url("/assets/checkout-icon.png") no-repeat 1.8em center;
+								    float:left;
+								    margin:0 1em 0 0;
+								    padding:1em 1.75em 1em 3.5em;
+								    width:auto;
 									}
-									#content FORM#update-cart .links BUTTON#update-button:hover{
-									    background:#191919 url("/assets/update-iconHover.png") no-repeat center center;
-									    color:#191919;
+									#content FORM#update-cart .links .checkout-button BUTTON:hover{
+										background:#191919 url("/assets/checkout-iconHover.png") no-repeat 1.8em center;
 										}
-								#content FORM#update-cart .links .checkout-button{
-								    float:right;
-								    margin:1em 0 0 0;
-								    width:100%;
-									}
-									#content FORM#update-cart .links .checkout-button BUTTON{
-										background:#19b794 url("/assets/checkout-icon.png") no-repeat 1.8em center;
-									    float:left;
-									    margin:0 1em 0 0;
-									    padding:1em 1.75em 1em 3.5em;
-									    width:auto;
-										}
-										#content FORM#update-cart .links .checkout-button BUTTON:hover{
-											background:#191919 url("/assets/checkout-iconHover.png") no-repeat 1.8em center;
-											}
 					#content #empty-carted FORM{
 						border:none;
 					    float:left;
@@ -1203,6 +1204,73 @@ body{
 									#content #checkout .thirteen.columns OL LI.current-first SPAN{
 										color:#19b794;
 										}
+						#content #checkout .row .columns{
+						    float:left;
+						    width:74%;
+							}
+							#content #checkout .row .columns FORM{
+							    float:left;
+							    width:92.6%;
+								}
+								#content #checkout .row .columns FORM .columns.alpha{
+								    float:left;
+								    margin:0;
+								    width:62.6%;
+									}
+								#content #checkout .row .columns FORM .columns.omega{
+									width:35%;
+									}
+									#content #checkout .row .columns FORM .columns.alpha FIELDSET,
+									#content #checkout .row .columns FORM .columns.omega FIELDSET{
+									    margin:0;
+										}
+										#content #checkout .row .columns FORM .columns.alpha LEGEND,
+										#content #checkout .row .columns FORM .columns.omega LEGEND{
+											color:#19b794;
+										    margin:0;
+											}
+										#content #checkout .row .columns FORM .columns.alpha .inner{
+										    float:left;
+										    width:100%;
+											}
+											#content #checkout .row .columns FORM .columns.alpha LABEL{
+												margin:0 0.2em 0 0;
+											    width:auto;
+												}
+											#content #checkout .row .columns FORM .columns.alpha SPAN#bcountry-selection{
+												float:left;
+											    width:100%;
+												}
+												#content #checkout .row .columns FORM .columns.alpha SELECT{
+												    width:auto;
+													}								
+								#content #checkout .row .columns FORM .form-buttons INPUT{
+									background:#19b794 url("/assets/save-icon.png") no-repeat 1.8em center;
+									float:left;
+									margin:0;
+									width:auto;
+									}
+									#content #checkout .row .columns FORM .form-buttons INPUT:hover{
+										background:#191919 url("/assets/save-iconHover.png") no-repeat 1.8em center;
+										}
+								#content #checkout .row .columns FORM .form-buttons SPAN INPUT{
+									background:none;
+									margin:0.2em 0.3em 0 0;
+									}
+								#content #checkout .row .columns FORM .form-buttons LABEL{
+									margin:0;
+									width:auto;
+									}
+								#content #checkout .row .columns FORM .form-buttons .save-user-address{
+									float:left;
+									margin:0 0 1em 0;
+									width:100%;
+									}
+						#content #checkout .row #checkout-summary{
+						    float:left;
+						    margin:0;
+						    width:25%;
+							}
 
 				#footer{
 					border:none!important;
