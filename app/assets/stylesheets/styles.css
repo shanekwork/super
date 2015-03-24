@@ -1107,6 +1107,17 @@ body{
 						    text-align:center;
 						    width:100%;
 							}
+							#content FORM#update-cart .links BUTTON#update-button{
+							    background:#19b794 url("/assets/update-icon.png") no-repeat center center;
+							    color:#19b794;
+							    font-size:1px;
+							    height:41em;
+							    width:53em;
+								}
+								#content FORM#update-cart .links BUTTON#update-button:hover{
+								    background:#191919 url("/assets/update-iconHover.png") no-repeat center center;
+								    color:#191919;
+									}
 							#content FORM#update-cart .links .checkout-button{
 							    float:right;
 							    margin:1em 0 0 0;
