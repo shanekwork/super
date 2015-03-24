@@ -1178,15 +1178,31 @@ body{
 						    width:100%;
 							}
 							#content #checkout .thirteen.columns OL{
-								background:transparent url("/assets/checkout-bar.png") repeeat-x left top;
+								background:transparent url("/assets/checkout-bar.png") repeat-x 0 0.55em;
 							    list-style:none;
+							    min-height:4em;
+							    overflow:hidden;
+							    text-align:center;
 								}
 								#content #checkout .thirteen.columns OL LI{
-									background:transparent url("/assets/next-checkout.png") no-repeeat left top;
+									background:transparent url("/assets/next-checkout.png") no-repeat center top;
+									display:inline;
+								    float:none;
+								    margin:0;
+								    padding:2em 3.5em 1em 3.5em;
+								    position:relative;
+								    text-align:center;
+								    top:1.9em;
 									}
+									#content #checkout .thirteen.columns OL LI SPAN{
+										color:#191919;
+										}
 								#content #checkout .thirteen.columns OL LI.current-first{
-									background:transparent url("/assets/current-checkout.png") no-repeeat left top;
+									background:transparent url("/assets/current-checkout.png") no-repeat center top;
 									}
+									#content #checkout .thirteen.columns OL LI.current-first SPAN{
+										color:#19b794;
+										}
 
 				#footer{
 					border:none!important;
