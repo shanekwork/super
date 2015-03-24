@@ -1113,9 +1113,15 @@ body{
 							    width:100%;
 								}
 								#content FORM#update-cart .links .checkout-button BUTTON{
-								    float:right;
+									background:#19b794 url("/assets/checkout-icon.png") no-repeat 1.8em center;
+								    float:left;
+								    margin:0 1em 0 0;
+								    padding:1em 1.75em 1em 3.5em;
 								    width:auto;
 									}
+									#content FORM#update-cart .links .checkout-button BUTTON:hover{
+										background:#191919 url("/assets/checkout-iconHover.png") no-repeat 1.8em center;
+										}
 					#content #empty-carted FORM{
 						border:none;
 					    float:left;
@@ -1128,6 +1134,18 @@ body{
 						    margin:0 1em 0 0;
 						    width:auto;
 							}
+						#content #empty-carted FORM #clear_cart_link INPUT{
+						    background:#19b794 url("/assets/empty-icon.png") no-repeat 1.8em center;
+							}
+							#content #empty-carted FORM #clear_cart_link INPUT:hover{
+							    background:#191919 url("/assets/empty-iconHover.png") no-repeat 1.8em center;
+								}
+						#content #empty-carted FORM #clear_cart_link A{
+							background:#19b794 url("/assets/shopping-icon.png") no-repeat 1.8em center;
+							}
+							#content #empty-carted FORM #clear_cart_link A:hover{
+							    background:#191919 url("/assets/shopping-iconHover.png") no-repeat 1.8em center;
+								}
 
 				#footer{
 					border:none!important;

@@ -36,8 +36,8 @@
   <div id="empty-carted" data-hook>
     <%= form_tag empty_cart_path, :method => :put do %>
       <p id="clear_cart_link" data-hook>
-        <%= submit_tag Spree.t(:empty_cart), :class => 'button gray' %>
-        <%= link_to Spree.t(:continue_shopping), products_path, :class => 'continue button gray' %>
+        <%= submit_tag Spree.t(:empty_cart), :class => 'button' %>
+        <%= link_to Spree.t(:continue_shopping), products_path, :class => 'continue button' %>
       </p>
   <% end %>
   </div>
