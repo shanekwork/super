@@ -1260,7 +1260,8 @@ body{
 												font-size:0.8em;
     											margin:0.3em 0 0 0;
 												}
-											#content #checkout .row .columns FORM .inner SPAN#bcountry-selection{
+											#content #checkout .row .columns FORM .inner SPAN#bcountry-selection,
+											#content #checkout .row .columns FORM .inner SPAN#scountry-selection{
 												float:left;
 											    width:100%;
 												}
@@ -1275,8 +1276,12 @@ body{
 										margin:0 0 1em 0;
 										padding:0;
 										}
+										#content #checkout .row .columns FORM .columns.omega P INPUT{
+											width:100%;
+											}
 										#content #checkout .row .columns FORM .columns.omega P.field.checkbox INPUT{
 											margin:0.2em 0.5em 0 0;
+											width:auto;
 											}
 										#content #checkout .row .columns FORM .columns.omega P.field.checkbox LABEL{
 											margin:0;
