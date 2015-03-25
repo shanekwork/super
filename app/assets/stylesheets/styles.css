@@ -1217,6 +1217,7 @@ body{
 						    width:100%;
 							}
 							#content #checkout .row .columns FORM{
+							    border:none;
 							    float:left;
 							    padding:0;
 							    width:100%;
