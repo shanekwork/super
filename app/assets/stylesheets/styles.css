@@ -251,7 +251,8 @@ nav#top-nav-bar UL LI::before,
 #errorExplanation UL LI:before,
 #content UL#products LI:before,
 #breadcrumbs UL LI:before,
-#content #checkout UL.shipping-methods LI:before{
+#content #checkout UL.shipping-methods LI:before,
+UL#payment-methods LI:before{
     content:none;
     font-size:1em;
 	}
@@ -1235,7 +1236,8 @@ body{
 								}
 								#content #checkout .row .columns FORM .columns.alpha,
 								#content #checkout .row .columns FORM .columns.omega,
-								#content #checkout .row .columns FORM#checkout_form_delivery{
+								#content #checkout .row .columns FORM#checkout_form_delivery,
+								#content #checkout .row .columns FORM#checkout_form_payment{
 									border:1px solid #d9d9db;
 								    float:left;
 								    margin:0;
@@ -1279,9 +1281,10 @@ body{
 												#content #checkout .row .columns FORM .inner SELECT{
 												    width:auto;
 													}
-								#content #checkout .row .columns FORM#checkout_form_delivery{
+								#content #checkout .row .columns FORM#checkout_form_delivery,
+								#content #checkout .row .columns FORM#checkout_form_payment{
 								    width:96.8%;
-									}									
+									}
 									#content #checkout .row .columns FORM#checkout_form_delivery LEGEND{
 									    width:98.8%;
 										}
@@ -1340,6 +1343,26 @@ body{
 												color:#19b794;
 												font-weight:normal;
 												}
+								#content #checkout .row .columns FORM#checkout_form_payment{
+								    width:96.8%;
+									}
+									#content #checkout .row .columns #payment #payment-method-fields{
+									    float:left;
+									    margin:0 0 1em 0;
+									    width:100%;
+										}
+										#content #checkout .row .columns #payment #payment-method-fields LABEL{
+										    margin:0;
+										    width:auto;
+											}
+											#content #checkout .row .columns #payment #payment-method-fields LABEL INPUT{
+											    float:left;
+											    margin:0.2em 0.5em 0 0;
+											    width:auto;
+												}
+									#content #checkout .row .columns #payment UL#payment-methods LI IMG{
+									    width:auto;
+										}
 								#content #checkout .row .columns FORM .columns.omega{
 									margin:0 0 1em 0.6em;
 									min-height:15em;
