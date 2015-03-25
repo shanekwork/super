@@ -1366,6 +1366,7 @@ body{
 										}
 									#content #checkout .row .columns #payment UL#payment-methods LI .label-field{
 									    float:left;
+									    margin:0 0 0.5em 0;
 									    width:100%;
 										}
 										#content #checkout .row .columns #payment UL#payment-methods LI LABEL{
@@ -1380,6 +1381,23 @@ body{
 									    float:left;
 									    width:50%;
 										}
+									#content #checkout .row .columns #payment UL#payment-methods LI SPAN#card_type{
+									    color:#ff0000;
+									    float:left;
+									    font-size:0.8em;
+									    margin:0.2em 0 0;
+									    width:100%;
+										}
+									#content #checkout .row .columns #payment UL#payment-methods LI A#cvv_link{
+									    color:#19b794!important;
+									    float:left;
+									    font-size:0.8em;
+									    margin:1em 0 1em 0.5em;
+									    width:auto;
+										}
+										#content #checkout .row .columns #payment UL#payment-methods LI A#cvv_link:hover{
+										    color:#191919!important;
+											}
 								#content #checkout .row .columns FORM .columns.omega{
 									margin:0 0 1em 0.6em;
 									min-height:15em;
