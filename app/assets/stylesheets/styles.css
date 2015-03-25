@@ -1228,7 +1228,7 @@ body{
 								    float:left;
 								    margin:0;
 								    padding:0.8em;
-								    width:60.8%;
+								    width:46.4%;
 									}
 									#content #checkout .row .columns FORM .columns.alpha FIELDSET,
 									#content #checkout .row .columns FORM .columns.omega FIELDSET{
@@ -1248,38 +1248,37 @@ body{
 										    text-align:center;
 										    width:97.8%;
 											}
-										#content #checkout .row .columns FORM .columns.alpha .inner{
+										#content #checkout .row .columns FORM .inner{
 										    float:left;
 										    width:100%;
 											}
-											#content #checkout .row .columns FORM .columns.alpha LABEL{
+											#content #checkout .row .columns FORM .inner LABEL{
 												margin:0 0.2em 0 0;
 											    width:auto;
 												}
-											#content #checkout .row .columns FORM .columns.alpha LABEL.errror{
+											#content #checkout .row .columns FORM .inner LABEL.errror{
 												font-size:0.8em;
     											margin:0.3em 0 0 0;
 												}
-											#content #checkout .row .columns FORM .columns.alpha SPAN#bcountry-selection{
+											#content #checkout .row .columns FORM .inner SPAN#bcountry-selection{
 												float:left;
 											    width:100%;
 												}
-												#content #checkout .row .columns FORM .columns.alpha SELECT{
+												#content #checkout .row .columns FORM .inner SELECT{
 												    width:auto;
 													}
 								#content #checkout .row .columns FORM .columns.omega{
 									margin:0 0 1em 0.6em;
 									min-height:15em;
-									width:31.9%;
 									}
 									#content #checkout .row .columns FORM .columns.omega P{
 										margin:0 0 1em 0;
 										padding:0;
 										}
-										#content #checkout .row .columns FORM .columns.omega P INPUT{
-											margin:0.3em 0.5em 0 0;
+										#content #checkout .row .columns FORM .columns.omega P.field.checkbox INPUT{
+											margin:0.2em 0.5em 0 0;
 											}
-										#content #checkout .row .columns FORM .columns.omega P LABEL{
+										#content #checkout .row .columns FORM .columns.omega P.field.checkbox LABEL{
 											margin:0;
 											width:auto;
 											}
