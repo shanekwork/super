@@ -1232,7 +1232,9 @@ body{
 									}
 									#content #checkout .row .columns FORM .columns.alpha FIELDSET,
 									#content #checkout .row .columns FORM .columns.omega FIELDSET{
+										border:none;
 									    margin:0;
+									    padding:0;
 										}
 										#content #checkout .row .columns FORM .columns.alpha LEGEND,
 										#content #checkout .row .columns FORM .columns.omega LEGEND{
@@ -1328,7 +1330,7 @@ body{
 									}
 									#content #checkout .row #checkout-summary TABLE #summary-order-total{
 										color:#19b794;
-										font-style:1em;
+										font-size:1em;
 										}
 				#footer{
 					border:none!important;
