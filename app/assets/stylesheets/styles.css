@@ -250,7 +250,8 @@ nav#top-nav-bar UL LI::before,
 #product-images #thumbnails UL LI:before,
 #errorExplanation UL LI:before,
 #content UL#products LI:before,
-#breadcrumbs UL LI:before{
+#breadcrumbs UL LI:before,
+#content #checkout UL.shipping-methods LI:before{
     content:none;
     font-size:1em;
 	}
@@ -1202,10 +1203,20 @@ body{
 									#content #checkout .thirteen.columns OL LI SPAN{
 										color:#191919;
 										}
-								#content #checkout .thirteen.columns OL LI.current-first{
+								#content #checkout .thirteen.columns OL LI.current-first,
+								#content #checkout .thirteen.columns OL LI.current{
 									background:transparent url("/assets/current-checkout.png") no-repeat center top;
 									}
-									#content #checkout .thirteen.columns OL LI.current-first SPAN{
+									#content #checkout .thirteen.columns OL LI.current-first SPAN,
+									#content #checkout .thirteen.columns OL LI.current SPAN{
+										color:#191919;
+										}
+								#content #checkout .thirteen.columns OL LI.completed-first,
+								#content #checkout .thirteen.columns OL LI.completed{
+									background:transparent url("/assets/completed-checkout.png") no-repeat center top;
+									}
+									#content #checkout .thirteen.columns OL LI.completed-first A,
+									#content #checkout .thirteen.columns OL LI.completed A{
 										color:#19b794;
 										}
 						#content #checkout .row .columns.alpha{
@@ -1223,21 +1234,21 @@ body{
 							    width:100%;
 								}
 								#content #checkout .row .columns FORM .columns.alpha,
-								#content #checkout .row .columns FORM .columns.omega{
+								#content #checkout .row .columns FORM .columns.omega,
+								#content #checkout .row .columns FORM#checkout_form_delivery{
 									border:1px solid #d9d9db;
 								    float:left;
 								    margin:0;
+								    min-height:53.8em;
 								    padding:0.8em;
 								    width:46.4%;
 									}
-									#content #checkout .row .columns FORM .columns.alpha FIELDSET,
-									#content #checkout .row .columns FORM .columns.omega FIELDSET{
+									#content #checkout .row .columns FORM FIELDSET{
 										border:none;
 									    margin:0;
 									    padding:0;
 										}
-										#content #checkout .row .columns FORM .columns.alpha LEGEND,
-										#content #checkout .row .columns FORM .columns.omega LEGEND{
+										#content #checkout .row .columns FORM LEGEND{
 											border-bottom:1px solid #d9d9db;
 										    color:#19b794;
 										    float:left;
@@ -1268,6 +1279,67 @@ body{
 												#content #checkout .row .columns FORM .inner SELECT{
 												    width:auto;
 													}
+								#content #checkout .row .columns FORM#checkout_form_delivery{
+								    width:96.8%;
+									}									
+									#content #checkout .row .columns FORM#checkout_form_delivery LEGEND{
+									    width:98.8%;
+										}
+									#content #checkout .row .columns FORM#checkout_form_delivery .shipment H3,
+									#content #checkout .row .columns FORM#checkout_form_delivery .shipment TABLE TH,
+									#content #checkout .row .columns FORM#checkout_form_delivery .shipment H5{
+									    background:none;
+									    color:#191919;
+									    font-size:1em;
+									    font-weight:bold;
+									    margin:0 0 0.5em 0;
+									    padding:0;
+										}
+									#content #checkout .row .columns FORM#checkout_form_delivery .shipment TABLE{
+										    float:left;
+										    margin:0 0 2em 0;
+										    width:100%;
+											}
+										#content #checkout .row .columns FORM#checkout_form_delivery .shipment TABLE TH{
+										    background:#d9d9db;
+										    margin:0;
+										    padding:0.35em 0.6em;
+											}
+										#content #checkout .row .columns FORM#checkout_form_delivery .shipment TABLE TD IMG{
+										    width:auto;
+											}
+									#content #checkout .row .columns FORM#checkout_form_delivery .shipment H5{
+										float:left;
+										width:100%;
+										}
+									#content #checkout .row .columns FORM#checkout_form_delivery .shipment UL.shipping-methods,
+									#content #checkout .row .columns FORM#checkout_form_delivery .shipment UL.shipping-methods LI{
+										float:left;
+										margin:0 0 1em 0;
+										width:100%;
+										}
+									#content #checkout .row .columns FORM#checkout_form_delivery UL.shipping-methods LI{
+										margin:0 0 0.5em 0;
+										}
+										#content #checkout .row .columns FORM#checkout_form_delivery UL.shipping-methods LABEL{
+											margin:0;
+											}
+											#content #checkout .row .columns FORM#checkout_form_delivery UL.shipping-methods LABEL INPUT,
+											#content #checkout .row .columns FORM#checkout_form_delivery UL.shipping-methods LABEL SPAN{
+												float:left;
+												margin:0.2em 0.5em 0 0;
+												width:auto;
+												}
+											#content #checkout .row .columns FORM#checkout_form_delivery UL.shipping-methods LABEL SPAN{
+												margin:0 0.5em 0 0;
+												}
+											#content #checkout .row .columns FORM#checkout_form_delivery UL.shipping-methods LABEL SPAN.rate-name{
+												min-width:7em;
+												}
+											#content #checkout .row .columns FORM#checkout_form_delivery UL.shipping-methods LABEL SPAN.rate-cost{
+												color:#19b794;
+												font-weight:normal;
+												}
 								#content #checkout .row .columns FORM .columns.omega{
 									margin:0 0 1em 0.6em;
 									min-height:15em;
@@ -1329,7 +1401,7 @@ body{
 								#content #checkout .row #checkout-summary TABLE TD STRONG{
 									color:#19b794;
 								    float:left;
-								    text-align:center;
+								    text-align:right;
 								    width:100%;
 									}
 									#content #checkout .row #checkout-summary TABLE #summary-order-total{
