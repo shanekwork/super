@@ -3,8 +3,8 @@
 <table data-hook="order_summary">
   <tbody>
     <tr data-hook="item_total">
-      <td><strong><%= Spree.t(:item_total) %>:</strong></td>
-      <td><strong><%= order.display_item_total.to_html %></strong></td>
+      <td><%= Spree.t(:item_total) %>:</td>
+      <td><%= order.display_item_total.to_html %></td>
     </tr>
 
     <% if order.line_item_adjustments.exists? %>
@@ -58,7 +58,7 @@
     <% end %>
 
     <tr data-hook="order_total">
-      <td><strong><%= Spree.t(:order_total) %>:</strong></td>
+      <td><%= Spree.t(:order_total) %>:</td>
       <td><strong><span id='summary-order-total'><%= order.display_total.to_html %></span></strong></td>
     </tr>
   </tbody>

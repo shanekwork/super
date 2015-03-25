@@ -175,6 +175,10 @@ FORM{
 					background:#191919 url("/assets/submit-iconHover.png") no-repeat 1.8em center;
 					color:#19b794;
 					}
+LABEL.errror{
+	font-size:0.8em;
+	margin:0.3em 0 0 0;
+	}
 TABLE{
 	float:left;
     margin:0 0 1em 0;
@@ -1214,15 +1218,16 @@ body{
 							}
 							#content #checkout .row .columns FORM{
 							    float:left;
-							    width:92.6%;
+							    padding:0;
+							    width:100%;
 								}
-								#content #checkout .row .columns FORM .columns.alpha{
+								#content #checkout .row .columns FORM .columns.alpha,
+								#content #checkout .row .columns FORM .columns.omega{
+									border:1px solid #d9d9db;
 								    float:left;
 								    margin:0;
-								    width:62.6%;
-									}
-								#content #checkout .row .columns FORM .columns.omega{
-									width:35%;
+								    padding:0.8em;
+								    width:60.8%;
 									}
 									#content #checkout .row .columns FORM .columns.alpha FIELDSET,
 									#content #checkout .row .columns FORM .columns.omega FIELDSET{
@@ -1230,8 +1235,15 @@ body{
 										}
 										#content #checkout .row .columns FORM .columns.alpha LEGEND,
 										#content #checkout .row .columns FORM .columns.omega LEGEND{
-											color:#19b794;
-										    margin:0;
+											border-bottom:1px solid #d9d9db;
+										    color:#19b794;
+										    float:left;
+										    font-size:1em;
+										    font-weight:normal;
+										    margin:0 0 1.5em 0;
+										    padding:0.35em 0.35em 1.1em 0.35em;
+										    text-align:center;
+										    width:97.8%;
 											}
 										#content #checkout .row .columns FORM .columns.alpha .inner{
 										    float:left;
@@ -1241,13 +1253,33 @@ body{
 												margin:0 0.2em 0 0;
 											    width:auto;
 												}
+											#content #checkout .row .columns FORM .columns.alpha LABEL.errror{
+												font-size:0.8em;
+    											margin:0.3em 0 0 0;
+												}
 											#content #checkout .row .columns FORM .columns.alpha SPAN#bcountry-selection{
 												float:left;
 											    width:100%;
 												}
 												#content #checkout .row .columns FORM .columns.alpha SELECT{
 												    width:auto;
-													}								
+													}
+								#content #checkout .row .columns FORM .columns.omega{
+									margin:0 0 1em 0.6em;
+									min-height:15em;
+									width:31.9%;
+									}
+									#content #checkout .row .columns FORM .columns.omega P{
+										margin:0 0 1em 0;
+										padding:0;
+										}
+										#content #checkout .row .columns FORM .columns.omega P INPUT{
+											margin:0.3em 0.5em 0 0;
+											}
+										#content #checkout .row .columns FORM .columns.omega P LABEL{
+											margin:0;
+											width:auto;
+											}
 								#content #checkout .row .columns FORM .form-buttons INPUT{
 									background:#19b794 url("/assets/save-icon.png") no-repeat 1.8em center;
 									float:left;
@@ -1272,10 +1304,31 @@ body{
 									}
 						#content #checkout .row #checkout-summary{
 						    float:left;
-						    margin:0;
-						    width:25%;
+						    margin:0 0 1em 0;
+						    min-height:15em;
+						    padding:0.75em;
+						    width:23%;
 							}
-
+							#content #checkout .row #checkout-summary H3{
+							    color:#19b794;
+							    font-size:1em;
+							    font-weight:normal;
+							    margin:0 0 1.15em;
+							    padding:0.2em 0.45em 0.85em 0.45em;
+								}
+							#content #checkout .row #checkout-summary TABLE TD{
+							    text-align:left;
+								}
+								#content #checkout .row #checkout-summary TABLE TD STRONG{
+									color:#19b794;
+								    float:left;
+								    text-align:center;
+								    width:100%;
+									}
+									#content #checkout .row #checkout-summary TABLE #summary-order-total{
+										color:#19b794;
+										font-style:1em;
+										}
 				#footer{
 					border:none!important;
 				    color:#191919;
