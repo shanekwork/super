@@ -1203,21 +1203,29 @@ body{
 								    text-align:center;
 								    top:1.9em;
 									}
-									#content #checkout .thirteen.columns OL LI SPAN{
-										background:transparent url("/assets/next-checkout.png") no-repeat center top;
-										color:#191919;
-										padding:2em 0 0 0;
+									#content #checkout .thirteen.columns OL LI,
+									#content #checkout .thirteen.columns OL LI:hover{
+										background:none;
 										}
-									#content #checkout .thirteen.columns OL LI.current-first SPAN,
-									#content #checkout .thirteen.columns OL LI.current SPAN{
-										background:transparent url("/assets/current-checkout.png") no-repeat center top;
-										}
-									#content #checkout .thirteen.columns OL LI.completed-first A,
-									#content #checkout .thirteen.columns OL LI.completed A{
-										background:transparent url("/assets/completed-checkout.png") no-repeat center top;
-										color:#19b794;
-										padding:2em 0 0 0;
-										}
+										#content #checkout .thirteen.columns OL LI SPAN{
+											background:transparent url("/assets/next-checkout.png") no-repeat center top;
+											color:#191919;
+											padding:2em 0 0 0;
+											}
+										#content #checkout .thirteen.columns OL LI.current-first SPAN,
+										#content #checkout .thirteen.columns OL LI.current SPAN{
+											background:transparent url("/assets/current-checkout.png") no-repeat center top;
+											}
+										#content #checkout .thirteen.columns OL LI.completed-first SPAN,
+										#content #checkout .thirteen.columns OL LI.completed SPAN{
+											background:none;
+											}
+											#content #checkout .thirteen.columns OL LI.completed-first A,
+											#content #checkout .thirteen.columns OL LI.completed A{
+												background:transparent url("/assets/completed-checkout.png") no-repeat center top;
+												color:#19b794;
+												padding:2em 0 0 0;
+												}
 						#content #checkout .row .columns.alpha{
 						    float:left;
 						    width:74%;
@@ -1465,7 +1473,7 @@ body{
 									#content #checkout .row .columns.alpha.omega FORM#checkout_form_confirm .alpha.four,
 									#content #checkout .row .columns.alpha.omega FORM#checkout_form_confirm .omega.four{
 										border:none;
-										border-left:1px solid #d9d9db;
+										border-right:1px solid #d9d9db;
 										margin:0 0.6em 0 0;
 										min-height:17em;
 										padding:0 0.8em;
