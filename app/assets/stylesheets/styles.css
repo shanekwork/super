@@ -1093,6 +1093,10 @@ body{
 						#content TABLE#cart-detail TR.line-item TD{
 							text-align:center;
 							}
+						#content TABLE#cart-detail TR.line-item TD.cart-item-price,
+						#content TABLE#cart-detail TR.line-item TD.cart-item-total{
+							text-align:right;
+							}
 						#content TABLE#cart-detail TR.line-item TD.cart-item-description{
 							text-align:left;
 							}
@@ -1315,9 +1319,12 @@ body{
 										    margin:0;
 										    padding:0.35em 0.6em;
 											}
-										#content #checkout .row .columns FORM#checkout_form_delivery .shipment TABLE TD IMG{
-										    width:auto;
+										#content #checkout .row .columns FORM#checkout_form_delivery .shipment TABLE TD.item-price{
+											text-align:right;
 											}
+											#content #checkout .row .columns FORM#checkout_form_delivery .shipment TABLE TD IMG{
+											    width:auto;
+												}
 									#content #checkout .row .columns FORM#checkout_form_delivery .shipment H5{
 										float:left;
 										width:100%;
@@ -1528,12 +1535,19 @@ body{
 									#content #checkout .row .columns.alpha.omega FORM#checkout_form_confirm TABLE#line-items TD.price,
 									#content #checkout .row .columns.alpha.omega FORM#checkout_form_confirm TABLE#line-items TD.qty,
 									#content #checkout .row .columns.alpha.omega FORM#checkout_form_confirm TABLE#line-items TD.total{
+									    text-align:right;
+										}
+									#content #checkout .row .columns.alpha.omega FORM#checkout_form_confirm TABLE#line-items TD.qty{
 									    text-align:center;
 										}
 										#content #checkout .row .columns.alpha.omega FORM#checkout_form_confirm TABLE#line-items TD.price SPAN,
 										#content #checkout .row .columns.alpha.omega FORM#checkout_form_confirm TABLE#line-items TD.total SPAN{
 										    color:#19b794;
 											}
+									#content #checkout .row .columns.alpha.omega FORM#checkout_form_confirm TFOOT TD{
+									    color:#191919;
+									    text-transform:none;									   
+										}
 						#content #checkout .row #checkout-summary{
 						    float:left;
 						    margin:0 0 1em 0;
