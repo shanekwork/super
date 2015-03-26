@@ -1351,9 +1351,13 @@ body{
 									    margin:0 0 1em 0;
 									    width:100%;
 										}
-										#content #checkout .row .columns #payment #payment-method-fields LABEL{
+										#content #checkout .row .columns #payment #payment-method-fields LABEL,
+										#content #checkout .row .columns #payment .field LABEL{
 										    margin:0;
 										    width:auto;
+											}
+										#content #checkout .row .columns #payment .field LABEL{
+										    margin:0 0.5em 0 0;
 											}
 											#content #checkout .row .columns #payment #payment-method-fields LABEL INPUT{
 											    float:left;
@@ -1364,7 +1368,8 @@ body{
 										margin:0 0 1em 0;
 									    width:auto;
 										}
-									#content #checkout .row .columns #payment UL#payment-methods LI .label-field{
+									#content #checkout .row .columns #payment UL#payment-methods LI .label-field,
+									#content #checkout .row .columns #payment .field .label-field{
 									    float:left;
 									    margin:0 0 0.5em 0;
 									    width:100%;
@@ -1377,7 +1382,8 @@ body{
 											float:left;
 										    width:auto;
 											}
-									#content #checkout .row .columns #payment UL#payment-methods LI INPUT{
+									#content #checkout .row .columns #payment UL#payment-methods LI INPUT,
+									#content #checkout .row .columns #payment .field INPUT{
 									    float:left;
 									    width:50%;
 										}
@@ -1389,6 +1395,7 @@ body{
 									    width:100%;
 										}
 									#content #checkout .row .columns #payment UL#payment-methods LI A#cvv_link{
+										background:transparent url("/assets/help-icon.png") no-repeat center top;
 									    color:#19b794!important;
 									    float:left;
 									    font-size:0.8em;
@@ -1396,6 +1403,7 @@ body{
 									    width:auto;
 										}
 										#content #checkout .row .columns #payment UL#payment-methods LI A#cvv_link:hover{
+											background:transparent url("/assets/help-iconHover.png") no-repeat center top;
 										    color:#191919!important;
 											}
 								#content #checkout .row .columns FORM .columns.omega{
