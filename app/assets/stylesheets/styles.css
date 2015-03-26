@@ -227,7 +227,8 @@ TABLE{
 	.flash.notice,
 	.flash.success,
 	.flash.error,
-	.flash.alert{
+	.flash.alert,
+	.stripeError{
 		background:transparent url("/assets/success-icon.png") no-repeat 50% 25%;
 		color:#191919;
 		float:left;
@@ -239,7 +240,8 @@ TABLE{
 	    text-transform:uppercase;
 	    width:68.3%;
 		}
-	.flash.error{
+	.flash.error,
+	.stripeError{
 		background:transparent url("/assets/error-icon.png") no-repeat 50% 25%;
 		}
 	.flash.alert{
