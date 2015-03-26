@@ -1294,6 +1294,7 @@ body{
 													}
 								#content #checkout .row .columns FORM#checkout_form_delivery,
 								#content #checkout .row .columns FORM#checkout_form_payment{
+									min-height:auto;
 								    width:96.8%;
 									}
 									#content #checkout .row .columns FORM#checkout_form_delivery LEGEND{
@@ -1320,6 +1321,7 @@ body{
 										    padding:0.35em 0.6em;
 											}
 										#content #checkout .row .columns FORM#checkout_form_delivery .shipment TABLE TD.item-price{
+											color:#19b794;
 											text-align:right;
 											}
 											#content #checkout .row .columns FORM#checkout_form_delivery .shipment TABLE TD IMG{
@@ -1543,6 +1545,9 @@ body{
 										#content #checkout .row .columns.alpha.omega FORM#checkout_form_confirm TABLE#line-items TD.price SPAN,
 										#content #checkout .row .columns.alpha.omega FORM#checkout_form_confirm TABLE#line-items TD.total SPAN{
 										    color:#19b794;
+											}
+										#content #checkout .row .columns.alpha.omega FORM#checkout_form_confirm TABLE#line-items TD.price SPAN{
+										    font-weight:normal;
 											}
 									#content #checkout .row .columns.alpha.omega FORM#checkout_form_confirm TFOOT TD{
 									    color:#191919;
