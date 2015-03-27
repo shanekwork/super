@@ -625,7 +625,7 @@ body{
 											}
 											#main-menu NAV UL LI UL LI UL LI A,
 											#main-menu NAV UL LI UL LI UL LI:first-child A{
-												background:none;
+												background:none!important;
 												color:#5b5b5b!important;
 												font-size:1em!important;
 												padding:0.5em!important;
