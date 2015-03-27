@@ -1593,6 +1593,20 @@ body{
 					#content .favorite-product-name{
 						text-align:left;
 						}
+					#content .search-results{
+						float:left;
+						width:100%;
+						}
+						#content .search-results H6{
+							border:none;
+						    color:#191919;
+						    font-size:1.5em;
+						    line-height:1.4em;
+						    margin:0 0 1em 0;
+							}
+						#content .search-results #products{
+							margin:0;
+							}
 				#footer{
 					border:none!important;
 				    color:#191919;
