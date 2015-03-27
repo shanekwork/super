@@ -88,6 +88,11 @@
 
 		/* Pop-up error messages */   
 		$( ".flash" ).dialog();
+
+		/* Add class to child nav links */
+		if($("#main-nav-bar li:has(> ul)").addClass("main-nav-bar-child")){
+
+		}
 	});
 </script>
 
