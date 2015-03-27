@@ -590,8 +590,8 @@ body{
 								}
 								#main-menu NAV UL LI UL LI{
 									margin:0.4em 0 0 0;
-									padding:0 0.95em 0 0;
-									width:93.5%;
+									padding:0 0.85em 0 0;
+									width:94.6%;
 									}
 								#main-menu NAV UL LI UL LI:first-child{
 									margin:0;
@@ -602,8 +602,8 @@ body{
 										color:#5b5b5b!important;
 										font-size:0.9em!important;
 										line-height:1.2em;
-									    padding:0.5em!important;
-									    width:95.5%;
+									    padding:0.5em 3em 0.5em 0.5em !important;
+									    width:85.5%;
 										}
 										#main-menu NAV UL LI UL LI A.selected,
 										#main-menu NAV UL LI UL LI A:hover{
