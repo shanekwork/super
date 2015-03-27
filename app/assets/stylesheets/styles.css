@@ -294,6 +294,15 @@ UL#payment-methods LI:before{
 	#errorExplanation UL{
     	width:96.4%;
 		}
+#stripeError{
+    background:#f2dede url("/assets/error-icon.png") no-repeat 2em 50%;
+    color:#ff0000;
+    font-size:1.4em;
+    font-weight:normal;
+    padding:2em 2em 2em 8em;
+    text-transform:uppercase;
+    width:75.5%!important;
+	}
 .pagination{
 	float:left;
 	margin:1em 0;
