@@ -227,8 +227,7 @@ TABLE{
 	.flash.notice,
 	.flash.success,
 	.flash.error,
-	.flash.alert,
-	#stripeError{
+	.flash.alert{
 		background:transparent url("/assets/success-icon.png") no-repeat 50% 25%;
 		color:#191919;
 		float:left;
@@ -240,8 +239,7 @@ TABLE{
 	    text-transform:uppercase;
 	    width:68.3%;
 		}
-	.flash.error,
-	#stripeError{
+	.flash.error{
 		background:transparent url("/assets/error-icon.png") no-repeat 50% 25%;
 		}
 	.flash.alert{
@@ -273,7 +271,8 @@ UL#payment-methods LI:before{
 		background:#1a1a1a;
 		color:#19b794;
 		}
-#errorExplanation{
+#errorExplanation,
+#stripeError{
     background:#f2dede url("/assets/errorBig-icon.png") no-repeat 3em 3em;
     border:1px solid #e45353;
     float:left;
