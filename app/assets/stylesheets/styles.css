@@ -1590,6 +1590,9 @@ body{
 										color:#19b794;
 										font-size:1em;
 										}
+					#content .favorite-product-name{
+						text-align:left;
+						}
 				#footer{
 					border:none!important;
 				    color:#191919;
