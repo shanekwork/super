@@ -598,6 +598,7 @@ body{
 									}
 									#main-menu NAV UL LI UL LI A,
 									#main-menu NAV UL LI UL LI:first-child A{
+										background:transparet url("menu-arrow.png") no-repeat right center;
 										color:#5b5b5b!important;
 										font-size:0.9em!important;
 										line-height:1.2em;
@@ -606,7 +607,7 @@ body{
 										}
 										#main-menu NAV UL LI UL LI A.selected,
 										#main-menu NAV UL LI UL LI A:hover{
-											background:#19b794!important;
+											background:#19b794 url("sel-menu-arrow.png") no-repeat right center!important;
 											color:#ffffff!important;
 											}
 									#main-menu NAV UL LI UL LI UL{
