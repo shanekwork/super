@@ -586,7 +586,7 @@ body{
 							    min-height:10em;
 							    padding:2.2em 0 2.2em 0.95em;
 							    top:5.7em;
-							    width:14.85em;
+							    width:15.6em;
 								}
 								#main-menu NAV UL LI UL LI{
 									margin:0.4em 0 0 0;
@@ -598,7 +598,7 @@ body{
 									}
 									#main-menu NAV UL LI UL LI A,
 									#main-menu NAV UL LI UL LI:first-child A{
-										background:transparent url("menu-arrow.png") no-repeat right center;
+										background:transparent url("menu-arrow.png") no-repeat 16em center;
 										color:#5b5b5b!important;
 										font-size:0.9em!important;
 										line-height:1.2em;
@@ -607,7 +607,7 @@ body{
 										}
 										#main-menu NAV UL LI UL LI A.selected,
 										#main-menu NAV UL LI UL LI A:hover{
-											background:#19b794 url("sel-menu-arrow.png") no-repeat right center!important;
+											background:#19b794 url("sel-menu-arrow.png") no-repeat 16em center!important;
 											color:#ffffff!important;
 											}
 									#main-menu NAV UL LI UL LI UL{
@@ -615,7 +615,7 @@ body{
 										border-bottom:3px solid #19b794;
 										border-top:3px solid #19b794;
 										box-shadow:0 1px 4px #a6a6a6;
-										left:15.65em;
+										left:16.45em;
 										padding:1.7em 0.95em;
 										top:0;
 										}
