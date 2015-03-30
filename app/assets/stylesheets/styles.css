@@ -605,12 +605,22 @@ body{
 									    padding:0.5em 3em 0.5em 0.5em !important;
 									    width:85.5%;
 										}
-										#main-menu NAV UL LI UL LI A.selected,
+										#main-menu NAV UL LI UL LI:hover,
 										#main-menu NAV UL LI UL LI A:hover{
 											background:#19b794 url("sel-menu-arrow.png") no-repeat 16em center!important;
 											color:#ffffff!important;
 											padding:0.5em 2.1em 0.5em 0.5em!important;
 											}
+										#main-menu NAV UL LI UL LI:hover{
+											background:#19b794 url("sel-menu-arrow.png") no-repeat 14.4em center!important;
+											padding:0.5em 2.1em 0.5em 0.5em!important;
+											width:79.5%;
+											}
+											#main-menu NAV UL LI UL LI:hover A{
+												background:none!important;
+												color:#ffffff!important;
+												padding:0!important;
+												}
 									#main-menu NAV UL LI UL LI UL{
 										border:none;
 										border-bottom:3px solid #19b794;
