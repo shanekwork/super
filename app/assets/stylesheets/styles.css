@@ -665,29 +665,32 @@ body{
 							}
 							#main-menu NAV UL LI:nth-last-child(1) UL LI,
 							#main-menu NAV UL LI:nth-last-child(2) UL LI,
-							#main-menu NAV UL LI:nth-last-child(3) UL LI{
-								padding:0 0 0 0.85em;
+							#main-menu NAV UL LI:nth-last-child(3) UL LI,
+							#main-menu NAV UL LI:nth-last-child(1) UL LI:hover,
+							#main-menu NAV UL LI:nth-last-child(2) UL LI:hover,
+							#main-menu NAV UL LI:nth-last-child(3) UL LI:hover{
+								padding:0 0 0 0.95em;
+								width:100%;
 								}
-								#main-menu NAV UL LI:nth-last-child(1) UL LI:hover,
-								#main-menu NAV UL LI:nth-last-child(2) UL LI:hover,
-								#main-menu NAV UL LI:nth-last-child(3) UL LI:hover{
-									padding:0 0 0 0.8em!important;
-									}
 								#main-menu NAV UL LI:nth-last-child(1) UL LI A,
 								#main-menu NAV UL LI:nth-last-child(2) UL LI A,
-								#main-menu NAV UL LI:nth-last-child(3) UL LI A{
+								#main-menu NAV UL LI:nth-last-child(3) UL LI A,
+								#main-menu NAV UL LI:nth-last-child(1) UL LI UL LI A,
+								#main-menu NAV UL LI:nth-last-child(2) UL LI UL LI A,
+								#main-menu NAV UL LI:nth-last-child(3) UL LI UL LI A{
 									background:transparent url("menu-arrow-left.png") no-repeat 1em center;
-									padding:0.5em 0.5em 0.5em 3em!important;
+									font-size:0.9em!important;
+									padding:0.5em 0.5em 0.5em 2.1em!important;
 									text-align:right;
-									width:80%;
-									}								
+									width:80.3%;
+									}
 								#main-menu NAV UL LI:nth-last-child(1) UL LI:hover A,
 								#main-menu NAV UL LI:nth-last-child(2) UL LI:hover A,
-								#main-menu NAV UL LI:nth-last-child(3) UL LI:hover A{
+								#main-menu NAV UL LI:nth-last-child(3) UL LI:hover A,
+								#main-menu NAV UL LI:nth-last-child(1) UL LI:hover UL LI A,
+								#main-menu NAV UL LI:nth-last-child(2) UL LI:hover UL LI A,
+								#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI A{
 									background:#19b794 url("sel-menu-arrow-left.png") no-repeat 1em center!important;
-									font-style:1em!important;
-									padding:0.5em 0.5em 0.5em 2.1em!important;
-									width:83.5%;
 									}
 								#main-menu NAV UL LI:nth-last-child(1) UL LI UL,
 								#main-menu NAV UL LI:nth-last-child(2) UL LI UL,
@@ -699,6 +702,20 @@ body{
 								#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI A{
 									background:none;
 									}
+									#main-menu NAV UL LI:nth-last-child(1) UL LI UL LI,
+									#main-menu NAV UL LI:nth-last-child(2) UL LI UL LI,
+									#main-menu NAV UL LI:nth-last-child(3) UL LI UL LI,
+									#main-menu NAV UL LI:nth-last-child(1) UL LI:hover UL LI,
+									#main-menu NAV UL LI:nth-last-child(2) UL LI:hover UL LI,
+									#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI{
+										padding:0 0 0 1em;
+										width:100%;
+										}
+										#main-menu NAV UL LI:nth-last-child(1) UL LI UL LI A,
+										#main-menu NAV UL LI:nth-last-child(2) UL LI UL LI A,
+										#main-menu NAV UL LI:nth-last-child(3) UL LI UL LI A{
+											width:90%;
+											}
 			#wrapper .container{
 				background:#ffffff;
 				box-shadow:0 15px 18px #a6a6a6;
