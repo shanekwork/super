@@ -613,13 +613,15 @@ body{
 											}
 										#main-menu NAV UL LI UL LI:hover{
 											background:#19b794 url("sel-menu-arrow.png") no-repeat 14.4em center!important;
-											padding:0.5em 2.1em 0.5em 0.5em!important;
-											width:79.5%;
+										    margin:0 0.8em 0 0;
+										    padding:0!important;
+										    width:95%;
 											}
 											#main-menu NAV UL LI UL LI:hover A{
 												background:none!important;
-												color:#ffffff!important;
-												padding:0!important;
+											    color:#ffffff!important;
+											    padding:0.5em 2.1em 0.5em 0.5em !important;
+											    width:80%;
 												}
 									#main-menu NAV UL LI UL LI UL{
 										border:none;
