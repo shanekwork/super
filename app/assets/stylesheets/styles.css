@@ -674,10 +674,7 @@ body{
 								}
 								#main-menu NAV UL LI:nth-last-child(1) UL LI A,
 								#main-menu NAV UL LI:nth-last-child(2) UL LI A,
-								#main-menu NAV UL LI:nth-last-child(3) UL LI A,
-								#main-menu NAV UL LI:nth-last-child(1) UL LI UL LI A,
-								#main-menu NAV UL LI:nth-last-child(2) UL LI UL LI A,
-								#main-menu NAV UL LI:nth-last-child(3) UL LI UL LI A{
+								#main-menu NAV UL LI:nth-last-child(3) UL LI A{
 									background:transparent url("menu-arrow-left.png") no-repeat 1em center;
 									font-size:0.9em!important;
 									padding:0.5em 0.5em 0.5em 2.1em!important;
@@ -703,17 +700,28 @@ body{
 										padding:0 0 0 1em!important;
 										width:100%;
 										}
-										#main-menu NAV UL LI:nth-last-child(1) UL LI:hover UL LI A,
-										#main-menu NAV UL LI:nth-last-child(2) UL LI:hover UL LI A,
-										#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI A{
+										#main-menu NAV UL LI:nth-last-child(1) UL LI UL LI A,
+										#main-menu NAV UL LI:nth-last-child(2) UL LI UL LI A,
+										#main-menu NAV UL LI:nth-last-child(3) UL LI UL LI A{
 											background:transparent url("menu-arrow-left.png") no-repeat 1em center!important;
+											font-size:1em!important;
 											width:78.9%;
 											}
 										#main-menu NAV UL LI:nth-last-child(1) UL LI:hover UL LI:hover A,
 										#main-menu NAV UL LI:nth-last-child(2) UL LI:hover UL LI:hover A,
-										#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI:hover A{
+										#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI:hover A,
+										#main-menu NAV UL LI:nth-last-child(1) UL LI:hover UL LI:hover A:hover,
+										#main-menu NAV UL LI:nth-last-child(2) UL LI:hover UL LI:hover A:hover,
+										#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI:hover A:hover{
 											background:#19b794 url("sel-menu-arrow-left.png") no-repeat 1em center!important;
+											width:89.5%!important;
 											}
+											#main-menu NAV UL LI:nth-last-child(1) UL LI:hover UL LI:hover A:hover,
+											#main-menu NAV UL LI:nth-last-child(2) UL LI:hover UL LI:hover A:hover,
+											#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI:hover A:hover{
+												background:none!important;
+												width:78.9%;
+												}
 			#wrapper .container{
 				background:#ffffff;
 				box-shadow:0 15px 18px #a6a6a6;
