@@ -607,7 +607,7 @@ body{
 										}
 										#main-menu NAV UL LI UL LI:hover,
 										#main-menu NAV UL LI UL LI A:hover{
-											background:#19b794 url("sel-menu-arrow.png") no-repeat 16em center!important;
+											background:none!important;
 											color:#ffffff!important;
 											padding:0.5em 2.1em 0.5em 0.5em!important;
 											}
@@ -634,7 +634,8 @@ body{
 												padding:1.7em 0.95em;
 												top:0;
 												}
-												#main-menu NAV UL LI UL LI UL LI{
+												#main-menu NAV UL LI UL LI UL LI,
+												#main-menu NAV UL LI UL LI:hover UL LI{
 													padding:0;
 													width:100%;
 													}
