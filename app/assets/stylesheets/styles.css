@@ -669,7 +669,7 @@ body{
 							#main-menu NAV UL LI:nth-last-child(1) UL LI:hover,
 							#main-menu NAV UL LI:nth-last-child(2) UL LI:hover,
 							#main-menu NAV UL LI:nth-last-child(3) UL LI:hover{
-								padding:0 0 0 0.95em;
+								padding:0 0 0 0.95em!important;
 								width:100%;
 								}
 								#main-menu NAV UL LI:nth-last-child(1) UL LI A,
@@ -686,35 +686,33 @@ body{
 									}
 								#main-menu NAV UL LI:nth-last-child(1) UL LI:hover A,
 								#main-menu NAV UL LI:nth-last-child(2) UL LI:hover A,
-								#main-menu NAV UL LI:nth-last-child(3) UL LI:hover A,
-								#main-menu NAV UL LI:nth-last-child(1) UL LI:hover UL LI A,
-								#main-menu NAV UL LI:nth-last-child(2) UL LI:hover UL LI A,
-								#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI A{
+								#main-menu NAV UL LI:nth-last-child(3) UL LI:hover A{
 									background:#19b794 url("sel-menu-arrow-left.png") no-repeat 1em center!important;
 									}
 								#main-menu NAV UL LI:nth-last-child(1) UL LI UL,
 								#main-menu NAV UL LI:nth-last-child(2) UL LI UL,
 								#main-menu NAV UL LI:nth-last-child(3) UL LI UL{
 									left:-16.5em;
-									}
-								#main-menu NAV UL LI:nth-last-child(1) UL LI:hover UL LI A,
-								#main-menu NAV UL LI:nth-last-child(2) UL LI:hover UL LI A,
-								#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI A{
-									background:none;
-									}
+									}								
 									#main-menu NAV UL LI:nth-last-child(1) UL LI UL LI,
 									#main-menu NAV UL LI:nth-last-child(2) UL LI UL LI,
 									#main-menu NAV UL LI:nth-last-child(3) UL LI UL LI,
 									#main-menu NAV UL LI:nth-last-child(1) UL LI:hover UL LI,
 									#main-menu NAV UL LI:nth-last-child(2) UL LI:hover UL LI,
 									#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI{
-										padding:0 0 0 1em;
+										padding:0 0 0 1em!important;
 										width:100%;
 										}
-										#main-menu NAV UL LI:nth-last-child(1) UL LI UL LI A,
-										#main-menu NAV UL LI:nth-last-child(2) UL LI UL LI A,
-										#main-menu NAV UL LI:nth-last-child(3) UL LI UL LI A{
-											width:90%;
+										#main-menu NAV UL LI:nth-last-child(1) UL LI:hover UL LI A,
+										#main-menu NAV UL LI:nth-last-child(2) UL LI:hover UL LI A,
+										#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI A{
+											background:transparent url("menu-arrow-left.png") no-repeat 1em center!important;
+											width:78.9%;
+											}
+										#main-menu NAV UL LI:nth-last-child(1) UL LI:hover UL LI:hover A,
+										#main-menu NAV UL LI:nth-last-child(2) UL LI:hover UL LI:hover A,
+										#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI:hover A{
+											background:#19b794 url("sel-menu-arrow-left.png") no-repeat 1em center!important;
 											}
 			#wrapper .container{
 				background:#ffffff;
