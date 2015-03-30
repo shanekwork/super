@@ -629,13 +629,14 @@ body{
 												background:none!important;
 												color:#5b5b5b!important;
 												font-size:1em!important;
-												padding:0.5em!important;
+												padding:0.5em 0.4em!important;
 												width:94.5%;
 												}
 												#main-menu NAV UL LI UL LI UL LI A:hover{
 													background:#19b794!important;
 													color:#ffffff!important;
 													padding:0.5em 0.4em!important;
+													width:94.5%;
 													}
 			#wrapper .container{
 				background:#ffffff;
