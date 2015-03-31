@@ -55,10 +55,7 @@ $(function(){
     
     });
     
-    // Add down arrow only to menu items with submenus
-    $("#main-nav-bar > li:has('ul')").each(function() {
-        $(this).find("a:first").css("background", "transparent url('/assets/down-menu-arrow.png') no-repeat right 0.35em");
-    });
+    
     
     
 });

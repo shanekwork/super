@@ -554,7 +554,6 @@ body{
 						#main-menu NAV UL LI{
 						    float:left;
 						    margin:0 0 0 1.56em;
-						    overflow:visible!important;
 						    padding:3.66em 0;
 						    width:auto;
 							}
@@ -567,9 +566,18 @@ body{
 							    font-family:'Roboto', sans-serif;
 							    font-weight:normal;
 							    font-size:1em!important;
-							    padding:0 0.85em 0 0;
+							    padding:0;
 							    width:auto;
 								}
+								#main-menu NAV UL LI A{
+									color:#ffffff!important;
+								    float:left;
+								    font-family:'Roboto', sans-serif;
+								    font-weight:normal;
+								    font-size:1em!important;
+								    padding:0;
+								    width:auto;
+									}
 							#main-menu NAV UL LI:first-child A{
 							    padding:0!important;
 								}
@@ -580,6 +588,9 @@ body{
 									#main-menu NAV UL LI A:hover{
 										background:transparent url("/assets/sel-down-menu-arrow.png") no-repeat right 0.35em!important;
 										}
+									#main-menu NAV UL LI:first-child A:hover{
+										background:none!important;
+										}
 							#main-menu NAV UL LI UL{
 								background:#ffffff;
 								border:none;
@@ -588,8 +599,8 @@ body{
 							    float:left;
 							    left:0;
 							    min-height:10em;
-							    padding:2.2em 0 2.2em 0.95em!important;
-							    top:5.7em!important;
+							    padding:2.2em 0 2.2em 0.95em;
+							    top:5.7em;
 							    width:15.6em;
 								}
 								#main-menu NAV UL LI UL LI{
@@ -637,7 +648,7 @@ body{
 												box-shadow:0 1px 4px #a6a6a6;
 												left:16.4em;
 												padding:1.7em 0.95em;
-												top:0!important;
+												top:0;
 												}
 												#main-menu NAV UL LI UL LI UL LI,
 												#main-menu NAV UL LI UL LI:hover UL LI,
