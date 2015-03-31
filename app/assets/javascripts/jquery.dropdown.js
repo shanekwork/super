@@ -2,7 +2,7 @@ var maxHeight = 400;
 
 $(function(){
 
-    $(".dropdown > li").hover(function() {
+    $("#main-menu > li").hover(function() {
     
          var $container = $(this),
              $list = $container.find("ul"),
@@ -56,8 +56,8 @@ $(function(){
     });
     
     // Add down arrow only to menu items with submenus
-    $(".dropdown > li:has('ul')").each(function() {
-        $(this).find("a:first").append("<img src='images/down-arrow.png' />");
+    $("#main-menu > li:has('ul')").each(function() {
+        $(this).find("a:first").append("<img src='/assets/down-menu-arrow.png' />");
     });
     
     
