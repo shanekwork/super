@@ -700,13 +700,16 @@ body{
 										padding:0 0 0 1em!important;
 										width:100%;
 										}
+										#main-menu NAV UL LI:nth-last-child(1) UL LI UL LI A,
+										#main-menu NAV UL LI:nth-last-child(2) UL LI UL LI A,
+										#main-menu NAV UL LI:nth-last-child(3) UL LI UL LI A,
 										#main-menu NAV UL LI:nth-last-child(1) UL LI:hover UL LI A,
 										#main-menu NAV UL LI:nth-last-child(2) UL LI:hover UL LI A,
 										#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI A{
-											background:transparent url("menu-arrow-left.png") no-repeat 1em center!important;
+											background:none!important;
 										    font-size:1em!important;
 										    padding:0.5em 0.5em 0.5em 2.1em!important;
-										    width:78.8%;
+										    width:88.5%;
 											}
 										#main-menu NAV UL LI:nth-last-child(1) UL LI:hover UL LI:hover A:hover,
 										#main-menu NAV UL LI:nth-last-child(2) UL LI:hover UL LI:hover A:hover,
