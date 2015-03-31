@@ -625,7 +625,10 @@ body{
 											    padding:0.5em 2.1em 0.5em 0.5em!important;
 											    width:85.5%;
 												}
-											#main-menu NAV UL LI UL LI UL{
+											#main-menu NAV UL LI UL LI UL,
+											#main-menu NAV UL:nth-last-child(1) LI UL LI:nth-last-child(1) UL,
+											#main-menu NAV UL:nth-last-child(2) LI UL LI:nth-last-child(2) UL,
+											#main-menu NAV UL:nth-last-child(3) LI UL LI:nth-last-child(3) UL{
 												border:none;
 												border-bottom:3px solid #19b794;
 												border-top:3px solid #19b794;
@@ -635,21 +638,31 @@ body{
 												top:0;
 												}
 												#main-menu NAV UL LI UL LI UL LI,
-												#main-menu NAV UL LI UL LI:hover UL LI{
+												#main-menu NAV UL LI UL LI:hover UL LI,
+												#main-menu NAV UL:nth-last-child(1) LI UL LI:nth-last-child(1) UL LI,
+												#main-menu NAV UL:nth-last-child(2) LI UL LI:nth-last-child(2) UL LI,
+												#main-menu NAV UL:nth-last-child(3) LI UL LI:nth-last-child(3) UL LI{
 													padding:0;
 													width:100%;
 													}
 													#main-menu NAV UL LI UL LI UL LI A,
 													#main-menu NAV UL LI UL LI UL LI:first-child A,
-													#main-menu NAV UL LI UL LI:hover UL LI A{
+													#main-menu NAV UL LI UL LI:hover UL LI A,
+													#main-menu NAV UL:nth-last-child(1) LI UL LI:nth-last-child(1) UL LI A,
+													#main-menu NAV UL:nth-last-child(2) LI UL LI:nth-last-child(2) UL LI A,
+													#main-menu NAV UL:nth-last-child(3) LI UL LI:nth-last-child(3) UL LI A{
 														background:none!important;
 														color:#5b5b5b!important;
 														font-size:1em!important;
 														padding:0.5em 0.4em!important;
+														text-align:left;
 														width:94.5%;
 														}
 														#main-menu NAV UL LI UL LI:hover UL LI A:hover,
-														#main-menu NAV UL LI UL LI UL LI A:hover{
+														#main-menu NAV UL LI UL LI UL LI A:hover,
+														#main-menu NAV UL:nth-last-child(1) LI UL LI:nth-last-child(1) UL LI A:hover,
+														#main-menu NAV UL:nth-last-child(2) LI UL LI:nth-last-child(2) UL LI A:hover,
+														#main-menu NAV UL:nth-last-child(3) LI UL LI:nth-last-child(3) UL LI A:hover{
 															background:#19b794!important;
 															color:#ffffff!important;
 															padding:0.5em 0.4em!important;
