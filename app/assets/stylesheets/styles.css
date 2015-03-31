@@ -626,12 +626,12 @@ body{
 											    width:85.5%;
 												}
 											#main-menu NAV UL LI UL LI UL,
-											#main-menu NAV UL:nth-last-child(-n+3) LI UL LI:nth-last-child(-n+3) UL{
+											#main-menu NAV UL:nth-last-child(-n+3) LI UL LI UL{
 												border:none;
 												border-bottom:3px solid #19b794;
 												border-top:3px solid #19b794;
 												box-shadow:0 1px 4px #a6a6a6;
-												left:16.45em;
+												left:16.4em;
 												padding:1.7em 0.95em;
 												top:0;
 												}
@@ -691,7 +691,8 @@ body{
 										#main-menu NAV UL LI:nth-last-child(-n+3) UL LI:hover UL LI A{
 											background:none!important;
 										    font-size:1em!important;
-										    padding:0.5em 0.5em 0.5em 2.1em!important;
+										    padding:0.5em 0.4em!important;
+										    text-align:right;
 										    width:88.5%;
 											}
 										#main-menu NAV UL LI:nth-last-child(-n+3) UL LI:hover UL LI:hover A:hover{
