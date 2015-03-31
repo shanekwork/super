@@ -606,7 +606,7 @@ body{
 								#main-menu NAV UL LI UL LI{
 									margin:0.4em 0 0 0;
 									padding:0 0.85em 0 0;
-									width:94.6%;
+									width:95%;
 									}
 								#main-menu NAV UL LI UL LI:first-child{
 									margin:0;
@@ -618,7 +618,7 @@ body{
 										font-size:0.9em!important;
 										line-height:1.2em;
 									    padding:0.5em 3em 0.5em 0.5em !important;
-									    width:85.5%;
+									    width:80%;
 										}
 										#main-menu NAV UL LI UL LI:hover,
 										#main-menu NAV UL LI UL LI A:hover{
@@ -634,7 +634,8 @@ body{
 										#main-menu NAV UL LI UL LI:first-child:hover{
 										    margin:0;
 											}
-											#main-menu NAV UL LI UL LI:hover A{
+											#main-menu NAV UL LI UL LI:hover A,
+											#main-menu NAV UL LI:first-child UL LI:hover A:hover{
 												background:#19b794 url("sel-menu-arrow.png") no-repeat scroll 16em center!important;
 											    color:#ffffff!important;
 											    padding:0.5em 2.1em 0.5em 0.5em!important;
