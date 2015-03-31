@@ -575,7 +575,7 @@ body{
 								    font-family:'Roboto', sans-serif;
 								    font-weight:normal;
 								    font-size:1em!important;
-								    padding:0;
+								    padding:0 0.89em 0 0;
 								    width:auto;
 									}
 							#main-menu NAV UL LI:first-child A{
