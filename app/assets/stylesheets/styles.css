@@ -554,6 +554,7 @@ body{
 						#main-menu NAV UL LI{
 						    float:left;
 						    margin:0 0 0 2.45em;
+						    overflow:visible!important;
 						    padding:3.66em 0;
 						    width:auto;
 							}
@@ -575,6 +576,13 @@ body{
 								#main-menu NAV UL LI A.selected,
 								#main-menu NAV UL LI A:hover{
 									color:#19b794!important;
+									}								
+								#main-menu NAV UL LI A IMG{
+									float:right;
+								    height:auto;
+								    margin:0.4em 0 0 0.3em;
+								    max-width:0.6em;
+								    width:auto;
 									}
 							#main-menu NAV UL LI UL{
 								background:#ffffff;
@@ -584,8 +592,8 @@ body{
 							    float:left;
 							    left:0;
 							    min-height:10em;
-							    padding:2.2em 0 2.2em 0.95em;
-							    top:5.7em;
+							    padding:2.2em 0 2.2em 0.95em!important;
+							    top:5.7em!important;
 							    width:15.6em;
 								}
 								#main-menu NAV UL LI UL LI{
@@ -633,7 +641,7 @@ body{
 												box-shadow:0 1px 4px #a6a6a6;
 												left:16.4em;
 												padding:1.7em 0.95em;
-												top:0;
+												top:0!important;
 												}
 												#main-menu NAV UL LI UL LI UL LI,
 												#main-menu NAV UL LI UL LI:hover UL LI,
