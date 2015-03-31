@@ -626,9 +626,7 @@ body{
 											    width:85.5%;
 												}
 											#main-menu NAV UL LI UL LI UL,
-											#main-menu NAV UL:nth-last-child(1) LI UL LI:nth-last-child(1) UL,
-											#main-menu NAV UL:nth-last-child(2) LI UL LI:nth-last-child(2) UL,
-											#main-menu NAV UL:nth-last-child(3) LI UL LI:nth-last-child(3) UL{
+											#main-menu NAV UL:nth-last-child(-n+3) LI UL LI:nth-last-child(-n+3) UL{
 												border:none;
 												border-bottom:3px solid #19b794;
 												border-top:3px solid #19b794;
@@ -639,18 +637,14 @@ body{
 												}
 												#main-menu NAV UL LI UL LI UL LI,
 												#main-menu NAV UL LI UL LI:hover UL LI,
-												#main-menu NAV UL:nth-last-child(1) LI UL LI:nth-last-child(1) UL LI,
-												#main-menu NAV UL:nth-last-child(2) LI UL LI:nth-last-child(2) UL LI,
-												#main-menu NAV UL:nth-last-child(3) LI UL LI:nth-last-child(3) UL LI{
-													padding:0;
+												#main-menu NAV UL:nth-last-child(-n+3) LI UL LI:nth-last-child(-n+3) UL LI{
+													padding:0!important;
 													width:100%;
 													}
 													#main-menu NAV UL LI UL LI UL LI A,
 													#main-menu NAV UL LI UL LI UL LI:first-child A,
 													#main-menu NAV UL LI UL LI:hover UL LI A,
-													#main-menu NAV UL:nth-last-child(1) LI UL LI:nth-last-child(1) UL LI A,
-													#main-menu NAV UL:nth-last-child(2) LI UL LI:nth-last-child(2) UL LI A,
-													#main-menu NAV UL:nth-last-child(3) LI UL LI:nth-last-child(3) UL LI A{
+													#main-menu NAV UL:nth-last-child(-n+3) LI UL LI:nth-last-child(-n+3) UL LI A{
 														background:none!important;
 														color:#5b5b5b!important;
 														font-size:1em!important;
@@ -660,73 +654,47 @@ body{
 														}
 														#main-menu NAV UL LI UL LI:hover UL LI A:hover,
 														#main-menu NAV UL LI UL LI UL LI A:hover,
-														#main-menu NAV UL:nth-last-child(1) LI UL LI:nth-last-child(1) UL LI A:hover,
-														#main-menu NAV UL:nth-last-child(2) LI UL LI:nth-last-child(2) UL LI A:hover,
-														#main-menu NAV UL:nth-last-child(3) LI UL LI:nth-last-child(3) UL LI A:hover{
+														#main-menu NAV UL:nth-last-child(-n+3) LI UL LI:nth-last-child(-n+3) UL LI A:hover{
 															background:#19b794!important;
 															color:#ffffff!important;
-															padding:0.5em 0.4em!important;
-															width:94.5%;
 															}
-						#main-menu NAV UL LI:nth-last-child(1) UL,
-						#main-menu NAV UL LI:nth-last-child(2) UL,
-						#main-menu NAV UL LI:nth-last-child(3) UL{
+						#main-menu NAV UL LI:nth-last-child(-n+3) UL{
 							left:inherit;
 							padding:2.2em 0.95em 2.2em 0;
 							position:absolute;
 							right:0;
 							}
-							#main-menu NAV UL LI:nth-last-child(1) UL LI,
-							#main-menu NAV UL LI:nth-last-child(2) UL LI,
-							#main-menu NAV UL LI:nth-last-child(3) UL LI,
-							#main-menu NAV UL LI:nth-last-child(1) UL LI:hover,
-							#main-menu NAV UL LI:nth-last-child(2) UL LI:hover,
-							#main-menu NAV UL LI:nth-last-child(3) UL LI:hover{
+							#main-menu NAV UL LI:nth-last-child(-n+3) UL LI,
+							#main-menu NAV UL LI:nth-last-child(-n+3) UL LI:hover{
 								padding:0 0 0 0.95em!important;
 								width:100%;
 								}
-								#main-menu NAV UL LI:nth-last-child(1) UL LI A,
-								#main-menu NAV UL LI:nth-last-child(2) UL LI A,
-								#main-menu NAV UL LI:nth-last-child(3) UL LI A{
+								#main-menu NAV UL LI:nth-last-child(-n+3) UL LI A{
 									background:transparent url("menu-arrow-left.png") no-repeat 1em center;
 									font-size:0.9em!important;
 									padding:0.5em 0.5em 0.5em 2.1em!important;
 									text-align:right;
 									width:80.3%;
 									}
-								#main-menu NAV UL LI:nth-last-child(1) UL LI:hover A,
-								#main-menu NAV UL LI:nth-last-child(2) UL LI:hover A,
-								#main-menu NAV UL LI:nth-last-child(3) UL LI:hover A{
+								#main-menu NAV UL LI:nth-last-child(-n+3) UL LI:hover A{
 									background:#19b794 url("sel-menu-arrow-left.png") no-repeat 1em center!important;
 									}
-								#main-menu NAV UL LI:nth-last-child(1) UL LI UL,
-								#main-menu NAV UL LI:nth-last-child(2) UL LI UL,
-								#main-menu NAV UL LI:nth-last-child(3) UL LI UL{
+								#main-menu NAV UL LI:nth-last-child(-n+3) UL LI UL{
 									left:-16.5em;
 									}								
-									#main-menu NAV UL LI:nth-last-child(1) UL LI UL LI,
-									#main-menu NAV UL LI:nth-last-child(2) UL LI UL LI,
-									#main-menu NAV UL LI:nth-last-child(3) UL LI UL LI,
-									#main-menu NAV UL LI:nth-last-child(1) UL LI:hover UL LI,
-									#main-menu NAV UL LI:nth-last-child(2) UL LI:hover UL LI,
-									#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI{
+									#main-menu NAV UL LI:nth-last-child(-n+3) UL LI UL LI,
+									#main-menu NAV UL LI:nth-last-child(-n+3) UL LI:hover UL LI{
 										padding:0 0 0 1em!important;
 										width:100%;
 										}
-										#main-menu NAV UL LI:nth-last-child(1) UL LI UL LI A,
-										#main-menu NAV UL LI:nth-last-child(2) UL LI UL LI A,
-										#main-menu NAV UL LI:nth-last-child(3) UL LI UL LI A,
-										#main-menu NAV UL LI:nth-last-child(1) UL LI:hover UL LI A,
-										#main-menu NAV UL LI:nth-last-child(2) UL LI:hover UL LI A,
-										#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI A{
+										#main-menu NAV UL LI:nth-last-child(-n+3) UL LI UL LI A,
+										#main-menu NAV UL LI:nth-last-child(-n+3) UL LI:hover UL LI A{
 											background:none!important;
 										    font-size:1em!important;
 										    padding:0.5em 0.5em 0.5em 2.1em!important;
 										    width:88.5%;
 											}
-										#main-menu NAV UL LI:nth-last-child(1) UL LI:hover UL LI:hover A:hover,
-										#main-menu NAV UL LI:nth-last-child(2) UL LI:hover UL LI:hover A:hover,
-										#main-menu NAV UL LI:nth-last-child(3) UL LI:hover UL LI:hover A:hover{
+										#main-menu NAV UL LI:nth-last-child(-n+3) UL LI:hover UL LI:hover A:hover{
 											background:#19b794!important;
 											}
 			#wrapper .container{
