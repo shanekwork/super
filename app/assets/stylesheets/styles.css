@@ -680,11 +680,11 @@ body{
 									background:#19b794 url("sel-menu-arrow-left.png") no-repeat 1em center!important;
 									}
 								#main-menu NAV UL LI:nth-last-child(-n+3) UL LI UL{
-									left:-16.5em;
+									left:-17.5em;
 									}								
 									#main-menu NAV UL LI:nth-last-child(-n+3) UL LI UL LI,
 									#main-menu NAV UL LI:nth-last-child(-n+3) UL LI:hover UL LI{
-										padding:0 0 0 1em!important;
+										padding:0!important;
 										width:100%;
 										}
 										#main-menu NAV UL LI:nth-last-child(-n+3) UL LI UL LI A,
@@ -693,7 +693,6 @@ body{
 										    font-size:1em!important;
 										    padding:0.5em 0.4em!important;
 										    text-align:right;
-										    width:88.5%;
 											}
 										#main-menu NAV UL LI:nth-last-child(-n+3) UL LI:hover UL LI:hover A:hover{
 											background:#19b794!important;
