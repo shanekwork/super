@@ -711,6 +711,7 @@ body{
 										    font-size:1em!important;
 										    padding:0.5em 0.4em!important;
 										    text-align:right;
+										    width:95%;
 											}
 										#main-menu NAV UL LI:nth-last-child(-n+3) UL LI:hover UL LI:hover A:hover,
 										#main-menu NAV UL LI:nth-last-child(-n+3) UL LI:first-child:hover UL LI:hover A:hover{
