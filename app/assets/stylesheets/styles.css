@@ -1886,4 +1886,10 @@ body{
 	#main-menu NAV UL LI {
 	    margin:0 0 0 1.53em;
 		}
+	#content #checkout .row .columns FORM .columns.omega{
+	    min-height:53.8em;
+		}
+	#content ul#products li{
+		margin:0 0.73em 1.9em 0.73em;
+		}
 }
