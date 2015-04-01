@@ -1883,6 +1883,10 @@ nav#top-nav-bar UL LI#search-bar{
 #content ul#products li{
 	margin/*\**/:0 0.73em 1.9em 0.73em\0;
 	}
+#footer .container{
+    background/*\**/:none\0;
+    box-shadow/*\**/:none\0;
+	}
 
 /* IE 9 - IE 10 */
 @media screen and (min-width:0\0) {
