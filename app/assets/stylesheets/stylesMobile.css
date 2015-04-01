@@ -21,4 +21,15 @@
 				nav#top-nav-bar UL LI A{
 					padding:0.5em 1.75em 0.5em 3.8em;
 					}
+			#header .phone{
+			    position:absolute;
+			    right:0;
+			    top:0;
+			    width:46%;
+			    z-index:999;
+				}
+				#header .phone .inside A{
+					color:#19b794;
+					font-style:1.2em;
+					}
 }
