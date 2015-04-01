@@ -1,8 +1,0 @@
-@media screen and (min-device-width:320px) and (max-device-width:400px){
-	html, body {
-	    font: 0.9em/1.4 Arial,Helvetica,sans-serif;
-		}
-		.container{
-		    width:320px;
-			}
-}
