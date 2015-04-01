@@ -237,7 +237,7 @@ TABLE{
 	    padding:6em 3em 4em 3em;
 	    text-align:center;
 	    text-transform:uppercase;
-	    width:68.3%;
+	    width:68.3%!important;
 		}
 	.flash.error{
 		background:transparent url("/assets/error-icon.png") no-repeat 50% 3.4em;
@@ -1499,6 +1499,7 @@ body{
 												}
 										#content #checkout .row .columns #payment UL#payment-methods LI INPUT,
 										#content #checkout .row .columns #payment .field INPUT{
+											clear:both;
 										    float:left;
 										    width:50%;
 											}
@@ -1846,3 +1847,31 @@ body{
 								#footer #bottom-footerContent P A:hover{
 									color:#19b794;
 									}
+/* GOOGLE CHROE & SAFARI */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	nav#top-nav-bar UL LI{
+		margin:0 0 0 0.9em;
+		}
+	nav#top-nav-bar UL LI#search-bar{
+		max-width:19.85em;
+		width:19.85em;
+		}
+		nav#top-nav-bar UL LI#search-bar INPUT[type="submit"] {
+		  padding:0.95em 1.15em 0.9em 1.15em!important;
+			}
+}
+
+/* IE 8 */
+#header .header-bottom #MainMenu UL LI A{
+	padding/*\**/:0 0.87em\0;
+	}
+
+/* IE 9 - IE 10 */
+@media screen and (min-width:0\0) {
+	
+}
+
+/* IE 11 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	
+}
