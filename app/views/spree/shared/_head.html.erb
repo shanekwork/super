@@ -8,10 +8,12 @@
 <%= stylesheet_link_tag 'spree/frontend/all', :media => 'screen' %>
 <%= stylesheet_link_tag 'jquery-styles', :media => 'screen' %><%= csrf_meta_tags %>
 <%= stylesheet_link_tag 'styles', :media => 'screen' %>
+<%= stylesheet_link_tag 'stylesMobile', :media => 'screen' %>
 <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Roboto', :media => 'screen' %>
 <%= stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', :media => 'screen' %>
 <%= javascript_include_tag 'spree/frontend/all' %>
 <%= javascript_include_tag '//code.jquery.com/ui/1.11.3/jquery-ui.js' %>
+<%= javascript_include_tag 'slicknav.js' %>
 <!--[if lt IE 9]>
   <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
 <![endif]-->
@@ -96,6 +98,9 @@
 	    $("#main-nav-bar > li:has('ul')").each(function() {
 	        $(this).find("a:first").css("background", "transparent url('/assets/down-menu-arrow.png') no-repeat right 0.35em");
 	    });
+
+	    /* Hide main menu for mobile devices */
+		$("nav").slicknav();
 	});
 </script>
 
