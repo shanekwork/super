@@ -1876,5 +1876,14 @@ body{
 
 /* IE 11 */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	
+	nav#top-nav-bar UL LI{
+		margin:0 0 0 0.9em;
+		}
+	nav#top-nav-bar UL LI#search-bar{
+		max-width:19.85em;
+		width:19.85em;
+		}
+	#main-menu NAV UL LI {
+	    margin:0 0 0 1.53em;
+		}
 }
