@@ -101,7 +101,8 @@
 
 	    /* Hide main menu for mobile devices */
 		$("nav#main-menu").slicknav();
-		if ($("#slicknav_menu").length > 0){
+		
+		if ($("#slicknav_menu").css(display) == block){
 		    $("html").addClass("js");
 		}
 	});
