@@ -1871,8 +1871,8 @@ body{
 
 /* IE 9 - IE 10 */
 @media screen and (min-width:0\0) {
-	#content #checkout .row .columns form .omega.columns p.checkbox.field input,
-	#content #checkout .row .columns form .form-buttons span input{
+	#content #checkout .row .columns form input[type="checkbox"],
+	#content #checkout .row .columns form input[type="radio"]{
 		border:none!important;
 		padding:0!important;
 		}
