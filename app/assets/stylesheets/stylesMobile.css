@@ -12,6 +12,13 @@
 	    font: 0.9em/1.4 Arial,Helvetica,sans-serif;
 		}
 		.container{
+			position:inherit;
 		    width:320px;
 			}
+			nav#top-nav-bar{
+			    width:100%;
+				}
+				nav#top-nav-bar UL LI A{
+					padding:0.5em 1.75em 0.5em 3.8em;
+					}
 }
