@@ -1864,9 +1864,19 @@ body{
 		}
 }
 
-/* IE 8 */
-#header .header-bottom #MainMenu UL LI A{
-	padding/*\**/:0 0.87em\0;
+/* IE 8 - IE 9 */
+nav#top-nav-bar UL LI{
+	margin/*\**/:0 0 0 0.9em\0;
+	}
+nav#top-nav-bar UL LI#search-bar{
+	max-width/*\**/:19.85em\0;
+	width/*\**/:19.85em\0;
+	}
+#main-menu NAV UL LI {
+    margin/*\**/:0 0 0 1.53em\0;
+	}
+#content ul#products li{
+	margin/*\**/:0 0.73em 1.9em 0.73em\0;
 	}
 
 /* IE 9 - IE 10 */
