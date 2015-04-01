@@ -1,4 +1,7 @@
 @media screen and (min-device-width:320px) and (max-device-width:400px){
+	#slicknav_menu{
+		display:block;
+		}
 	html, body {
 	    font: 0.9em/1.4 Arial,Helvetica,sans-serif;
 		}

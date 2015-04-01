@@ -353,6 +353,9 @@ UL#payment-methods LI:before{
 					color:#19b794!important;
 					cursor:text;
 					}
+#slicknav_menu{
+	display:none;
+	}
 html,
 body{
 	font:1em/1.4 Arial, Helvetica, sans-serif;
@@ -756,6 +759,7 @@ body{
 						}
 						#tabs{
 							float:left;
+							min-height:15em;
 							width:100%;
 							}
 							#tabs UL{

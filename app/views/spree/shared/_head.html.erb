@@ -100,7 +100,10 @@
 	    });
 
 	    /* Hide main menu for mobile devices */
-		$("nav").slicknav();
+		$("nav#main-menu").slicknav();
+		if ($("#slicknav_menu").length > 0){
+		    $("html").addClass("js");
+		}
 	});
 </script>
 
