@@ -1856,9 +1856,12 @@ body{
 		max-width:19.85em;
 		width:19.85em;
 		}
-		nav#top-nav-bar UL LI#search-bar INPUT[type="submit"] {
+		nav#top-nav-bar UL LI#search-bar INPUT[type="submit"]{
 		  padding:0.95em 1.15em 0.9em 1.15em!important;
 			}
+	#content #checkout .row .columns FORM .columns.omega{
+	    min-height:53.8em;
+		}
 }
 
 /* IE 8 */
