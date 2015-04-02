@@ -16,11 +16,40 @@
 		    width:320px;
 			}
 			nav#top-nav-bar{
-			    width:100%;
+			    padding:0 1em;
+    			width:91.8%;
 				}
 				nav#top-nav-bar UL LI A{
 					padding:0.5em 1.75em 0.5em 3.8em;
 					}
+				nav#top-nav-bar ul li.account,
+				nav#top-nav-bar ul li#link-to-login{
+					flat:right;
+					margin:0 0 0 0.8em;
+					}
+					nav#top-nav-bar UL LI.account A{
+					    background:#19b894 url("/assets/account-icon.png") no-repeat 1.5em 50%;
+					    font-size:0.9em;
+    					min-width:6.6em;
+						}
+					nav#top-nav-bar UL LI.logIn A{
+					    background:#19b894 url("/assets/login-icon.png") no-repeat 2em 50%;
+						}
+				nav#top-nav-bar UL LI#search-bar{
+				    margin:0.5em 0;
+				    max-width:100%;
+				    width:100%;
+					}
+					nav#top-nav-bar UL LI#search-bar FORM{
+					    text-align:center;
+						}
+						nav#top-nav-bar UL LI#search-bar INPUT,
+						nav#top-nav-bar UL LI#search-bar INPUT[type="submit"]{
+						    float:none;
+							}
+						nav#top-nav-bar UL LI#search-bar INPUT[type="submit"]{
+						    padding:1.2em 1.15em!important;
+							}
 			#header .phone{
 			    position:absolute;
 			    right:0;
@@ -28,8 +57,11 @@
 			    width:46%;
 			    z-index:999;
 				}
+				#header .phone IMG{
+					max-width:1.4em;
+					}
 				#header .phone .inside A{
 					color:#19b794;
-					font-style:1.2em;
+					font-size:1.2em;
 					}
 }
