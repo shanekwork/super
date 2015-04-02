@@ -129,5 +129,29 @@
 					#tabs UL LI H2 A{
 					    padding:0.8em 0.4em;
 						}
+		#footer .left-footerContent{
+		    margin:0 0 1em 0;
+		    width:100%;
+			}
+			#footer H3{
+				font-size:1.5em;
+				margin:0;
+				width:100%;
+				}
+			#footer .left-footerContent #footer-right UL LI{
+			    margin:0 1.6em 0.8em 0;
+			    width:10em;
+				}
+			#footer .right-footerContent,
+			#footer .right-footerContent .left-fc{
+				width:100%;
+				}
+			#footer .right-footerContent .left-fc{
+				margin:0 0 1em 0;
+				}
+			#footer .right-footerContent .right-fc{
+				margin:0;
+				width:100%;
+				}
 
 }
