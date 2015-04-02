@@ -127,10 +127,9 @@
 .slicknav_nav .slicknav_open > a a{
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
-    background:transparent url("/assets/down-menu-arrowHover.png") no-repeat right 0.35em;
+    background:transparent url("/assets/down-menu-arrowHover.png") no-repeat right 0.35em!important;
     border-radius: 0;
-    background:none;
-    color:#19b794;
+    color:#19b794!important;
 }
 .slicknav_nav .slicknav_txtnode {
      margin-left:15px;   
