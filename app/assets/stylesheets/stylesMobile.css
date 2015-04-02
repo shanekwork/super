@@ -120,7 +120,8 @@
 				margin:0 0 1em 0;
 				min-height:124px;
 				}
-			#tabs UL LI:last-child{
+			#tabs UL LI:last-child,
+			#tabs UL LI:last-child.ui-tabs-active{
 			   	background:none;
 				}
 			#tabs UL LI:hover:last-child{
