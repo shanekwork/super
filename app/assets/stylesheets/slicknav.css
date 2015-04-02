@@ -10,10 +10,11 @@
 .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar { margin-top: 0.188em }
 .slicknav_nav { clear: both }
 .slicknav_nav ul,
-.slicknav_nav li { background:none; display: block; padding:0.5em 0; width:100%; }
+.slicknav_nav li { background:none; display: block; margin:0; padding:0; width:100%; }
+.slicknav_nav li { border-bottom:1px solid #ffffff; padding:0.5em 0; }
 .slicknav_nav li:first-child{ border-top:none; }
 .slicknav_nav ul{ border-top:none; }
-.slicknav_nav .slicknav_arrow { font-size: 0.8em; margin: 0 0 0 0.4em; }
+.slicknav_nav .slicknav_arrow { font-size: 0.8em; margin: 0 0 0 0.4em; display:none; }
 .slicknav_nav .slicknav_item { cursor: pointer; }
 .slicknav_nav .slicknav_row { display: block; }
 .slicknav_nav a { display: block }
@@ -38,7 +39,7 @@
     background:#19b894;
 	border:none;
 	border-radius:0;
-	margin:0.3em;
+	margin:0.3em 0.3em 0 0.3em;
 	padding:0.5em 0.7em;
 	position:relative;
 	text-decoration:none;
@@ -57,25 +58,26 @@
   font-size:0.8em;
 }
 .slicknav_menu {
-    background:#191919;
+    background:none;
 	float:left;
 	left:0;
     padding:0;
-	position:relative;
+	position:absolute;
 	top:0;
 	width:100%;
 	z-index:10;
 }
 .slicknav_nav {
-	background:none;
+	background:#191919;
     color:#fff;
 	float:left;
     margin:0;
     padding:0 0.8em;
 	position:relative;
     font-size:0.875em;
+    left:0.4em;
 	top:0;
-	width:92.9%;
+	width:89.35%;
 }
 .slicknav_nav, .slicknav_nav ul {
     list-style: none;
@@ -86,14 +88,14 @@
     margin:0;
 }
 .slicknav_nav .slicknav_row {
-    padding:5px 10px;
-    margin:2px 5px;
+    padding:0;
+    margin:0;
 }
 .slicknav_nav a{
     color:#f0efef!important;
 	font-size:1em;
 	font-weight:normal;
-    padding:5px 10px;
+    padding:0;
     margin:0;
     text-decoration:none;
 	text-transform:uppercase;
@@ -116,7 +118,7 @@
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    background:#ccc;
+    background:none;
     color:#fff;
 }
 .slicknav_nav a:hover{
@@ -129,3 +131,9 @@
 .slicknav_nav .slicknav_txtnode {
      margin-left:15px;   
 }
+
+.slicknav_nav li li{
+    border:none;
+    padding:0.5em 0 0.5em 2em;
+    width:91.2%;
+    }
