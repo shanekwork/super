@@ -24,7 +24,7 @@
 					}
 				nav#top-nav-bar ul li.account,
 				nav#top-nav-bar ul li#link-to-login{
-					flat:right;
+					float:right;
 					margin:0 0 0 0.8em;
 					}
 					nav#top-nav-bar UL LI.account A{
@@ -32,9 +32,15 @@
 					    font-size:0.9em;
     					min-width:6.6em;
 						}
+						nav#top-nav-bar UL LI.account A:hover{
+						    background:#19b894 url("/assets/account-iconHover.png") no-repeat 1.5em 50%;
+							}
 					nav#top-nav-bar UL LI.logIn A{
-					    background:#19b894 url("/assets/login-icon.png") no-repeat 2em 50%;
+					    background:#19b894 url("/assets/login-icon.png") no-repeat 1.5em 50%;
 						}
+						nav#top-nav-bar UL LI.logIn A:hover{
+						    background:#191919 url("/assets/login-iconHover.png") no-repeat 1.5em 50%;
+							}
 				nav#top-nav-bar UL LI#search-bar{
 				    margin:0.5em 0;
 				    max-width:100%;
@@ -50,7 +56,19 @@
 						nav#top-nav-bar UL LI#search-bar INPUT[type="submit"]{
 						    padding:1.2em 1.15em!important;
 							}
+			#link-to-cart{
+			    margin:0 0 0 1.3em;
+			    position:absolute;
+			    right:0.6em;
+			    top:12em;
+			    width:40%;
+				}
+				#link-to-cart A{
+					color:#19b794;
+					padding:1.9em 0 1.1em 5.5em;
+					}
 			#header .phone{
+				margin:0.5em 0 0 1.8em;
 			    position:absolute;
 			    right:0;
 			    top:0;
@@ -61,7 +79,12 @@
 					max-width:1.4em;
 					}
 				#header .phone .inside A{
-					color:#19b794;
 					font-size:1.2em;
 					}
+		#main-menu FIGURE{
+    		padding:0.95em 0 0.95em 1em;
+			}
+			#main-menu FIGURE A IMG{
+				max-width:12em;
+				}
 }
