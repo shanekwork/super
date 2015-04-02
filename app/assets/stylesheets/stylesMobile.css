@@ -153,5 +153,19 @@
 				margin:0;
 				width:100%;
 				}
+				#footer .right-footerContent .right-fc .social{
+				    text-align:center;
+					}
+					#footer .right-footerContent .right-fc .social UL LI{
+						display:inline;
+						float:none;
+						margin:0 0 0 3em;
+						}
+						#footer .right-footerContent .right-fc .social UL LI A{
+							float:none;
+							}
+							#footer .right-footerContent .right-fc .social UL LI A IMG{
+								float:none;
+								}
 
 }
