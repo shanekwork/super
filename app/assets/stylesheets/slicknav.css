@@ -111,8 +111,10 @@
 }
 .slicknav_nav .slicknav_item a,
 .slicknav_nav .slicknav_parent-link a {
+    float:left;
     padding:0;
     margin:0;
+    width:100%;
 }
 .slicknav_nav .slicknav_row:hover {
     -webkit-border-radius: 6px;
@@ -121,12 +123,14 @@
     background:none;
     color:#fff;
 }
-.slicknav_nav a:hover{
+.slicknav_nav a:hover,
+.slicknav_nav .slicknav_open > a a{
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
+    background:transparent url("/assets/down-menu-arrowHover.png") no-repeat right 0.35em;
     border-radius: 0;
     background:none;
-    color:#222;
+    color:#19b794;
 }
 .slicknav_nav .slicknav_txtnode {
      margin-left:15px;   
