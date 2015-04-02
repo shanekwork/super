@@ -105,4 +105,29 @@
 					#main-menu FIGURE A IMG{
 						max-width:12em;
 						}
+		#content,
+		#content .main-content,
+		#footer .main-footer{
+			float:left;
+		    padding:0 1em;
+		    width:92%;
+			}
+			#content .banner{
+				height:124px!important;
+				margin:0 0 1em 0;
+				min-height:124px;
+				}
+			#tabs UL LI:last-child{
+			   	background:none;
+				}
+			#tabs UL LI:hover:last-child{
+			   	background:#191919;
+				}
+				#tabs UL LI H2{
+					font-size:0.8em;
+					}
+					#tabs UL LI H2 A{
+					    padding:0.8em 0.4em;
+						}
+
 }
