@@ -18,9 +18,22 @@
 			font-size:1.3em;
 			padding:7em 3em 4em 3em;
 			}
+	H1{
+		font-size:1.4em;
+		}
+	H2,
+	H6{
+		font-size:1.25em;
+		line-height:1.35em;
+		}
+	H3{
+	    font-size:1.1em;
+		}
+	H4{
+	    font-size:1em;
+		}
 	FORM{
 		padding:1em;
-    	width:90.5%;
 		}
 		FORM INPUT,
 		FORM TEXTAREA,
@@ -35,6 +48,24 @@
 			margin:0;
 			width:40%;
 			}
+	#new_review{
+	    padding:1em;
+	    width:90%;
+		}		
+		#new_review .label-field{
+		    margin:0;
+		    text-align:left;
+		    width:100%;
+			}
+		#new_review .stars-field,
+		#new_review .label-field,
+		#new_review .text-field{
+			text-align:left;
+		    width:100%;
+			}
+			#new_review .text-field INPUT, #new_review .text-field TEXTAREA{
+			    width:100%;
+				}
 	#content BUTTON{
 		font-size:0.85em;
 		}
