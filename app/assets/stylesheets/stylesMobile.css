@@ -6,7 +6,7 @@
 		display:block;
 		}
 		#slicknav_menu{
-			display:block!important;
+			display:block;
 			}
 	nav#top-nav-bar UL LI::before,
 	.slicknav_nav li::before,
