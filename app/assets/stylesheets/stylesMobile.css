@@ -8,6 +8,23 @@
 		#slicknav_menu{
 			display:block;
 			}
+	FORM{
+		padding:1em;
+    	width:90.5%;
+		}
+		FORM INPUT,
+		FORM TEXTAREA,
+		FORM SELECT{
+		    padding:0.5em 0.85em!important;
+		    width:65.2%;
+			}
+		FORM P INPUT[type="checkbox"]{
+			margin:0.25em 0.5em 0 34.8%;
+			}
+		FORM P LABEL[for="spree_user_remember_me"]{
+			margin:0;
+			width:40%;
+			}
 	nav#top-nav-bar UL LI::before,
 	.slicknav_nav li::before,
 	#main-menu NAV UL LI:before,
@@ -51,7 +68,7 @@
 	    					min-width:6.6em;
 							}
 							nav#top-nav-bar UL LI.account A:hover{
-							    background:#19b894 url("/assets/account-iconHover.png") no-repeat 1.5em 50%;
+							    background:#191919 url("/assets/account-iconHover.png") no-repeat 1.5em 50%;
 								}
 						nav#top-nav-bar UL LI.logIn A{
 						    background:#19b894 url("/assets/login-icon.png") no-repeat 1.5em 50%;

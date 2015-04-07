@@ -132,6 +132,9 @@
     border-radius: 0;
     color:#19b794!important;
 }
+.slicknav_nav li > a:first-child:hover{
+    background:none!important;
+}
 .slicknav_nav .slicknav_txtnode {
      margin-left:15px;   
 }
