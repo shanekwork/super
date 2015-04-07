@@ -245,6 +245,24 @@
 					#content [data-hook="product_right_part"] #cart-form .add-to-cart{
 						margin:0;
 						}
+			#content TABLE.favorite-products THEAD,
+			#content TABLE.favorite-products TBODY{
+				float:left;
+				width:100%;
+				}
+			#content TABLE.favorite-products TBODY{
+				white-space:inherit;
+				}
+				#content TABLE.favorite-products TH,
+				#content TABLE.favorite-products TH.favorite-product-name{
+				    text-align:center;
+					}
+				#content TABLE.favorite-products TD{
+				    float:left;
+				    padding:0.49em;
+				    text-align:center;
+				    width:29%;
+					}
 		#footer .left-footerContent{
 		    margin:0 0 1em 0;
 		    width:100%;
