@@ -254,12 +254,10 @@
 				white-space:inherit;
 				}
 				#content TABLE.favorite-products TH,
-				#content TABLE.favorite-products TH.favorite-product-name{
-				    text-align:center;
-					}
+				#content TABLE.favorite-products TH.favorite-product-name,
 				#content TABLE.favorite-products TD{
-				    float:left;
-				    padding:0.49em;
+					float:left;
+					padding:0.49em;
 				    text-align:center;
 				    width:29%;
 					}
