@@ -65,7 +65,10 @@
 			}
 			#new_review .text-field INPUT, #new_review .text-field TEXTAREA{
 			    width:100%;
-				}
+				}	
+	#reviews .review .reviewBody{
+	    width:66.8%;
+		}
 	#content BUTTON{
 		font-size:0.85em;
 		}
