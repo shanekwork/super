@@ -84,6 +84,20 @@
 	    content:none;
 	    font-size:1em;
 		}
+	#errorExplanation,
+	#stripeError{
+	    background:#f2dede url("/assets/error-icon.png") no-repeat 1em 1em;
+	    margin:0 0 2em 0!important;
+	    padding:1em 1em 1em 6em;
+	    width:65% !important;
+		}
+		#errorExplanation UL{
+		    margin:0 0 1em 1em;
+		    width:92.4%;
+			}
+			#errorExplanation UL LI{
+			    text-align:left;
+				}
 	html, body {
 	    font: 0.9em/1.4 Arial,Helvetica,sans-serif;
 		}
