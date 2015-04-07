@@ -8,6 +8,16 @@
 		#slicknav_menu{
 			display:block;
 			}
+	.js .ui-dialog{
+		width:320px!important;
+		}
+		.js .flash.notice,
+		.js .flash.success,
+		.js .flash.error,
+		.js .flash.alert{
+			font-size:1.3em;
+			padding:7em 3em 4em 3em;
+			}
 	FORM{
 		padding:1em;
     	width:90.5%;
