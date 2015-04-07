@@ -8,13 +8,13 @@
 		#slicknav_menu{
 			display:block;
 			}
-	.js .ui-dialog{
+	.ui-dialog{
 		width:320px!important;
 		}
-		.js .flash.notice,
-		.js .flash.success,
-		.js .flash.error,
-		.js .flash.alert{
+		.flash.notice,
+		.flash.success,
+		.flash.error,
+		.flash.alert{
 			font-size:1.3em;
 			padding:7em 3em 4em 3em;
 			}
@@ -198,6 +198,19 @@
 						float:none;
 						text-align:center;
 						}
+			#content .account-summary DL{
+				width:92.2%;
+				}
+				#content .account-summary DL DT{
+				    padding:0;
+				    text-align:left;
+				    width:100%;
+					}
+				#content .account-summary DL DD{
+				    padding:0 0 0 2em;
+				    text-align:left;
+				    width:90%;
+					}
 		#footer .left-footerContent{
 		    margin:0 0 1em 0;
 		    width:100%;
