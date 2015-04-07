@@ -72,12 +72,10 @@
 							    background:#19b894 url("/assets/favourite-icon.png") no-repeat center center;
 								}
 								nav#top-nav-bar UL LI.favProds A:hover{
-								    background:#191919 url("/assets/favourite-icon.png") no-repeat center center;
+								    background:#191919 url("/assets/favourite-iconHover.png") no-repeat center center;
 									}
 							nav#top-nav-bar UL LI.account A{
 							    background:#19b894 url("/assets/account-icon.png") no-repeat center center;
-							    font-size:0.9em;
-		    					min-width:6.6em;
 								}
 								nav#top-nav-bar UL LI.account A:hover{
 								    background:#191919 url("/assets/account-iconHover.png") no-repeat center center;
@@ -87,6 +85,12 @@
 								}
 								nav#top-nav-bar UL LI.logIn A:hover{
 								    background:#191919 url("/assets/login-iconHover.png") no-repeat center center;
+									}							
+							nav#top-nav-bar UL LI.logOut A{
+							    background:#19b894 url("/assets/logout-icon.png") no-repeat center center;
+								}
+								nav#top-nav-bar UL LI.logOut A:hover{
+								    background:#191919 url("/assets/logout-iconHover.png") no-repeat center center;
 									}
 					nav#top-nav-bar UL LI#search-bar{
 					    margin:0.5em 0;
@@ -101,15 +105,13 @@
 							   	float:left;
    								width:17.4em;
 								}
-							nav#top-nav-bar UL LI#search-bar INPUT{
-							    width:auto;
-								}
 							nav#top-nav-bar UL LI#search-bar INPUT,
 							FORM#contact_newsletter FIELDSET INPUT{
 							    padding:0.9em 0.85em!important;
 								}
 							nav#top-nav-bar UL LI#search-bar INPUT[type="submit"]{
 							    padding:1.2em 1.15em!important;
+							    width:auto;
 								}
 				#link-to-cart{
 				    margin:0 0 0 1.3em;
