@@ -1,3 +1,6 @@
+
+#lib/tasks/import.rake
+
 require 'csv'
 
 desc "Imports a CSV file into an ActiveRecord table"
