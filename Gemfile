@@ -3,7 +3,7 @@ ruby "2.1.0"
 
 gem 'rails', '4.0.4'
 
-gem 'pg'
+gem 'pg', '~> 0.18.1'
 
 gem 'sass-rails', '~> 4.0.2'
 

@@ -230,7 +230,7 @@ GEM
       xml-simple
     paypal-sdk-merchant (1.106.1)
       paypal-sdk-core (~> 0.2.3)
-    pg (0.17.1)
+    pg (0.18.1)
     polyamorous (0.6.4)
       activerecord (>= 3.0)
     polyglot (0.3.5)
@@ -376,7 +376,7 @@ DEPENDENCIES
   jquery-rails
   mail_form
   money (= 6.0.1)
-  pg
+  pg (~> 0.18.1)
   rails (= 4.0.4)
   rails_12factor
   s3
