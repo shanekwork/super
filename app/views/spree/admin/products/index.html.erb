@@ -3,8 +3,8 @@
 <% end %>
 
 
-<%= form_for(:catalogue) do |f| %>
-  <%= f.collection_check_boxes :catalogue_ids, @catalogues, :id, :name %>
+<% Catalogue.where(active: true) .each do |catalogue| %>
+  <%= radio_button_tag :my_catalogue, catalogue, false %>
  <% end %>
 
 
@@ -29,11 +29,6 @@
   <% end %>
 
 <hr style="margin-bottom:3%;">
-
-
-
-
-
 
 
 <hr style="margin-top:3%;">
