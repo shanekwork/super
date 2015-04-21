@@ -1,7 +1,7 @@
 module Spree
   class User < ActiveRecord::Base
 
-    after_create :send_welcome_email
+ 
 
     include Core::UserAddress
     if Spree.version > '2.2.0' && defined?(Core::UserPaymentSource)
@@ -38,9 +38,7 @@ module Spree
 
     private
 
-      def send_welcome_email
-        UserMailer.deliver_welcome_email(self)
-      end
+    
 
       def check_completed_orders
         raise DestroyWithOrdersError if orders.complete.present?
