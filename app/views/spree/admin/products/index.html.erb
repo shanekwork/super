@@ -3,8 +3,8 @@
 <% end %>
 
 
-<% Catalogue.where(active: true) .each do |catalogue| %>
-  <%= radio_button_tag :my_catalogue, catalogue, false %>
+<%= form_for(:catalogue) do |f| %>
+  <%= f.collection_check_boxes :catalogue_ids, @catalogs, :id, :name %>
  <% end %>
 
 
