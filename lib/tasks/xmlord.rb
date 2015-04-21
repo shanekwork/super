@@ -9,8 +9,6 @@ require 'builder'
     @order.each do |o|
       xml.Order do
 
-
-
         xml.OrderReferences do
           xml.BuyersOrderNumber o.id
           xml.PORef "blank"
