@@ -1,3 +1,10 @@
 class WelcomeMailer < ActionMailer::Base
-  default from: "from@example.com"
+
+	def registration
+		@greeting = 'Hi'
+		mail to: 'test@example.com'
+	end
+  
+
+
 end
