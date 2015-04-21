@@ -14,6 +14,14 @@
       <%= form.text_field :company %>
     </p>
   <% end %>
+  <p class="field" id=<%="#{address_id}department" %>>
+    <%= form.label :department, Spree.t(:department) %><br />
+    <%= form.text_field :department %>
+  </p>
+  <p class="field" id=<%="#{address_id}cost_centre" %>>
+    <%= form.label :cost_centre, Spree.t(:cost_centre) %><br />
+    <%= form.text_field :cost_centre %>
+  </p>
   <p class="field" id=<%="#{address_id}address1" %>>
     <%= form.label :address1, Spree.t(:street_address) %><span class="required">*</span><br />
     <%= form.text_field :address1, :class => 'required' %>
