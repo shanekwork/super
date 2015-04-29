@@ -2,8 +2,9 @@ Super::Application.routes.draw do
 
 get 'additional_pages/findme'
 
-match '/contacts', to: 'contacts#new', via: 'get'
-resources "contacts", only: [:new, :create]
+#match '/contacts', to: 'contacts#new', via: 'get'
+#resources "contacts", only: [:new, :create]
+post 'products/select', as: 'select'
 
   # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.

@@ -132,6 +132,15 @@
               </label>
             </div>
           </div>
+          <div class="three columns omega">
+            <div class="field checkbox">
+              <%= f.label :catalogue_id, Spree.t(:catalogue_id) %>
+          <% Catalogue.all.each do |a| %>
+              <%= f.radio_button :catalogue_id_eq, a.id, value: a.id %>
+              <%= a.name %>
+          <% end %> <br>
+            </div>
+        </div>
         </div>
 
         <div class="clear"></div>

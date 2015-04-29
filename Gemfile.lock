@@ -1,13 +1,4 @@
 GIT
-  remote: git://github.com/romul/spree_address_book.git
-  revision: 1205c4c30f5013c829966dbdd022b0a0c0473705
-  branch: 2-2-stable
-  specs:
-    spree_address_book (2.0.0)
-      spree_auth_devise
-      spree_core (~> 2.1)
-
-GIT
   remote: git://github.com/spree-contrib/better_spree_paypal_express.git
   revision: 25afe2b47b21aeaf0e5901636a682b0bedffa7bb
   branch: 2-2-stable
@@ -384,7 +375,6 @@ DEPENDENCIES
   sdoc
   simple_form
   spree (= 2.2.1)
-  spree_address_book!
   spree_auth_devise!
   spree_favorite_products
   spree_gateway!
