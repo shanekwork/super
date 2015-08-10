@@ -471,7 +471,7 @@ body{
 				#link-to-cart{
 					float:left;
 					margin:0 0 0 3.5em;
-					width:18.3%;
+					width:17.3%;
 					}
 					#link-to-cart A{
 						background:transparent url("/assets/cart.png") no-repeat left top;
@@ -491,7 +491,7 @@ body{
 				#header .phone{
 					float:left;
 					margin:0 0 0 1.8em;
-					width:17%;
+					width:18%;
 					}
 					#header .phone IMG{
 						float:left;
@@ -542,7 +542,7 @@ body{
 						    width:auto!important;
 							}
 				#main-menu NAV{
-				    float:left;
+				    float:right;
 				    margin:0 0 0 4.2em;
 				    width:77%;
 					}
